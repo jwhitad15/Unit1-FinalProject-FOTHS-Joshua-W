@@ -13,20 +13,16 @@ import { useState } from "react";
 
 const SignupForm = () => {
 
-    const [formData, setFormData] = useState({
-        name: "",
-        email: ""
-    });
-
+    const [formData, setFormData] = useState({ name: "", email: "" });
     const [characterCount, setCharacterCount] = useState(0);
     const maxLength = 200;
-
     const handleChange = (e) => {
         const { name, value } = e.target;
         console.log(`Updating ${name}:`, value);
         setFormData((prevData) => ({...prevData, [name]: value,}));
         setCharacterCount(e.target.value.length);
        };
+
 
     return (
 
@@ -57,7 +53,7 @@ const SignupForm = () => {
                         <div id="characterCount"> Character Limit: {characterCount} / {maxLength} </div>
                 </label> <br /> <br />
 
-                <button type="submit" id="submit">Sign Up</button>
+                <button type="submit" id="submit" >Sign Up</button>
 
             </form>
 

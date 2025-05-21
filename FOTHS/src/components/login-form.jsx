@@ -11,39 +11,41 @@
 // I need a picture embedded into the Login Card for user-friendliness.
 
 import { useState } from "react";
+import Button from "./login-button";
 
 const LoginForm = () => {
 
-    const [formData, setFormData] = useState({
-        name: "",
-        email: ""
-    });
-
+    const [formData, setFormData] = useState({ username: "", password: "" });
     const handleChange = (e) => {
-        const { name, value } = e.target;
-        console.log(`Updating ${name}:`, value);
-        setFormData((prevData) => ({...prevData, [name]: value,}));
+        const { username, value } = e.target;
+        console.log(`Updating ${username}:`, value);
+        setFormData((prevData) => ({...prevData, [username]: value,}));
         setCharacterCount(e.target.value.length);
        };
 
+    // IF-ELSE Statement
+
+
+
     return (
 
-        <div class="login-signup">
+        <div class="login-signup" >
             <h1 class="header">FOTHS</h1>
-            <h1>Login</h1>
+            <p>Login</p>
             <form class="form">
 
                 <label> Username <br /> 
-                    <input class="textfield" type="text" name="username" value={formData.name} onChange={handleChange} />
+                    <input class="textfield" type="text" name="username" value={formData.username} onChange={handleChange} />
                 </label> <br /> <br />
 
                 <label> Password <br />
-                    <input class="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
+                    <input class="textfield" type="email" name="email" value={formData.password} onChange={handleChange}/>
                 </label> <br /> <br />
 
-                <button type="login" id="login">Login</button>
-
+                <Button text="Hover Effect 2" effectType="effect2"/>
+               
             </form>
+
 
             <form>
                 <p>Already have an account? Click <a>here</a> to login!</p>

@@ -3,23 +3,89 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  place-content: center;
+  grid-auto-flow: column;
+  
+
+ 
 }
 
 .form {
   border-style: outset;
-  width: 800px;
-
+  border: 3px outset #fff;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #a64444;
 }
 
 .header {
   border-style: outset;
+  border: 3px outset white;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: #a64444
+ 
 }
 
-.login-signup {
+/* .login-signup {
   border-style: outset;
   background-color: #a64444;
-}
+  border-radius: 25px;
+  border: 7px outset wheat;
+  box-shadow: 0 4px 8px rgba(94, 203, 233, 0.2);
+  
+  padding: 20px;
+  
+
+} */
 
 .textfield {
   background-color: white;
+  border: 1.2px solid black;
 }
+
+.effect2 {
+    transition: box-shadow 0.3s, border-radius 0.3s;
+}
+
+.effect2:hover {
+    box-shadow: 0 4px 8px rgba(94, 203, 233, 0.2);
+    border-radius: 20px;
+}
+
+.login-signup {
+  --c: #1d3461; /* the main color */
+  --b: 5px; /* thickness of the border */
+  --o: 31px; /* control the offset */
+  
+  width: 250px; /* the image size */
+  --_p: calc(2*var(--o) + var(--b));
+  padding: var(--_p) var(--_p) 0 0;
+  border: var(--b) solid var(--c);
+  border-radius: 25px;
+  outline-offset: calc(var(--o) - var(--_p));
+  transition: 1.0s;
+  cursor: pointer;
+  box-shadow: 8 14px 8px black;
+  background-color: #6e0e0a
+}
+/* change the padding to get all the combination
+   two consecutive padding equal to --_p and the others 0
+*/
+.login-signup + .login-signup {
+  padding: var(--_p) 0 0 var(--_p);
+}
+.login-signup:hover {
+  padding: calc(var(--_p)/2);
+}
+
+/* body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
+  grid-auto-columns: 300px;
+  background: #547980;
+} */
