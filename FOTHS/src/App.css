@@ -25,7 +25,42 @@
   padding-left: 10px;
   border-radius: 10px;
   background-color: #a64444
- 
+}
+.header-logo {
+  border-style: outset;
+  border: 3px outset white;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: #a64444;
+  position: fixed;
+  left: 3%;
+  vertical-align: middle;
+
+}
+.header-user {
+  border-style: outset;
+  border: 3px outset white;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: #a64444;
+  position: fixed;
+  right: 3%;
+
+}
+.header-center {
+  border-style: outset;
+  border: 3px outset white;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: #a64444;
+  position: fixed;
+  right: 26%;
+  left: 26%;
+}
+
+.footer-copyright {
+  text-align: left;
+  margin: 3%;
 }
 
 /* .login-signup {
@@ -115,3 +150,108 @@
   padding-top: 3px;
   padding-bottom: 3px;
 }
+
+/* .userHeader {
+
+} */
+
+nav {
+  display: flex;
+  place-content: center;
+  /* flex: 0 0 25vw; */
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: outset;
+  border-color: #1d3461;
+  align-items: center;
+  
+  position: fixed;
+  top: 0;
+  /* width: 100%; */
+
+}
+
+ aside {
+  display: flex;
+  place-content: center;
+  flex: 0 0 25vw;
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: outset;
+  border-color: #1d3461;
+  align-items: center;
+  
+  position: fixed;
+  
+  left: 3%;
+  top: 18%;
+  width: 20%;
+ }
+
+ nav {
+  display: flex;
+  place-content: center;
+  flex: 0 0 25vw;
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: outset;
+  border-color: #1d3461;
+  align-items: center;
+  
+  position: fixed;
+  
+  right: 3%;
+  top: 18%;
+  width: 20%;
+ }
+
+ main {
+  display: flex;
+  place-content: center;
+  flex: 0 0 25vw;
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: outset;
+  border-color: #1d3461;
+  align-items: center;
+  
+  position: fixed;
+  right: 26%;
+  left: 26%;
+  top: 18%;
+  width: 48%;
+ }
+footer {
+  display: flex;
+  flex: 0 0 25vw;
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: outset;
+  border-color: #1d3461;
+  align-items: center;
+  
+  position: fixed;
+  bottom: 0;
+  top: 91%;
+  left: 0;
+  right: 0;
+  width: 100%;
+ }
+
+ /* header {
+  padding: 50px;
+  text-align: center;
+  background:#6e0e0a;
+  color: white;
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+} */
