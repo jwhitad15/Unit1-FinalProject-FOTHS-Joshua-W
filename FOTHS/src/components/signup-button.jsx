@@ -20,13 +20,12 @@ import { useState } from "react";
 import React from 'react';
 import './Test.css';
 
-const Button = ({ text, effectType }) => {
+const SignupButton = ({ text, effectType }) => {
   return (
     <button id="login" style={{ margin: "10px" }} className={`custom-button ${effectType}`}>
-      Login
+      Signup
     </button>
   );
 };
 
-export default Button;  
-// export default LoginButton;
+export default SignupButton;  

@@ -11,7 +11,10 @@
 // I need a picture embedded into the Login Card for user-friendliness.
 
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Button from "./login-button";
+import SignupForm from "./signup-form";
+
 
 const LoginForm = () => {
 
@@ -28,10 +31,9 @@ const LoginForm = () => {
 
 
     return (
-
         <div class="login-signup" >
             <h1 class="header">FOTHS</h1>
-            <p>Login</p>
+            <p id="login-title">Login</p>
             <form class="form">
 
                 <label> Username <br /> 
@@ -42,16 +44,18 @@ const LoginForm = () => {
                     <input class="textfield" type="email" name="email" value={formData.password} onChange={handleChange}/>
                 </label> <br /> <br />
 
-                <Button text="Hover Effect 2" effectType="effect2"/>
+                <Button onClick=" document.location='signup-form.jsx' " text="Hover Effect 2" effectType="effect2"/>
                
             </form>
 
 
             <form>
-                <p>Already have an account? Click <a>here</a> to login!</p>
+     
+                <p>Already have an account? Click <a href="/components/signup-form.jsx">here</a> to login! </p>
             </form>
 
         </div>
+        
     )
 
 }

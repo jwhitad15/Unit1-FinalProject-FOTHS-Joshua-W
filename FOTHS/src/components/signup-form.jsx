@@ -10,6 +10,8 @@
 // I need a picture embedded into the Login Card for user-friendliness.
 
 import { useState } from "react";
+import { useParams } from "react-router-dom"
+import SignupButton from "./signup-button";
 
 const SignupForm = () => {
 
@@ -22,38 +24,40 @@ const SignupForm = () => {
         setFormData((prevData) => ({...prevData, [name]: value,}));
         setCharacterCount(e.target.value.length);
        };
+    
+    const {newUser} = useParams();
 
 
     return (
 
-        <div>
+        <div class="signup-form">
 
             <h1>Login</h1>
             <form class="form">
 
                 <label> Username <br /> 
-                    <input type="text" name="name" value={formData.name} onChange={handleChange} />
+                    <input class="textfield" type="text" name="name" value={formData.name} onChange={handleChange} />
                 </label> <br /> <br />
 
                 <label> Email <br />
-                    <input type="email" name="email" value={formData.email} onChange={handleChange}/>
+                    <input class="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
                 </label> <br /> <br />
 
                 <label> Church Name <br />
-                    <input type="email" name="email" value={formData.email} onChange={handleChange}/>
+                    <input class="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
                 </label> <br /> <br />
 
                 <label> Bio <br />
-                    <textarea id="feedback" name="feedback" value={formData.feedback} onChange={handleChange} maxLength={maxLength}></textarea> 
+                    <textarea class="textfield" id="feedback" name="feedback" value={formData.feedback} onChange={handleChange} maxLength={maxLength}></textarea> 
                         <div id="characterCount"> Character Limit: {characterCount} / {maxLength} </div>
                 </label> <br /> <br />
 
                 <label> 3 Areas for Improvement <br />
-                    <textarea id="feedback" name="feedback" value={formData.feedback} onChange={handleChange} maxLength={maxLength}></textarea> 
+                    <textarea class="textfield" id="feedback" name="feedback" value={formData.feedback} onChange={handleChange} maxLength={maxLength}></textarea> 
                         <div id="characterCount"> Character Limit: {characterCount} / {maxLength} </div>
                 </label> <br /> <br />
 
-                <button type="submit" id="submit" >Sign Up</button>
+                <SignupButton onClick=" document.location='signup-form.jsx' " text="Hover Effect 2" effectType="effect2"/>
 
             </form>
 
