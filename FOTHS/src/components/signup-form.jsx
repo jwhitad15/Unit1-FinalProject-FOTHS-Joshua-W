@@ -17,12 +17,20 @@ const SignupForm = () => {
 
     const [formData, setFormData] = useState({ name: "", email: "" });
     const [characterCount, setCharacterCount] = useState(0);
-    const maxLength = 200;
+    const maxLength = 500;
     const handleChange = (e) => {
         const { name, value } = e.target;
         console.log(`Updating ${name}:`, value);
         setFormData((prevData) => ({...prevData, [name]: value,}));
         setCharacterCount(e.target.value.length);
+       };
+    const [signupCharacterCount, setSignupCharacterCount] = useState(0);
+    const maxSignupLength = 300;
+    const handleSignupChange = (e) => {
+        const { name, value } = e.target;
+        console.log(`Updating ${name}:`, value);
+        setFormData((prevData) => ({...prevData, [name]: value,}));
+        setSignupCharacterCount(e.target.value.length);
        };
     
     const {newUser} = useParams();
@@ -30,32 +38,69 @@ const SignupForm = () => {
 
     return (
 
-        <div class="signup-form">
+        <div className="signup-form">
 
             <h1>Login</h1>
-            <form class="form">
+            <form className="form">
+            
+                <fieldset>  
+                    <legend className="legend">Name</legend>
 
-                <label> Username <br /> 
-                    <input class="textfield" type="text" name="name" value={formData.name} onChange={handleChange} />
-                </label> <br /> <br />
+                    <label> First:
+                        <input className="textfield" type="text" name="name" value={formData.name} onChange={handleChange} />
+                    </label> 
 
-                <label> Email <br />
-                    <input class="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
-                </label> <br /> <br />
+                    <label className="text-to-prompt-pad"> Last:
+                        <input className="textfield" type="text" name="name" value={formData.name} onChange={handleChange} />
+                    </label> <br /> <br />
 
-                <label> Church Name <br />
-                    <input class="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
-                </label> <br /> <br />
+                </fieldset> <br />
+              
+                <fieldset>
+                    <legend className="legend">Contact</legend> 
 
-                <label> Bio <br />
-                    <textarea class="textfield" id="feedback" name="feedback" value={formData.feedback} onChange={handleChange} maxLength={maxLength}></textarea> 
-                        <div id="characterCount"> Character Limit: {characterCount} / {maxLength} </div>
-                </label> <br /> <br />
+                    <label> Email: 
+                        <input className="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
+                    </label> 
 
-                <label> 3 Areas for Improvement <br />
-                    <textarea class="textfield" id="feedback" name="feedback" value={formData.feedback} onChange={handleChange} maxLength={maxLength}></textarea> 
-                        <div id="characterCount"> Character Limit: {characterCount} / {maxLength} </div>
-                </label> <br /> <br />
+                    <label> <em>Phone:</em> 
+                        <input className="textfield" type="email" name="email" placeholder="optional" value={formData.email} onChange={handleChange}/>
+                    </label> <br /> <br />
+
+                </fieldset> <br />
+
+                <fieldset> 
+                    <legend className="legend">Account</legend> 
+
+                    <fieldset> 
+                        <legend className="nested-legend">Credentials</legend>  
+
+                        <label> Username: 
+                            <input className="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
+                        </label> 
+
+                        <label> Password:
+                            <input className="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
+                        </label> <br /> <br />
+
+                    </fieldset> <br />
+
+                    <label> Church Name:
+                        <input className="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
+                    </label> <br /> <br />
+            <hr />
+
+                    <label> Tell us about yourself! <br />
+                        <textarea className="textfield" id="feedback" name="feedback" value={formData.feedback} onChange={handleSignupChange} maxLength={maxSignupLength}></textarea> 
+                            <div id="characterCount"> Character Limit: {signupCharacterCount} / {maxSignupLength} </div>
+                    </label> <br /> 
+
+                    <label> 3 Areas for Improvement <br />
+                        <textarea className="textfield" id="feedback" name="feedback" value={formData.feedback} onChange={handleSignupChange} maxLength={maxLength}></textarea> 
+                            <div id="characterCount"> Character Limit: {signupCharacterCount} / {maxLength} </div>
+                    </label> <br /> <br />
+
+                </fieldset>
 
                 <SignupButton onClick=" document.location='signup-form.jsx' " text="Hover Effect 2" effectType="effect2"/>
 

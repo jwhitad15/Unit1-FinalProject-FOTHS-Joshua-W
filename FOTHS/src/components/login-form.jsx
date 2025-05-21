@@ -31,17 +31,17 @@ const LoginForm = () => {
 
 
     return (
-        <div class="login-signup" >
-            <h1 class="header">FOTHS</h1>
+        <div className="login-signup" >
+            <h1 className="header">FOTHS</h1>
             <p id="login-title">Login</p>
-            <form class="form">
+            <form className="form">
 
                 <label> Username <br /> 
-                    <input class="textfield" type="text" name="username" value={formData.username} onChange={handleChange} />
+                    <input className="textfield" type="text" name="username" value={formData.username} onChange={handleChange} />
                 </label> <br /> <br />
 
                 <label> Password <br />
-                    <input class="textfield" type="email" name="email" value={formData.password} onChange={handleChange}/>
+                    <input className="textfield" type="email" name="email" value={formData.password} onChange={handleChange}/>
                 </label> <br /> <br />
 
                 <Button onClick=" document.location='signup-form.jsx' " text="Hover Effect 2" effectType="effect2"/>

@@ -44,7 +44,15 @@
   background-color: white;
   border: 1.2px solid black;
 }
-
+.legend {
+  text-align: left;
+}
+.nested-legend {
+  text-align: right;
+}
+:optional {
+  text-align: center;
+}
 .effect2 {
     transition: box-shadow 0.3s, border-radius 0.3s;
 }
@@ -86,7 +94,7 @@
   --b: 5px; /* thickness of the border */
   --o: 31px; /* control the offset */
   
-  width: 250px; /* the image size */
+  width: 2500px; /* the image size */
   --_p: calc(2*var(--o) + var(--b));
   padding: var(--_p) var(--_p) 0 0;
   border: var(--b) solid var(--c);
