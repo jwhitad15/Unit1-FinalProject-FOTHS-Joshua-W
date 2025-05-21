@@ -11,14 +11,15 @@ const Dashboard = () => {
                 <div className="header-center"> Navigation Menu </div>
             </div>
 
-       
-            <aside><h1>Blicky Blanknarach</h1></aside>
-            <main><h1>This is the main window</h1></main>
-            <nav><h1>Blicky Blanknarach</h1></nav>
+            <main>
+                <h1>This is the main window</h1> <br />
+                <div className="game-card"> FOTHS </div>
+            </main>
 
             <footer className="footer">
                 <div className="footer-copyright"> &copy; JWMP 2025 </div>
             </footer>
+
         </div>
 
     )
