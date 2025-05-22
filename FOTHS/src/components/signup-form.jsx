@@ -40,7 +40,7 @@ const SignupForm = () => {
 
         <div className="signup-form">
 
-            <h1>Login</h1>
+            <h1>Signup</h1>
             <form className="form">
             
                 <fieldset>  

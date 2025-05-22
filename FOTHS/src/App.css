@@ -6,9 +6,6 @@
   display: flex;
   place-content: center;
   grid-auto-flow: column;
-  
-
- 
 }
 
 .form {
@@ -19,18 +16,20 @@
   background-color: #a64444;
 }
 
-/* .header {
+/* OLD//
+.header {
   border-style: outset;
   border: 3px outset white;
   padding-left: 10px;
   border-radius: 10px;
   background-color: #a64444
 } */
+
 .header-logo {
   border-style: outset;
   border: 3px outset white;
   padding-left: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #a64444;
   position: fixed;
   left: 3%;
@@ -38,83 +37,55 @@
   vertical-align: middle;
 
 }
-
 .header-user {
   border-style: outset;
   border: 3px outset white;
   padding-right: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #a64444;
   position: fixed;
   right: 3%;
   width: 18%;
 
 }
-
 .header-center {
   border-style: outset;
   border: 3px outset white;
   padding-right: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #a64444;
   position: fixed;
   right: 26%;
   left: 26%;
+
+}
+
+.footer-copyright {
+  text-align: left;
+  margin: 3%;
+}
+.footer-copyright {
+  text-align: left;
+  margin: 3%;
 }
 
 .foths-main {
-    display: grid;
-    place-content: center;
-    flex: 0 0 25vw;
-    background: #cdc5b4;
-    color: #85756e;
-    box-sizing: borderbox;
-    border: outset;
-    border-color: #1d3461;
-    align-items: center;
-    
-    position: fixed;
-    right: 26%;
-    left: 26%;
-    top: 18%;
-    width: 48%;
-    height:68%
-}
-
-.footer-copyright {
-  text-align: left;
-  margin: 3%;
-}
-.footer-copyright {
-  text-align: left;
-  margin: 3%;
-}
-
-.game-card {
-  border: outset;
+  display: grid;
   place-content: center;
-}
-
-.textfield {
-  background-color: white;
-  border: 1.2px solid black;
-}
-.legend {
-  text-align: left;
-}
-.nested-legend {
-  text-align: right;
-}
-:optional {
-  text-align: center;
-}
-.effect2 {
-    transition: box-shadow 0.3s, border-radius 0.3s;
-}
-
-.effect2:hover {
-    box-shadow: 0 4px 8px rgba(94, 203, 233, 0.2);
-    border-radius: 20px;
+  flex: 0 0 25vw;
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: outset;
+  border-color: #1d3461;
+  align-items: center;
+  
+  position: fixed;
+  right: 26%;
+  left: 26%;
+  top: 18%;
+  width: 48%;
+  height:68%
 }
 
 .login-signup {
@@ -171,6 +142,77 @@
   padding-bottom: 3px;
 }
 
+.game-card {
+  border: outset;
+  place-content: center;
+}
+.textfield {
+  background-color: white;
+  border: 1.2px solid black;
+}
+.legend {
+  text-align: left;
+}
+.nested-legend {
+  text-align: right;
+}
+:optional {
+  text-align: center;
+}
+.effect2 {
+    transition: box-shadow 0.3s, border-radius 0.3s;
+}
+.effect2:hover {
+    box-shadow: 0 4px 8px rgba(94, 203, 233, 0.2);
+    border-radius: 20px;
+}
+
+.about-title-container {
+  border: outset;
+  place-content: center;
+  padding-right: 10px;;
+  border-radius: 10px;
+  background-color: #a64444;
+  position: fixed;
+  right: 6%;
+  left: 6%;
+  top: 21%;
+  bottom: 70%;
+  color: white;
+  
+}
+.about-story-card {
+  border: outset;
+  place-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: #a64444;
+  position: fixed;
+  right: 6%;
+  left: 6%;
+  top: 33%;
+  bottom: 52%;
+  color: white;
+  font-size:xx-small;
+}
+.about-app-card {
+  border: outset;
+  place-content: center;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: #a64444;
+  position: fixed;
+  right: 31%;
+  left: 36%;
+  top: 51%;
+  bottom: 17%;
+  color: white;
+  font-size:xx-small
+}
+
  aside {
   display: flex;
   place-content: center;
@@ -207,7 +249,6 @@
   width: 20%;
   height:68%
  }
-
  nav {
   display: flex;
   place-content: center;
@@ -244,12 +285,29 @@
   width: 20%;
   height:68%
  }
-
  main {
   display: grid;
   place-content: center;
   flex: 0 0 25vw;
   background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: outset;
+  border-color: #1d3461;
+  align-items: center;
+  border-radius: 8px;
+  
+  position: fixed;
+  right: 3%;
+  left: 3%;
+  top: 18%;
+  height:68%
+ }
+ /* #about-main {
+  display: grid;
+  place-content: center;
+  flex: 0 0 25vw;
+  background: black;
   color: #85756e;
   box-sizing: borderbox;
   border: outset;
@@ -261,8 +319,7 @@
   left: 3%;
   top: 18%;
   height:68%
- }
-
+ } */
 footer {
   display: flex;
   flex: 0 0 25vw;
@@ -272,6 +329,7 @@ footer {
   border: outset;
   border-color: #1d3461;
   align-items: center;
+  border-radius: 10px;
   
   position: fixed;
   bottom: 3%;
@@ -280,7 +338,8 @@ footer {
   left: 3%;
  }
 
- /* header {
+ /* Optional?
+ header {
   padding: 50px;
   text-align: center;
   background:#6e0e0a;
