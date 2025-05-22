@@ -1,4 +1,5 @@
-
+import { FcRight } from "react-icons/fc";
+import { FcLeft } from "react-icons/fc";
 
 const Study = () => {
     return (
@@ -6,23 +7,24 @@ const Study = () => {
 
            
             <div className="fothsUserHeader">
-                <div className="foths-header-logo"> justOne Logo </div>
-                <div className="foths-header-user"> Welcome, </div>
-                <div className="foths-header-center"> Navigation Menu </div>
+                <div className="study-header-logo"> justOne Logo </div>
+                <div className="study-header-user"> Welcome, </div>
+                <div className="study-header-center"> Navigation Menu </div>
             </div>
 
        
-            <aside>
-                <h1>Blicky Blanknarach</h1>
+            <aside className="study-previous-button">
+                <h1><FcRight/></h1>
             </aside>
 
-            <main class="foths-main">
-                <h1>This is the main window</h1> <br />
-                <div className="game-card"> FOTHS </div>
+            <main class="study-display-verse">
+                <h1>"So then faith comes by hearing and hearing by the word of God". Romans 10:17</h1> <br />
+                <div className="study-title"> Study Mode </div>
+                <div className="verse-name"> Verse Name </div>
             </main>
 
-            <nav>
-                <h1>Blicky Blanknarach</h1>
+            <nav className="study-next-button">
+                <h1><FcLeft/></h1>
             </nav>
 
             <footer className="footer">

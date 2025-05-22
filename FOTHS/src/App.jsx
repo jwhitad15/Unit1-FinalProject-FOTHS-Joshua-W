@@ -21,8 +21,8 @@ function App() {
         {/* <Route path="/" element={ <Dashboard/>} /> */}
         {/* <Route path="/" element={ <FOTHSMain/>} /> */}
         {/* <Route path="/" element={ <GameMode/>} /> */}
-        {/* <Route path="/" element={ <Study/>} /> */}
-        <Route path="/" element={ <About/>} />
+        <Route path="/" element={ <Study/>} />
+        {/* <Route path="/" element={ <About/>} /> */}
       </Routes>
   
      {/* <SignupForm/> */}
