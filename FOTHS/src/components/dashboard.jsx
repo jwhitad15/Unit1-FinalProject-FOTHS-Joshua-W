@@ -12,8 +12,12 @@ const Dashboard = () => {
             </div>
 
             <main>
-                <h1>This is the main window</h1> <br />
-                <div className="game-card"> FOTHS </div>
+                <div className="dashboard-title"> Dashboard View </div>
+                <div className="FOTHS-dashboard-card"> 
+                    <hr/> FOTHS <hr/> <br/>
+                    <p className="dashboard-card-text"> Click on this game card to play! </p> 
+              
+                </div>
             </main>
 
             <footer className="footer">
