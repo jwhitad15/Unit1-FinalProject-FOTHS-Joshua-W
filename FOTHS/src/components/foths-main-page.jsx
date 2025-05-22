@@ -6,9 +6,9 @@ const FOTHSMain = () => {
 
            
             <div className="fothsUserHeader">
-                <div className="foths-header-logo"> FOTHS Logo </div>
-                <div className="foths-header-user"> Welcome, </div>
-                <div className="foths-header-center"> Navigation Menu </div>
+                <div className="header-logo"> FOTHS Logo </div>
+                <div className="header-user"> Welcome, </div>
+                <div className="header-center"> Navigation Menu </div>
             </div>
 
        

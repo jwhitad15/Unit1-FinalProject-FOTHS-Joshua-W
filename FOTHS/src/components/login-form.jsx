@@ -51,7 +51,7 @@ const LoginForm = () => {
 
             <form>
      
-                <p>Already have an account? Click <a href="/components/signup-form.jsx">here</a> to login! </p>
+                <p>Don't have an account? Click <a href="/components/signup-form.jsx">here</a> to signup! </p>
             </form>
 
         </div>
