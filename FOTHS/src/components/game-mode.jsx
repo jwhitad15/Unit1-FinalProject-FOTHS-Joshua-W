@@ -11,9 +11,12 @@ const GameMode = () => {
                 <div className="header-center"> Navigation Menu </div>
             </div>
 
-            <main>
-                <h1>This is the main window</h1> <br />
-                <div className="game-card"> FOTHS </div>
+            <main className="game-mode-cards">
+                <div className="game-mode-title"> Game Mode </div>
+                <div className="game-card-1"> Study </div>
+                <div className="game-card-2"> Recall </div>
+                <div className="game-card-3"> Quiz </div>
+             
             </main>
 
             <footer className="footer">

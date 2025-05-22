@@ -211,6 +211,74 @@
 
 }
 
+.game-mode-title {
+  border-style: outset;
+  border: 3px outset white;
+  padding-right: 10px;
+  border-radius: 8px;
+  background-color: #a64444;
+  position: fixed;
+  right: 15%;
+  left: 15%;
+  top: 21%;
+  height: 5%;
+  width: 68%;
+  color: white;
+  place-content: center;
+
+}
+.game-card-1 {
+  border-style: outset;
+  border: 3px outset white;
+  padding-right: 10px;
+  border-radius: 8px;
+  background-color: #a64444;
+  position: fixed;
+  right: 33.833%;
+  left: 5.5%;
+  top: 31%;
+  height: 50%;
+  width: 28.333%;
+  color: white;
+  place-content: center;
+}
+.game-card-2 {
+  border-style: outset;
+  border: 3px outset white;
+  padding-right: 10px;
+  border-radius: 8px;
+  background-color: #a64444;
+  position: fixed;
+  right: 64.667%;
+  left: 36.333%;
+  top: 31%;
+  height: 50%;
+  width: 28.333%;
+  color: white;
+  place-content: center;
+
+}
+.game-card-3 {
+  border-style: outset;
+  border: 3px outset white;
+  padding-right: 10px;
+  border-radius: 8px;
+  background-color: #a64444;
+  position: fixed;
+  right: 94.5%;
+  left: 67.167%;
+  top: 31%;
+  height: 50%;
+  width: 28.333%;
+  color: white;
+  place-content: center;
+
+  
+}
+.game-mode-cards {
+  justify-content: space-between;
+}
+
 .login-signup {
   --c: #1d3461; /* the main color */
   --b: 5px; /* thickness of the border */
