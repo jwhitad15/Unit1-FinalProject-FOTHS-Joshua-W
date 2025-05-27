@@ -10,10 +10,13 @@
 // I need a picture embedded into the Login Card for user-friendliness.
 
 import { useState } from "react";
-import { useParams } from "react-router-dom"
+import React from "react";
+import { useNavigate, useParams } from "react-router-dom"
 import SignupButton from "./signup-button";
 
 const SignupForm = () => {
+
+ 
 
     const [formData, setFormData] = useState({ name: "", email: "" });
     const [characterCount, setCharacterCount] = useState(0);

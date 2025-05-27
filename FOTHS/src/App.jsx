@@ -7,6 +7,7 @@ import FOTHSMain from './components/foths-main-page';
 import GameMode from './components/game-mode';
 import About from './components/about';
 import Study from './components/study';
+import ErrorPage from './components/error-page'
 
 // import LoginButton from './components/Test'
 
@@ -16,13 +17,16 @@ function App() {
     <>
     
       <Routes>
-        {/* <Route path="/" element={ <LoginForm/>} /> */}
-         {/* <Route path="/" element={ <SignupForm/>} /> */}
-        {/* <Route path="/" element={ <Dashboard/>} /> */}
-        {/* <Route path="/" element={ <FOTHSMain/>} /> */}
-        {/* <Route path="/" element={ <GameMode/>} /> */}
-        {/* <Route path="/" element={ <Study/>} /> */}
-        {/* <Route path="/" element={ <About/>} /> */}
+        <Route index element={ <LoginForm/>} />
+
+        <Route path="/login" element={ <LoginForm/>} />
+        <Route path="/signup" element={ <SignupForm/>} />
+        <Route path="/dashboard" element={ <Dashboard/>} />
+        <Route path="/foths" element={ <FOTHSMain/>} />
+        <Route path="/game-mode" element={ <GameMode/>} />
+        <Route path="/study" element={ <Study/>} />
+        <Route path="/about" element={ <About/>} />
+        <Route path="*" element={<ErrorPage/>} />
       </Routes>
   
      {/* <SignupForm/> */}

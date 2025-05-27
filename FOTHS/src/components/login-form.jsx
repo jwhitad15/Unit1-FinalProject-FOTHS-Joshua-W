@@ -13,20 +13,31 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Button from "./login-button";
-import SignupForm from "./signup-form";
+import { CiUser } from "react-icons/ci";
+import { CiLock } from "react-icons/ci";
 
 
 const LoginForm = () => {
 
-    const [formData, setFormData] = useState({ username: "", password: "" });
-    const handleChange = (e) => {
-        const { username, value } = e.target;
-        console.log(`Updating ${username}:`, value);
-        setFormData((prevData) => ({...prevData, [username]: value,}));
-        setCharacterCount(e.target.value.length);
-       };
+       const navigate = useNavigate();
+    
+        function handleClick (){
+            navigate("/dashboard")
+        }
 
-    // IF-ELSE Statement
+    const [input, setInput] = useState({ username: "", password: ""});
+   
+   
+
+    
+    const handleChange = (event) => {
+        const { username, value } = event.target;
+        setInput((input) => ({...input, [username]: value}));
+    }
+    
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    }
 
 
 
@@ -34,25 +45,41 @@ const LoginForm = () => {
         <div className="login-signup" >
             <h1 className="header">FOTHS</h1>
             <p id="login-title">Login</p>
-            <form className="form">
+
+            <form className="form" onSubmit={handleSubmit}>
 
                 <label> Username <br /> 
-                    <input className="textfield" type="text" name="username" value={formData.username} onChange={handleChange} />
+                    <input className="textfield" type="text" name="username" value={input.username || ""} onChange={handleChange} required />
+                    <CiUser className="icon" />
                 </label> <br /> <br />
 
                 <label> Password <br />
-                    <input className="textfield" type="email" name="email" value={formData.password} onChange={handleChange}/>
+                    <input className="textfield" type="password" name="password" value={input.password || ""} onChange={handleChange} required />
+                    <CiLock className="icon" />
                 </label> <br /> <br />
 
-                <Button onClick=" document.location='signup-form.jsx' " text="Hover Effect 2" effectType="effect2"/>
+                <div className="remember-forgot">
+                    <lable>
+                        <input type="checkbox" /> Remember me
+                    </lable>
+                </div>
+
+                <button text="Hover Effect 2" effectType="effect2">sdf</button>
+
+                {/* <Button onClick={handleSubmit} text="Hover Effect 2" effectType="effect2"/> */}
                
             </form>
 
-
-            <form>
+            <form >
      
                 <p>Don't have an account? Click <a href="/components/signup-form.jsx">here</a> to signup! </p>
             </form>
+
+            {/* <script>
+            document.getElementByClass("login-signup").addEventListener("submit", ((event)=> {
+                event.preventDefault()
+            }))
+            </script> */}
 
         </div>
         
