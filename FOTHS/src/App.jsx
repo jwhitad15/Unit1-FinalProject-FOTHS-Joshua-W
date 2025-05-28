@@ -9,13 +9,10 @@ import About from './components/about';
 import Study from './components/study';
 import ErrorPage from './components/error-page'
 
-// import LoginButton from './components/Test'
-
 function App() {
  
   return (
     <>
-    
       <Routes>
         <Route index element={ <LoginForm/>} />
 
@@ -28,8 +25,6 @@ function App() {
         <Route path="/about" element={ <About/>} />
         <Route path="*" element={<ErrorPage/>} />
       </Routes>
-  
-     {/* <SignupForm/> */}
     </>
   )
 }

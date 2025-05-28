@@ -11,12 +11,11 @@
 // I need a picture embedded into the Login Card for user-friendliness.
 
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Button from "./login-button";
 import React from "react";
 import { CiUser } from "react-icons/ci";
 import { CiLock } from "react-icons/ci";
 import './button-animation.css';
+import handleValidatorClick from "./validation requirements/handleValidatorClick";
 
 
 const LoginForm = () => {
@@ -54,12 +53,12 @@ const LoginForm = () => {
             <form className="form" onSubmit={handleSubmit}>
 
                 <label> Username <br /> 
-                    <input className="textfield" type="text" name="username" value={input.username || ""} onChange={handleChange} required />
+                    <input className="textfield" type="text" name="username" onChange={handleChange} required />
                     <CiUser className="icon" />
                 </label> <br /> 
 
                 <label> Password <br />
-                    <input className="textfield" type="password" name="password" value={input.password || ""} onChange={handleChange} required />
+                    <input className="textfield" type="password" name="password" onChange={handleChange} required />
                     <CiLock className="icon" />
                 </label> <br /> 
 
@@ -72,7 +71,10 @@ const LoginForm = () => {
                 {/* <button onClick={handleClick} id="login" text="Hover Effect 2" effectteype="effect2">sdf</button> */}
 
                 
-                <a href="./dashboard" class="button-class">Login</a> 
+                <a onClick={handleValidatorClick} className="button-class">Login</a> 
+                {/* <a href="./dashboard" class="button-class">Login</a>  */}
+
+
                 {/* <Button onClick={handleSubmit} text="Hover Effect 2" effectType="effect2"/> */}
                 {/* <script type="text/javascript"> document.getElementById("myButton").onclick = function () {href = "./dashboard"};</script> */}
                

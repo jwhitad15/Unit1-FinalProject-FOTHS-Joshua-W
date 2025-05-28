@@ -20,6 +20,10 @@
   color: salmon;
   text-decoration: none;
 }
+#return-to-dashboard-hyperlink {
+  color: white;
+  text-decoration: none;
+}
 #card-hyperlink {
   color: white;
   text-decoration: none;
@@ -444,16 +448,7 @@
   padding-left: 2%;
   padding-right:  2%;
 }
-/* 
-.fruit-cards-row-1 {
-  
-}
-.fruit-cards-row-2 {
 
-}
-.fruit-cards-row-3 {
-
-} */
 .fruit-card-1 {
   border: outset;
   border: 3px outset white;
@@ -625,6 +620,22 @@
   cursor: pointer;
   border-radius: 4px;
 }
+.return-to-dashboard-button-class {
+  border: outset 2.5px;
+  color: white;
+  background-color: #a64444;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
 
 .signup-form {
   --c: #1d3461; /* the main color */
@@ -658,9 +669,9 @@
   place-content: center;
 }
 .textfield {
-  background-color: white;
-  border: 1.2px solid black;
+  border: 1.2px solid white;
   border-radius: 5px;
+  color: black;
 }
 .legend {
   text-align: left;

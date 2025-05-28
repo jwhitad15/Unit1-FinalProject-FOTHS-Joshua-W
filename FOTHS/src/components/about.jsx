@@ -39,6 +39,10 @@ const About = () => {
                 
             </main>
 
+            <form action="./dashboard">
+            <input type="submit" value="Go to Another Page" />
+            </form>
+
             <footer className="footer">
                 <div className="footer-copyright"> &copy; JWMP 2025 </div>
             </footer>
