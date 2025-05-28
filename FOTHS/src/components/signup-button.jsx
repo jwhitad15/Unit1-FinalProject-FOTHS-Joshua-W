@@ -18,11 +18,13 @@ import { useState } from "react";
 // Button.jsx
 
 import React from 'react';
-import './Test.css';
+import './button-animation.css';
 
-const SignupButton = ({ text, effectType }) => {
+const SignupButton = ({ text, effecttype }) => {
+
+  
   return (
-    <button id="login" style={{ margin: "10px" }} className={`custom-button ${effectType}`}>
+    <button id="login" style={{ margin: "10px" }} className={`custom-button ${effecttype}`}>
       Signup
     </button>
   );

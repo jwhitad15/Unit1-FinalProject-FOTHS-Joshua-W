@@ -13,18 +13,23 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Button from "./login-button";
+import React from "react";
 import { CiUser } from "react-icons/ci";
 import { CiLock } from "react-icons/ci";
+import './button-animation.css';
 
 
 const LoginForm = () => {
 
-       const navigate = useNavigate();
+       
+
+       
     
         function handleClick (){
+            const navigate = navigate();
             navigate("/dashboard")
         }
-
+        
     const [input, setInput] = useState({ username: "", password: ""});
    
    
@@ -51,28 +56,31 @@ const LoginForm = () => {
                 <label> Username <br /> 
                     <input className="textfield" type="text" name="username" value={input.username || ""} onChange={handleChange} required />
                     <CiUser className="icon" />
-                </label> <br /> <br />
+                </label> <br /> 
 
                 <label> Password <br />
                     <input className="textfield" type="password" name="password" value={input.password || ""} onChange={handleChange} required />
                     <CiLock className="icon" />
-                </label> <br /> <br />
+                </label> <br /> 
 
                 <div className="remember-forgot">
-                    <lable>
-                        <input type="checkbox" /> Remember me
-                    </lable>
-                </div>
+                    <label>
+                        <input className="checkbox" type="checkbox" /> Remember me
+                    </label>
+                </div> <br/>
 
-                <button text="Hover Effect 2" effectType="effect2">sdf</button>
+                {/* <button onClick={handleClick} id="login" text="Hover Effect 2" effectteype="effect2">sdf</button> */}
 
+                
+                <a href="./dashboard" class="button-class">Login</a> 
                 {/* <Button onClick={handleSubmit} text="Hover Effect 2" effectType="effect2"/> */}
+                {/* <script type="text/javascript"> document.getElementById("myButton").onclick = function () {href = "./dashboard"};</script> */}
                
             </form>
 
             <form >
      
-                <p>Don't have an account? Click <a href="/components/signup-form.jsx">here</a> to signup! </p>
+                <p>Don't have an account? Click <a id="hyperlink" href="/signup">here</a> to signup! </p>
             </form>
 
             {/* <script>
@@ -88,3 +96,4 @@ const LoginForm = () => {
 }
 
 export default LoginForm;
+

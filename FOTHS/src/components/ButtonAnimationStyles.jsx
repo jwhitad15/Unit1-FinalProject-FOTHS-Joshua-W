@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Button from './TestButton';
-import './Test.css';
+import './button-animation';
 
 function LoginButton() {
     return (
@@ -16,11 +16,11 @@ function LoginButton() {
             </header>
 
             
-            <Button text="Hover Effect 1" effectType="effect1" />
-            <Button text="Hover Effect 2" effectType="effect2" />
-            <Button text="Hover Effect 3" effectType="effect3" />
-            <Button text="Hover Effect 4" effectType="effect4" />
-            <Button text="Hover Effect 5" effectType="effect5" />
+            <Button text="Hover Effect 1" effecttype="effect1" />
+            <Button text="Hover Effect 2" effecttype="effect2" />
+            <Button text="Hover Effect 3" effecttype="effect3" />
+            <Button text="Hover Effect 4" effecttype="effect4" />
+            <Button text="Hover Effect 5" effecttype="effect5" />
         </div>
     );
 }

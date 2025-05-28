@@ -16,6 +16,16 @@
   background-color: #a64444;
 }
 
+#hyperlink {
+  color: salmon;
+  text-decoration: none;
+}
+
+/* .checkbox {
+  background-color: white;
+  border: 1.2px solid black;
+  border-radius: 5px;
+} */
 /* OLD//
 .header {
   border-style: outset;
@@ -25,6 +35,15 @@
   background-color: #a64444
 } */
 
+.header {
+  border-style: outset;
+  border: 3px outset white;
+  padding-left: 10px;
+  border-radius: 8px;
+  background-color: #a64444;
+  position: grid;
+  vertical-align: middle;
+}
 .header-logo {
   border-style: outset;
   border: 3px outset white;
@@ -584,6 +603,23 @@
   padding-right: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.button-class {
+  border: outset 2.5px;
+  color: white;
+  background-color: #1d3461;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .signup-form {

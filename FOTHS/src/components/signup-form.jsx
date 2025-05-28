@@ -13,6 +13,7 @@ import { useState } from "react";
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom"
 import SignupButton from "./signup-button";
+import './button-animation.css'
 
 const SignupForm = () => {
 
@@ -88,11 +89,12 @@ const SignupForm = () => {
 
                     </fieldset> <br />
 
+                    {/* <div className="optional-info">
                     <label> Church Name:
                         <input className="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
                     </label> <br /> <br />
             <hr />
-
+                    
                     <label> Tell us about yourself! <br />
                         <textarea className="textfield" id="feedback" name="feedback" value={formData.feedback} onChange={handleSignupChange} maxLength={maxSignupLength}></textarea> 
                             <div id="characterCount"> Character Limit: {signupCharacterCount} / {maxSignupLength} </div>
@@ -102,6 +104,7 @@ const SignupForm = () => {
                         <textarea className="textfield" id="feedback" name="feedback" value={formData.feedback} onChange={handleSignupChange} maxLength={maxLength}></textarea> 
                             <div id="characterCount"> Character Limit: {signupCharacterCount} / {maxLength} </div>
                     </label> <br /> <br />
+                    </div> */}
 
                 </fieldset>
 
@@ -110,7 +113,7 @@ const SignupForm = () => {
             </form>
 
             <form>
-                <p>Already have an account? Click <a>here</a> to login!</p>
+                <p>Already have an account? Click <a id="hyperlink" href="/login">here</a> to login!</p>
             </form>
 
         </div>
