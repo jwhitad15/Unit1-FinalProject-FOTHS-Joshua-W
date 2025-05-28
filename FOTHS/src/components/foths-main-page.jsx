@@ -23,19 +23,19 @@ const FOTHSMain = () => {
                 <div className="fruit-image-1"> &#127822; </div>
 
                 <div className="fruit-cards-row-1">
-                    <div className="fruit-card-1">Fruit 1</div>
-                    <div className="fruit-card-2">Fruit 2</div>
-                    <div className="fruit-card-3">Fruit 3</div>
+                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-1">Fruit 1</a>
+                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-2">Fruit 2</a>
+                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-3">Fruit 3</a>
                 </div>
                 <div className="fruit-cards-row-2">
-                    <div className="fruit-card-4">Fruit 4</div>
-                    <div className="fruit-card-5">Fruit 5</div>
-                    <div className="fruit-card-6">Fruit 6</div>
+                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-4">Fruit 4</a>
+                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-5">Fruit 5</a>
+                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-6">Fruit 6</a>
                 </div>
                 <div className="fruit-cards-row-3">
-                    <div className="fruit-card-7">Fruit 7</div>
-                    <div className="fruit-card-8">Fruit 8</div>
-                    <div className="fruit-card-9">Fruit 9</div>
+                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-7">Fruit 7</a>
+                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-8">Fruit 8</a>
+                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-9">Fruit 9</a>
                 </div>
 
             </main>

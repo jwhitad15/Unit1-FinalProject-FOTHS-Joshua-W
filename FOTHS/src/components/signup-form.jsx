@@ -106,9 +106,11 @@ const SignupForm = () => {
                     </label> <br /> <br />
                     </div> */}
 
-                </fieldset>
+                </fieldset> <br/>
 
-                <SignupButton onClick=" document.location='signup-form.jsx' " text="Hover Effect 2" effectType="effect2"/>
+                <a href="./dashboard" class="button-class">Signup</a> 
+
+                {/* <SignupButton onClick=" document.location='signup-form.jsx' " text="Hover Effect 2" effectType="effect2"/> */}
 
             </form>
 

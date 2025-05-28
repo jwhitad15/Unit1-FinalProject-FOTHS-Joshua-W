@@ -12,12 +12,10 @@ const Dashboard = () => {
             </div>
 
             <main>
+                
                 <div className="dashboard-title"> Dashboard View </div>
-                <div className="FOTHS-dashboard-card"> 
-                    <hr/> FOTHS <hr/> <br/>
-                    <p className="dashboard-card-text"> Click on this game card to play! </p> 
-              
-                </div>
+                <a href="./foths" id="card-hyperlink" className="FOTHS-dashboard-card">FOTHS</a>
+
             </main>
 
             <footer className="footer">

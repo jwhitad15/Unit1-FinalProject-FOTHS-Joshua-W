@@ -20,6 +20,10 @@
   color: salmon;
   text-decoration: none;
 }
+#card-hyperlink {
+  color: white;
+  text-decoration: none;
+}
 
 /* .checkbox {
   background-color: white;
@@ -473,7 +477,7 @@
   place-content: center;
   position: fixed;
   top: 31%;
-  left: 44.5%;
+  left: 46.5%;
   height: 12.5%;
   padding-left: 2%;
   padding-right:  2%;
@@ -515,7 +519,7 @@
   place-content: center;
   position: fixed;
   top: 50%;
-  left: 44.5%;
+  left: 46.5%;
   height: 12.5%;
   padding-left: 2%;
   padding-right:  2%;
@@ -557,7 +561,7 @@
   place-content: center;
   position: fixed;
   top: 70%;
-  left: 44.5%; 
+  left: 46.5%;
   height: 12.5%;
   padding-left: 2%;
   padding-right:  2%;
