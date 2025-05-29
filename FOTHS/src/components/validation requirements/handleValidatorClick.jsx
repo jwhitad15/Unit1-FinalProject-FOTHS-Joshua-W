@@ -1,13 +1,13 @@
-// import { validator } from "./validation";
+import validator from "./duplicate-validation";
 
 window.location.href="./dashboard"
 const dashboard = window.location.href;
 
-let isValid = false;
+// let isValid = false;
 
 const handleValidatorClick = () => {
     
-    return isValid=true ? dashboard : alert("Your credentials are invalid. Please try again.")
+    return validator(isValid) ? dashboard : alert("Your credentials are invalid. Please try again.")
 }
 
 export default handleValidatorClick;

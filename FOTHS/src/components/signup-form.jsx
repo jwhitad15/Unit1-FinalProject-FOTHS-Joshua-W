@@ -44,10 +44,10 @@ const SignupForm = () => {
 
         <div className="signup-form">
 
-            <h1>Signup</h1>
-            <form className="form">
+            <p id="signup-title">Signup</p>
+            <form className="signup-container-in-form">
             
-                <fieldset>  
+                <fieldset className="fieldset">  
                     <legend className="legend">Name</legend>
 
                     <label> First:
@@ -76,8 +76,8 @@ const SignupForm = () => {
                 <fieldset> 
                     <legend className="legend">Account</legend> 
 
-                    <fieldset> 
-                        <legend className="nested-legend">Credentials</legend>  
+                    {/* <fieldset>  */}
+                        {/* <legend className="nested-legend">Credentials</legend>   */}
 
                         <label> Username: 
                             <input className="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
@@ -87,7 +87,7 @@ const SignupForm = () => {
                             <input className="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
                         </label> <br /> <br />
 
-                    </fieldset> <br />
+                    {/* </fieldset> <br /> */}
 
                     {/* <div className="optional-info">
                     <label> Church Name:

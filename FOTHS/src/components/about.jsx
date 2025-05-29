@@ -5,7 +5,7 @@ const About = () => {
         <div id="about-main">
 
            
-            <div className="userHeader">
+            <div className="about-header">
                 <div className="header-logo"> justOne Logo </div>
                 <div className="header-user"> Welcome, </div>
                 <div className="header-center"> Navigation Menu </div>

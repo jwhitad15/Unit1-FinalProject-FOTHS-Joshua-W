@@ -5,11 +5,12 @@ const Dashboard = () => {
         <div id="main">
 
            
-            <div className="userHeader">
-                <div className="header-logo"> justOne Logo </div>
+            <header className="dashboard-header">
+                {/* <div className="header-logo"> justOne Logo </div> */}
+
                 <div className="header-user"> Welcome, </div>
                 <div className="header-center"> Navigation Menu </div>
-            </div>
+            </header>
 
             <main>
                 

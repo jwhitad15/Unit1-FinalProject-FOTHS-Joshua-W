@@ -6,7 +6,7 @@ const Study = () => {
         <div id="foths-main">
 
            
-            <div className="fothsUserHeader">
+            <div className="foths-header">
                 <div className="study-header-logo"> justOne Logo </div>
                 <div className="study-header-user"> Welcome, </div>
                 <div className="study-header-center"> Navigation Menu </div>

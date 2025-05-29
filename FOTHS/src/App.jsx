@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route index element={ <LoginForm/>} />
 
-        <Route path="/login" element={ <LoginForm/>} />
+        <Route className="testy" path="/login" element={ <LoginForm/>} />
         <Route path="/signup" element={ <SignupForm/>} />
         <Route path="/dashboard" element={ <Dashboard/>} />
         <Route path="/foths" element={ <FOTHSMain/>} />

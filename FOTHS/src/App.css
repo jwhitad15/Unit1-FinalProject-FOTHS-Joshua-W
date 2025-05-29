@@ -5,19 +5,36 @@
   text-align: center;
   display: flex;
   place-content: center;
-  grid-auto-flow: column;
+  /* grid-auto-flow: column; */
+  /* vertical-align: middle; */
 }
+/* 
+.testy {
+  vertical-align: middle;
+} */
 
-.form {
+.login-form {
   border-style: outset;
-  border: 3px outset #fff;
+  border: 3px outset white;
   padding: 20px;
   border-radius: 10px;
   background-color: #a64444;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 7px#a64444;
+}
+.signup-container-in-form {
+  border-style: outset;
+  border: 3px outset #4d788f;;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #a64444;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 7px#a64444;
 }
 
+
 #hyperlink {
-  color: salmon;
+  color: #a64444;
   text-decoration: none;
 }
 #return-to-dashboard-hyperlink {
@@ -49,21 +66,68 @@
   padding-left: 10px;
   border-radius: 8px;
   background-color: #a64444;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 7px#a64444;
   position: grid;
   vertical-align: middle;
 }
-.header-logo {
+.header-element-1 {
   border-style: outset;
   border: 3px outset white;
   padding-left: 10px;
+  padding-right: 10px;
   border-radius: 8px;
   background-color: #a64444;
-  position: fixed;
-  left: 3%;
+  /* position: fixed; */
+  /* top: 1%; */
+  /* left: 3%; */
   width: 18%;
-  vertical-align: middle;
+  padding-top: auto;
 
 }
+.header-element-2 {
+  border-style: outset;
+  border: 3px outset white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  background-color: #a64444;
+  /* position: fixed; */
+  /* top: 1%; */
+  /* left: 3%; */
+  width: 18%;
+  padding-top: auto;
+  /* vertical-align: middle; */
+}
+.header-element-3 {
+  border-style: outset;
+  border: 3px outset white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  background-color: #a64444;
+  /* position: fixed; */
+  /* top: 1%; */
+  /* left: 3%; */
+  width: 18%;
+  padding-top: auto;
+  /* vertical-align: middle; */
+}
+.header-element-4 {
+  border-style: outset;
+  border: 3px outset white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  background-color: #a64444;
+  /* position: fixed; */
+  /* top: 1%; */
+  /* left: 76%; */
+  width: 18%;
+  padding-top: auto;
+  /* vertical-align: middle; */
+}
+
 .header-user {
   border-style: outset;
   border: 3px outset white;
@@ -130,24 +194,6 @@
   margin: 3%;
 }
 
-.foths-main {
-  display: grid;
-  place-content: center;
-  flex: 0 0 25vw;
-  background: #cdc5b4;
-  color: #85756e;
-  box-sizing: borderbox;
-  border: outset;
-  border-color: #1d3461;
-  align-items: center;
-  
-  position: fixed;
-  right: 26%;
-  left: 26%;
-  top: 18%;
-  width: 48%;
-  height:68%;
-}
 .study-display-verse {
   display: grid;
   place-content: center;
@@ -238,6 +284,7 @@
 
 }
 
+
 .game-mode-title {
   border-style: outset;
   border: 3px outset white;
@@ -260,9 +307,9 @@
   padding-right: 10px;
   border-radius: 8px;
   background-color: #a64444;
-  position: fixed;
+  /* position: fixed;
   right: 33.833%;
-  left: 5.5%;
+  left: 5.5%; */
   top: 31%;
   height: 50%;
   width: 28.333%;
@@ -275,9 +322,9 @@
   padding-right: 10px;
   border-radius: 8px;
   background-color: #a64444;
-  position: fixed;
-  right: 64.667%;
-  left: 36.333%;
+  /* position: fixed; */
+  /* right: 64.667%;
+  left: 36.333%; */
   top: 31%;
   height: 50%;
   width: 28.333%;
@@ -291,9 +338,9 @@
   padding-right: 10px;
   border-radius: 8px;
   background-color: #a64444;
-  position: fixed;
-  right: 94.5%;
-  left: 67.167%;
+  /* position: fixed; */
+  /* right: 94.5%;
+  left: 67.167%; */
   top: 31%;
   height: 50%;
   width: 28.333%;
@@ -301,9 +348,6 @@
   place-content: center;
 
   
-}
-.game-mode-cards {
-  justify-content: space-between;
 }
 
 .dashboard-title {
@@ -341,21 +385,6 @@
   margin: 1px;
 }
 
-.foths-main-title {
-  border-style: outset;
-  border: 3px outset white;
-  /* padding-right: 10px; */
-  border-radius: 8px;
-  background-color: #a64444;
-  position: fixed;
-  right: 29%;
-  left: 29%;
-  top: 21%;
-  height: 5%;
-  width: 42%;
-  color: white;
-  place-content: center;
-}
 .recent-activity {
   border: outset;
   border: 3px outset white;
@@ -449,6 +478,39 @@
   padding-right:  2%;
 }
 
+.foths-main {
+  display: grid;
+  place-content: center;
+  flex: 0 0 25vw;
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: outset;
+  border-color: #1d3461;
+ justify-content: center;
+  
+  position: fixed;
+  right: 26%;
+  left: 26%;
+  top: 18%;
+  width: 48%;
+  height:68%;
+}
+.foths-main-title {
+  border-style: outset;
+  border: 3px outset white;
+  /* padding-right: 10px; */
+  border-radius: 8px;
+  background-color: #a64444;
+  position: fixed;
+  right: 29%;
+  left: 29%;
+  top: 21%;
+  height: 5%;
+  width: 42%;
+  color: white;
+  place-content: center;
+}
 .fruit-card-1 {
   border: outset;
   border: 3px outset white;
@@ -582,7 +644,7 @@
   --b: 5px; /* thickness of the border */
   --o: 31px; /* control the offset */
   
-  width: 250px; /* the image size */
+  width: 234px; /* the image size */
   --_p: calc(2*var(--o) + var(--b));
   padding: var(--_p) var(--_p) 0 0;
   border: var(--b) solid var(--c);
@@ -591,7 +653,9 @@
   transition: 1.0s;
   cursor: pointer;
   box-shadow: 8 14px 8px black;
-  background-color: #6e0e0a
+  background: #cdc5b4;
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 21px #cdc5b4;
 } .login-signup + .login-signup {
   padding: var(--_p) 0 0 var(--_p);
 } .login-signup:hover {
@@ -603,11 +667,20 @@
   padding-top: 3px;
   padding-bottom: 3px;
 }
+#login-title {
+  /* line-height: 5%; */
+  font-size: 20px;
+  border: 2.1px outset white;
+  border-radius: 8px;
+  background-color: #a64444;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 7px#a64444;
+}
 
 .button-class {
   border: outset 2.5px;
   color: white;
-  background-color: #1d3461;
+  background-color: #4d788f;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 3px;
@@ -638,7 +711,7 @@
 }
 
 .signup-form {
-  --c: #1d3461; /* the main color */
+  --c:#4d788f; /* the main color */
   --b: 5px; /* thickness of the border */
   --o: 31px; /* control the offset */
   
@@ -651,7 +724,9 @@
   transition: 1.0s;
   cursor: pointer;
   box-shadow: 8 14px 8px black;
-  background-color: #6e0e0a
+  background: #cdc5b4;
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 21px #cdc5b4;
 } .signup-form + .signup-form {
   padding: var(--_p) 0 0 var(--_p);
 } .signup-form:hover {
@@ -662,6 +737,15 @@
   padding-right: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+#signup-title {
+  /* line-height: 5%; */
+  font-size: 20px;
+  border: 2.1px outset #4d788f;
+  border-radius: 8px;
+  background-color: #a64444;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 7px#a64444;
 }
 
 .game-card {
@@ -674,7 +758,10 @@
   color: black;
 }
 .legend {
-  text-align: left;
+  text-align: center;
+}
+.fieldset {
+  justify-content: left;
 }
 .nested-legend {
   text-align: right;
@@ -740,6 +827,8 @@
   position: absolute;
   /* transform: translate(-100%); */
 }
+
+
 
  aside {
   display: flex;
@@ -813,14 +902,17 @@
   width: 20%;
   height:68%
  }
+ /* This is the section that controls the tan colored container on the game-mode page */
+ /* This is where I jusitfy the individual game mode cards within the container.*/
  main {
-  display: grid;
-  place-content: center;
+  display: flex;
+  /* place-content: center; */
+  justify-content: space-evenly;
   flex: 0 0 25vw;
   background: #cdc5b4;
   color: #85756e;
   box-sizing: borderbox;
-  border: outset;
+  border: inset;
   border-color: #1d3461;
   align-items: center;
   border-radius: 8px;
@@ -831,23 +923,22 @@
   top: 18%;
   height:68%
  }
- /* #about-main {
-  display: grid;
-  place-content: center;
-  flex: 0 0 25vw;
-  background: black;
-  color: #85756e;
-  box-sizing: borderbox;
+ .game-mode-header {
   border: outset;
-  border-color: #1d3461;
+  display: flex;
+  /* place-content: center; */
+  justify-content: space-evenly;
   align-items: center;
-  
+  flex: 0 0 25vw;
   position: fixed;
   right: 3%;
   left: 3%;
-  top: 18%;
-  height:68%
- } */
+  height: 8%;
+  border-radius: 8px;
+  background-color: #cdc5b4
+}
+/* header {
+} */
 footer {
   display: flex;
   flex: 0 0 25vw;
@@ -866,16 +957,3 @@ footer {
   left: 3%;
  }
 
- /* Optional?
- header {
-  padding: 50px;
-  text-align: center;
-  background:#6e0e0a;
-  color: white;
-  font-size: 30px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  
-} */

@@ -15,7 +15,7 @@ import React from "react";
 import { CiUser } from "react-icons/ci";
 import { CiLock } from "react-icons/ci";
 import './button-animation.css';
-import handleValidatorClick from "./validation requirements/handleValidatorClick";
+// import handleValidatorClick from "./validation requirements/handleValidatorClick";
 
 
 const LoginForm = () => {
@@ -50,7 +50,7 @@ const LoginForm = () => {
             <h1 className="header">FOTHS</h1>
             <p id="login-title">Login</p>
 
-            <form className="form" onSubmit={handleSubmit}>
+            <form className="login-form" onSubmit={handleSubmit}>
 
                 <label> Username <br /> 
                     <input className="textfield" type="text" name="username" onChange={handleChange} required />
@@ -71,8 +71,8 @@ const LoginForm = () => {
                 {/* <button onClick={handleClick} id="login" text="Hover Effect 2" effectteype="effect2">sdf</button> */}
 
                 
-                <a onClick={handleValidatorClick} className="button-class">Login</a> 
-                {/* <a href="./dashboard" class="button-class">Login</a>  */}
+                {/* <a onClick={handleValidatorClick} className="button-class">Login</a>  */}
+                <a href="./dashboard" class="button-class">Login</a> 
 
 
                 {/* <Button onClick={handleSubmit} text="Hover Effect 2" effectType="effect2"/> */}
