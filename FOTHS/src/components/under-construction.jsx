@@ -5,10 +5,13 @@ const UnderConstruction = () => {
 
            
             <div className="under-construction-header">
-                <div className="header-element-1"> FOTHS </div>
-                <div className="header-element-2"> Dashboard </div>
-                <div className="header-element-3"> Exit Program </div>
+
+
+                <div className="header-element-1"> justOne&trade; </div>
                 <div className="header-element-4"> Welcome, User! </div>
+                <a href="./#/dashboard" id="card-hyperlink" className="header-element-3"> Dashboard</a>
+                <a href="./#/login" id="card-hyperlink" className="header-element-4"> Exit Program </a>
+
             </div>
 
             <div className="under-construction-container">
@@ -16,8 +19,8 @@ const UnderConstruction = () => {
 
                 <div className="under-construction-display-card"> 
                     <h1>Look out! </h1> <hr/>
-                    <h2>This page is currently under construction - thank you for your patience as we continue expanding.</h2> 
-                    <h2>In the meantime, use the return button below to navigate back to the dashboard and pick a different game!</h2> <hr/>
+                    <h2>This page is currently under construction - thank you for your patience as we continue updating our application.</h2> 
+                    <h2>In the meantime, use the return button below to navigate back to the FOTHS home page and pick a different game!</h2> <hr/>
                 </div>
 
                 <div className="return-to-foths-button-class">
