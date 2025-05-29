@@ -21,7 +21,6 @@ const Dashboard = () => {
 
             <footer className="footer">
                 <div className="footer-copyright"> &copy; JWMP 2025 </div>
-                {/* <p to="/about" className="footer-copyright"> About </p> */}
             </footer>
 
         </div>

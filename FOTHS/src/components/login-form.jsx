@@ -15,7 +15,6 @@ import React from "react";
 import { CiUser } from "react-icons/ci";
 import { CiLock } from "react-icons/ci";
 import './button-animation.css';
-// import handleValidatorClick from "./validation requirements/handleValidatorClick";
 
 
 const LoginForm = () => {
@@ -74,22 +73,15 @@ const LoginForm = () => {
                 {/* <a onClick={handleValidatorClick} className="button-class">Login</a>  */}
                 <a href="./dashboard" class="button-class">Login</a> 
 
-
                 {/* <Button onClick={handleSubmit} text="Hover Effect 2" effectType="effect2"/> */}
-                {/* <script type="text/javascript"> document.getElementById("myButton").onclick = function () {href = "./dashboard"};</script> */}
                
             </form>
 
             <form >
      
                 <p>Don't have an account? Click <a id="hyperlink" href="/signup">here</a> to signup! </p>
-            </form>
 
-            {/* <script>
-            document.getElementByClass("login-signup").addEventListener("submit", ((event)=> {
-                event.preventDefault()
-            }))
-            </script> */}
+            </form>
 
         </div>
         
