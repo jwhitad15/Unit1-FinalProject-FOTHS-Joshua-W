@@ -1,7 +1,7 @@
 const ErrorPage = () => {
 
     return (
-        <div id="about-main">
+        <div id="error-main">
 
            
             <div className="error-header">
@@ -11,22 +11,22 @@ const ErrorPage = () => {
                 <div className="header-element-4"> Welcome, User! </div>
             </div>
 
-            <main>
-                <div className="about-title-container"> <h2> Error 404: Page Does Not Exist </h2> </div> <br />
+            <div className="error-container">
+                <div className="error-title-container"> <h2> Error 404: Page Does Not Exist </h2> </div> <br />
 
-                <div className="about-story-card"> 
+                <div className="error-display-card"> 
                     <h2>We apologize, but there seems to be an error. Our records indicate that the page you are trying to access does not exist. Please return to the home page. </h2>
                 </div>
 
                 <div className="return-to-dashboard-button-class">
-                   <a id="return-to-dashboard-hyperlink" href="./dashboard">Return</a>
+                   <a id="return-to-dashboard-hyperlink" href="./#/dashboard">Return</a>
                 </div>
                 
-            </main>
+            </div>
 
-            <form action="./dashboard">
+            {/* <form action="./dashboard">
             <input type="submit" value="Go to Another Page" />
-            </form>
+            </form> */}
 
             <footer className="footer">
                 <div className="footer-copyright"> &copy; JWMP 2025 </div>

@@ -9,9 +9,6 @@
   /* vertical-align: middle; */
 }
 
-
-
-
 #hyperlink {
   color: #a64444;
   text-decoration: none;
@@ -25,20 +22,6 @@
   text-decoration: none;
 }
 
-/* .checkbox {
-  background-color: white;
-  border: 1.2px solid black;
-  border-radius: 5px;
-} */
-/* OLD//
-.header {
-  border-style: outset;
-  border: 3px outset white;
-  padding-left: 10px;
-  border-radius: 10px;
-  background-color: #a64444
-} */
-
 .header {
   border-style: outset;
   border: 3px outset white;
@@ -50,7 +33,6 @@
   position: grid;
   vertical-align: middle;
 }
-
 .header-element-1 {
   border-style: outset;
   border: 3px outset white;
@@ -106,7 +88,6 @@
   padding-top: auto;
   /* vertical-align: middle; */
 }
-
 .header-user {
   border-style: outset;
   border: 3px outset white;
@@ -129,6 +110,7 @@
   left: 26%;
 
 }
+
 .study-header-logo {
   border-style: outset;
   border: 3px outset white;
@@ -373,6 +355,7 @@
   place-content: center;
   position: fixed;
   top: 21%;
+  width: 12%;
   height: 5%;
   padding-left: 2%;
   padding-right:  2%;
@@ -386,9 +369,11 @@
   place-content: center;
   position: fixed;
   top: 31%;
-  height: 15%;
+  width: 9%;
+  height: 14%;
   padding-left: 2%;
   padding-right:  2%;
+  font-size: xx-small;
 }
 .recent-activity-card-2 {
   border: outset;
@@ -398,10 +383,12 @@
   color: white;
   place-content: center;
   position: fixed;
-  top: 50%;
-  height: 15%;
+  top: 49.75%;
+  width: 9%;
+  height: 14%;
   padding-left: 2%;
   padding-right:  2%;
+  font-size: xx-small;
 }
 .recent-activity-card-3 {
   border: outset;
@@ -411,10 +398,12 @@
   color: white;
   place-content: center;
   position: fixed;
-  top:70%;
-  height: 15%;
+  top:68.5%;
+  width: 9%;
+  height: 14%;
   padding-left: 2%;
   padding-right:  2%;
+  font-size: xx-small;
 }
 
 .scope {
@@ -426,6 +415,7 @@
   place-content: center;
   position: fixed;
   top: 21%;
+  width: 12%;
   height: 5%;
   padding-left: 2%;
   padding-right:  2%;
@@ -439,9 +429,11 @@
   place-content: center;
   position: fixed;
   top: 31%;
+  width: 9%;
   height: 15%;
   padding-left: 2%;
   padding-right:  2%;
+  font-size: xx-small;
 }
 .scope-card-2 {
   border: outset;
@@ -451,10 +443,12 @@
   color: white;
   place-content: center;
   position: fixed;
-  top: 50%;
+  top: 49.75%;
+  width: 9%;
   height: 15%;
   padding-left: 2%;
   padding-right:  2%;
+  font-size: xx-small;
 }
 
 .foths-main {
@@ -504,7 +498,7 @@
   border-radius: 8px;
   background-color: #cdc5b4
 }
-.fruits-grid {
+/* .fruits-grid {
   border: outset;
   border-color: pink;
   display: flex;
@@ -518,11 +512,11 @@
   align-items: center;
   vertical-align: middle;
 
-}
+} */
 .fruit-cards-row-1 {
-  border: outset;
+  /* border: outset; */
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   align-items: center;
   flex: 0 0 25vw;
   position: fixed;
@@ -535,9 +529,9 @@
   border-color: black;
 }
 .fruit-cards-row-2 {
-  border: outset;
+  /* border: outset; */
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   align-items: center;
   flex: 0 0 25vw;
   position: fixed;
@@ -550,9 +544,9 @@
   border-color: black;
 }
 .fruit-cards-row-3 {
-  border: outset;
+  /* border: outset; */
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   align-items: center;
   flex: 0 0 25vw;
   position: fixed;
@@ -566,7 +560,6 @@
 }
 .fruit-card-1 {
   border: outset;
-  display: flex;
   border: 3px outset white;
   border-radius: 8px;
   background-color: #a64444;
@@ -602,14 +595,13 @@
   place-content: center;
   position: fixed;
   top: 31%;
-  /* right: 28.2%; */
+  right: 29%;
   height: 12.5%;
   padding-left: 2%;
   padding-right:  2%;
 }
 .fruit-card-4 {
   border: outset;
-  display: flex;
   border: 3px outset white;
   border-radius: 8px;
   background-color: #a64444;
@@ -630,8 +622,8 @@
   color: white;
   place-content: center;
   position: fixed;
-  top: 50%;
-  left: 46.5%;
+  top: 49.75%;
+  /* left: 46.5%; */
   height: 12.5%;
   padding-left: 2%;
   padding-right:  2%;
@@ -644,8 +636,8 @@
   color: white;
   place-content: center;
   position: fixed;
-  top: 50%;
-  right: 28.2%;
+  top: 49.75%;
+  right: 29%;
   height: 12.5%;
   padding-left: 2%;
   padding-right:  2%;
@@ -672,8 +664,8 @@
   color: white;
   place-content: center;
   position: fixed;
-  top: 70%;
-  left: 46.5%;
+  top: 68.5%;
+  /* left: 46.5%; */
   height: 12.5%;
   padding-left: 2%;
   padding-right:  2%;
@@ -686,8 +678,8 @@
   color: white;
   place-content: center;
   position: fixed;
-  top: 70%;
-  right: 28.2%;
+  top: 68.5%;
+  right: 29%;
   height: 12.5%;
   padding-left: 2%;
   padding-right:  2%;
@@ -757,22 +749,7 @@
   cursor: pointer;
   border-radius: 4px;
 }
-.return-to-dashboard-button-class {
-  border: outset 2.5px;
-  color: white;
-  background-color: #a64444;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 4px;
-}
+
 
 .signup-form {
   --c:#4d788f; /* the main color */
@@ -864,6 +841,38 @@
   background-color: #cdc5b4
 }
 
+.error-container {
+  display: grid;
+  justify-content: space-evenly;
+  flex: 0 0 25vw;
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: inset;
+  border-color: #1d3461;
+  align-items: center;
+  border-radius: 8px;
+  
+  position: fixed;
+  right: 3%;
+  left: 3%;
+  top: 18%;
+  height:68%
+}
+.return-to-dashboard-button-class {
+  border: outset 2.5px;
+  color: white;
+  background-color: #a64444;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 2px;
+  border-radius: 4px;
+}
+
 .game-card {
   border: outset;
   place-content: center;
@@ -891,6 +900,70 @@
 .effect2:hover {
     box-shadow: 0 4px 8px rgba(94, 203, 233, 0.2);
     border-radius: 20px;
+}
+
+.under-construction-container {
+  display: grid;
+  justify-content: space-evenly;
+  flex: 0 0 25vw;
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: inset;
+  border-color: #1d3461;
+  align-items: center;
+  border-radius: 8px;
+  
+  position: fixed;
+  right: 3%;
+  left: 3%;
+  top: 18%;
+  height:68%
+}
+.under-construction-title-container {
+  border: outset 2px;
+  place-content: center;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: #a64444;
+  position: fixed;
+  right: 6%;
+  left: 6%;
+  top: 21%;
+  color: white;
+  
+}
+.under-construction-display-card {
+  border: outset 2px;
+  place-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: #a64444;
+  position: fixed;
+  right: 15%;
+  left: 15%;
+  top: 36%;
+  bottom: 38%;
+  color: white;
+  font-size:xx-small;
+  /* font-size: calc(1vw + .3vh); */
+}
+.under-construction-header {
+  border: outset;
+  display: flex;
+  /* place-content: center; */
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 0 0 25vw;
+  position: fixed;
+  right: 3%;
+  left: 3%;
+  height: 8%;
+  border-radius: 8px;
+  background-color: #cdc5b4
 }
 
 .about-title-container {
@@ -923,6 +996,7 @@
   bottom: 52%;
   color: white;
   font-size:xx-small;
+  /* font-size: calc(1vw + .3vh); */
 }
 .about-app-card {
   border: outset;
@@ -955,7 +1029,6 @@
   box-sizing: borderbox;
   border: outset;
   border-color: #1d3461;
-  align-items: center;
   
   position: fixed;
   

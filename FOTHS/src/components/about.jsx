@@ -40,9 +40,9 @@ const About = () => {
                 
             </main>
 
-            <form action="./dashboard">
+            {/* <form action="./#/dashboard">
             <input type="submit" value="Go to Another Page" />
-            </form>
+            </form> */}
 
             <footer className="footer">
                 <div className="footer-copyright"> &copy; JWMP 2025 </div>
