@@ -71,7 +71,7 @@ const LoginForm = () => {
 
                 
                 {/* <a onClick={handleValidatorClick} className="button-class">Login</a>  */}
-                <a href="./dashboard" class="button-class">Login</a> 
+                <a href="./#/dashboard" class="button-class">Login</a> 
 
                 {/* <Button onClick={handleSubmit} text="Hover Effect 2" effectType="effect2"/> */}
                
@@ -79,7 +79,7 @@ const LoginForm = () => {
 
             <form >
      
-                <p>Don't have an account? Click <a id="hyperlink" href="/signup">here</a> to signup! </p>
+                <p>Don't have an account? Click <a id="hyperlink" href="/#/signup">here</a> to signup! </p>
 
             </form>
 

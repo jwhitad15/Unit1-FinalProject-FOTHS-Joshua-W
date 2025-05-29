@@ -17,10 +17,10 @@ const UnderConstruction = () => {
                 <div className="under-construction-display-card"> 
                     <h1>Look out! </h1> <hr/>
                     <h2>This page is currently under construction - thank you for your patience as we continue expanding.</h2> 
-                    <h2>In the meantime, use the return button below to navigate back to the dashboard and pick a different game!</h2>
+                    <h2>In the meantime, use the return button below to navigate back to the dashboard and pick a different game!</h2> <hr/>
                 </div>
 
-                <div className="return-to-dashboard-button-class">
+                <div className="return-to-foths-button-class">
                    <a id="return-to-dashboard-hyperlink" href="./#/foths">Return</a>
                 </div>
                 

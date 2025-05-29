@@ -8,7 +8,7 @@
   /* grid-auto-flow: column; */
   /* vertical-align: middle; */
 }
-
+/* ID CSS */
 #hyperlink {
   color: #a64444;
   text-decoration: none;
@@ -20,6 +20,51 @@
 #card-hyperlink {
   color: white;
   text-decoration: none;
+}
+/* Miscellaneous CSS */
+.form .icon {
+  position: absolute;
+  /* transform: translate(-100%); */
+}
+.button-class {
+  border: outset 2.5px;
+  color: white;
+  background-color: #4d788f;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.textfield {
+  border: 1.2px solid white;
+  border-radius: 5px;
+  color: black;
+}
+.legend {
+  text-align: center;
+}
+.fieldset {
+  justify-content: left;
+}
+.nested-legend {
+  text-align: right;
+}
+:optional {
+  text-align: center;
+}
+.effect2 {
+    transition: box-shadow 0.3s, border-radius 0.3s;
+}
+.effect2:hover {
+    box-shadow: 0 4px 8px rgba(94, 203, 233, 0.2);
+    border-radius: 20px;
 }
 
 .header {
@@ -110,7 +155,34 @@
   left: 26%;
 
 }
-
+.about-header {
+  border: outset;
+  display: flex;
+  /* place-content: center; */
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 0 0 25vw;
+  position: fixed;
+  right: 3%;
+  left: 3%;
+  height: 8%;
+  border-radius: 8px;
+  background-color: #cdc5b4
+}
+ .study-header {
+  border: outset;
+  display: flex;
+  /* place-content: center; */
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 0 0 25vw;
+  position: fixed;
+  right: 3%;
+  left: 3%;
+  height: 8%;
+  border-radius: 8px;
+  background-color: #cdc5b4
+}
 .study-header-logo {
   border-style: outset;
   border: 3px outset white;
@@ -145,16 +217,6 @@
   left: 26%;
 
 }
-
-.footer-copyright {
-  text-align: left;
-  margin: 3%;
-}
-.footer-copyright {
-  text-align: left;
-  margin: 3%;
-}
-
 .study-display-verse {
   display: grid;
   place-content: center;
@@ -209,7 +271,6 @@
   width: 9%;
   height:5%
 }
-
 .study-title {
   border-style: outset;
   border: 3px outset white;
@@ -245,7 +306,6 @@
 
 }
 
-
 .game-mode-title {
   border-style: outset;
   border: 3px outset white;
@@ -261,6 +321,10 @@
   color: white;
   place-content: center;
 
+}
+.game-card {
+  border: outset;
+  place-content: center;
 }
 .game-card-1 {
   border-style: outset;
@@ -310,7 +374,34 @@
 
   
 }
-
+.game-mode-header {
+  border: outset;
+  display: flex;
+  /* place-content: center; */
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 0 0 25vw;
+  position: fixed;
+  right: 3%;
+  left: 3%;
+  height: 8%;
+  border-radius: 8px;
+  background-color: #cdc5b4
+}
+ .dashboard-header {
+  border: outset;
+  display: flex;
+  /* place-content: center; */
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 0 0 25vw;
+  position: fixed;
+  right: 3%;
+  left: 3%;
+  height: 8%;
+  border-radius: 8px;
+  background-color: #cdc5b4
+}
 .dashboard-title {
   border-style: outset;
   border: 3px outset white;
@@ -498,21 +589,6 @@
   border-radius: 8px;
   background-color: #cdc5b4
 }
-/* .fruits-grid {
-  border: outset;
-  border-color: pink;
-  display: flex;
-  flex: 0 0 25vw;
-  height: 50%;
-  top: 31%;
-  right: 29%;
-  left: 29%;
-  position: fixed;
-  justify-content: space-evenly;
-  align-items: center;
-  vertical-align: middle;
-
-} */
 .fruit-cards-row-1 {
   /* border: outset; */
   display: flex;
@@ -685,7 +761,6 @@
   padding-right:  2%;
 }
 
-
 .login-signup {
   --c: #1d3461; /* the main color */
   --b: 5px; /* thickness of the border */
@@ -732,24 +807,6 @@
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 7px#a64444;
 }
-
-.button-class {
-  border: outset 2.5px;
-  color: white;
-  background-color: #4d788f;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
 
 .signup-form {
   --c:#4d788f; /* the main color */
@@ -798,35 +855,71 @@
   box-shadow: 0 0 7px#a64444;
 }
 
-.about-header {
-  border: outset;
-  display: flex;
-  /* place-content: center; */
+.under-construction-container {
+  display: grid;
   justify-content: space-evenly;
-  align-items: center;
   flex: 0 0 25vw;
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: inset;
+  border-color: #1d3461;
+  align-items: center;
+  border-radius: 8px;
+  
   position: fixed;
   right: 3%;
   left: 3%;
-  height: 8%;
-  border-radius: 8px;
-  background-color: #cdc5b4
+  top: 18%;
+  height:68%
 }
- .study-header {
-  border: outset;
-  display: flex;
-  /* place-content: center; */
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 0 0 25vw;
+.under-construction-title-container {
+  border: outset 2px;
+  place-content: center;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: #a64444;
   position: fixed;
-  right: 3%;
-  left: 3%;
-  height: 8%;
-  border-radius: 8px;
-  background-color: #cdc5b4
+  right: 6%;
+  left: 6%;
+  top: 21%;
+  color: white;
+  
 }
- .error-header {
+.return-to-foths-button-class {
+  border: outset 2.5px;
+  color: white;
+  background-color: #a64444;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  font-size: 18px;
+  /* margin: 4px 2px; */
+  margin-top: 75px;
+  border-radius: 4px;
+  top: 88%;
+}
+.under-construction-display-card {
+  border: outset 2px;
+  place-content: center;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: #a64444;
+  position: fixed;
+  right: 15%;
+  left: 15%;
+  top: 36%;
+  bottom: 35%;
+  color: white;
+  font-size:xx-small;
+  /* font-size: calc(1vw + .3vh); */
+}
+.under-construction-header {
   border: outset;
   display: flex;
   /* place-content: center; */
@@ -859,6 +952,19 @@
   top: 18%;
   height:68%
 }
+.error-title-container {
+  border: outset 2px;
+  place-content: center;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: #a64444;
+  position: fixed;
+  right: 6%;
+  left: 6%;
+  top: 21%;
+  color: white;
+  
+}
 .return-to-dashboard-button-class {
   border: outset 2.5px;
   color: white;
@@ -872,68 +978,7 @@
   margin: 4px 2px;
   border-radius: 4px;
 }
-
-.game-card {
-  border: outset;
-  place-content: center;
-}
-.textfield {
-  border: 1.2px solid white;
-  border-radius: 5px;
-  color: black;
-}
-.legend {
-  text-align: center;
-}
-.fieldset {
-  justify-content: left;
-}
-.nested-legend {
-  text-align: right;
-}
-:optional {
-  text-align: center;
-}
-.effect2 {
-    transition: box-shadow 0.3s, border-radius 0.3s;
-}
-.effect2:hover {
-    box-shadow: 0 4px 8px rgba(94, 203, 233, 0.2);
-    border-radius: 20px;
-}
-
-.under-construction-container {
-  display: grid;
-  justify-content: space-evenly;
-  flex: 0 0 25vw;
-  background: #cdc5b4;
-  color: #85756e;
-  box-sizing: borderbox;
-  border: inset;
-  border-color: #1d3461;
-  align-items: center;
-  border-radius: 8px;
-  
-  position: fixed;
-  right: 3%;
-  left: 3%;
-  top: 18%;
-  height:68%
-}
-.under-construction-title-container {
-  border: outset 2px;
-  place-content: center;
-  padding-right: 10px;
-  border-radius: 10px;
-  background-color: #a64444;
-  position: fixed;
-  right: 6%;
-  left: 6%;
-  top: 21%;
-  color: white;
-  
-}
-.under-construction-display-card {
+.error-display-card {
   border: outset 2px;
   place-content: center;
   padding-top: 10px;
@@ -951,7 +996,7 @@
   font-size:xx-small;
   /* font-size: calc(1vw + .3vh); */
 }
-.under-construction-header {
+.error-header {
   border: outset;
   display: flex;
   /* place-content: center; */
@@ -965,6 +1010,7 @@
   border-radius: 8px;
   background-color: #cdc5b4
 }
+
 
 .about-title-container {
   border: outset;
@@ -1013,11 +1059,14 @@
   font-size:xx-small
 }
 
-.form .icon {
-  position: absolute;
-  /* transform: translate(-100%); */
+.footer-copyright {
+  text-align: left;
+  margin: 3%;
 }
-
+.footer-copyright {
+  text-align: left;
+  margin: 3%;
+}
 
 
  aside {
@@ -1112,54 +1161,7 @@
   top: 18%;
   height:68%
  }
- .game-mode-header {
-  border: outset;
-  display: flex;
-  /* place-content: center; */
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 0 0 25vw;
-  position: fixed;
-  right: 3%;
-  left: 3%;
-  height: 8%;
-  border-radius: 8px;
-  background-color: #cdc5b4
-}
- .dashboard-header {
-  border: outset;
-  display: flex;
-  /* place-content: center; */
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 0 0 25vw;
-  position: fixed;
-  right: 3%;
-  left: 3%;
-  height: 8%;
-  border-radius: 8px;
-  background-color: #cdc5b4
-}
-
-
- /* .fruits-grid { */
-  /* border: outset; */
-  /* display: flex; */
-  /* place-content: center; */
-  /* justify-content: space-evenly; */
-  /* align-items: center; */
-  /* flex: 0 0 25vw; */
-  /* position: fixed; */
-  /* right: 3%; */
-  /* left: 3%; */
-  /* height: 8%; */
-  /* border-radius: 8px; */
-  /* background-color: #cdc5b4 */
-/* } */
-
-/* header {
-} */
-footer {
+ footer {
   display: flex;
   flex: 0 0 25vw;
   background: #cdc5b4;
@@ -1176,4 +1178,7 @@ footer {
   right: 3%;
   left: 3%;
  }
+
+
+
 

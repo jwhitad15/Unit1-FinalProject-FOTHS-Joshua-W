@@ -6,16 +6,24 @@ const Dashboard = () => {
 
            
             <header className="dashboard-header">
-                <div className="header-element-1"> FOTHS </div>
-                <div className="header-element-2"> Dashboard </div>
-                <div className="header-element-3"> Exit Program </div>
+                <div className="header-element-1"> justOne&trade; </div>
                 <div className="header-element-4"> Welcome, User! </div>
+                <a href="./#/login" id="card-hyperlink" className="header-element-3"> Exit Program </a>
+              
+
+                 {/* //THIS WILL BE INCLUDED LATER AS A LINK TO BRAND//  */}
+                 {/* //* <a href="./#/foths" id="card-hyperlink" className="header-element-1"> justOne&trade; </a>  */}
+
+                 {/* //THIS WILL BE INCLUDED LATER AS A LINK TO USER ACCOUNT//  */}
+                 {/* //* <a href="./#/foths" id="card-hyperlink" className="header-element-4"> Welcome, User! </a>  */}
+               
+               
             </header>
 
             <main>
                 
                 <div className="dashboard-title"> Dashboard View </div>
-                <a href="./foths" id="card-hyperlink" className="FOTHS-dashboard-card">FOTHS</a>
+                <a href="./#/foths" id="card-hyperlink" className="FOTHS-dashboard-card">FOTHS</a>
 
             </main>
 

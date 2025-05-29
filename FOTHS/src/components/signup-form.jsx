@@ -108,14 +108,14 @@ const SignupForm = () => {
 
                 </fieldset> <br/>
 
-                <a href="./dashboard" class="button-class">Signup</a> 
+                <a href="./#/dashboard" class="button-class">Signup</a> 
 
                 {/* <SignupButton onClick=" document.location='signup-form.jsx' " text="Hover Effect 2" effectType="effect2"/> */}
 
             </form>
 
             <form>
-                <p>Already have an account? Click <a id="hyperlink" href="/login">here</a> to login!</p>
+                <p>Already have an account? Click <a id="hyperlink" href="/#/login">here</a> to login!</p>
             </form>
 
         </div>
