@@ -482,8 +482,8 @@
   border-radius: 8px;
   background-color: #a64444;
   position: fixed;
-  right: 29%;
-  left: 29%;
+  /* right: 29%; */
+  /* left: 29%; */
   top: 21%;
   height: 5%;
   width: 42%;
@@ -504,6 +504,21 @@
   border-radius: 8px;
   background-color: #cdc5b4
 }
+.fruits-grid {
+  border: outset;
+  border-color: pink;
+  display: flex;
+  flex: 0 0 25vw;
+  height: 50%;
+  top: 31%;
+  right: 29%;
+  left: 29%;
+  position: fixed;
+  justify-content: space-evenly;
+  align-items: center;
+  vertical-align: middle;
+
+}
 .fruit-cards-row-1 {
   border: outset;
   display: flex;
@@ -519,6 +534,36 @@
   background-color: #cdc5b4;
   border-color: black;
 }
+.fruit-cards-row-2 {
+  border: outset;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  flex: 0 0 25vw;
+  position: fixed;
+  right: 29%;
+  left: 29%;
+  top: 49.75%;
+  height: 12.5%;
+  border-radius: 8px;
+  background-color: #cdc5b4;
+  border-color: black;
+}
+.fruit-cards-row-3 {
+  border: outset;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  flex: 0 0 25vw;
+  position: fixed;
+  right: 29%;
+  left: 29%;
+  top: 68.5%;
+  height: 12.5%;
+  border-radius: 8px;
+  background-color: #cdc5b4;
+  border-color: black;
+}
 .fruit-card-1 {
   border: outset;
   display: flex;
@@ -529,7 +574,7 @@
   place-content: center;
   position: fixed;
   top: 31%;
-  /* left: 29%; */
+  left: 29%;
   height: 12.5%;
   padding-left: 2%;
   padding-right:  2%;
@@ -564,13 +609,14 @@
 }
 .fruit-card-4 {
   border: outset;
+  display: flex;
   border: 3px outset white;
   border-radius: 8px;
   background-color: #a64444;
   color: white;
   place-content: center;
   position: fixed;
-  top: 50%;
+  top: 49.75%;
   left: 29%;
   height: 12.5%;
   padding-left: 2%;
@@ -612,7 +658,7 @@
   color: white;
   place-content: center;
   position: fixed;
-  top: 70%;
+  top: 68.5%;
   left: 29%;
   height: 12.5%;
   padding-left: 2%;
