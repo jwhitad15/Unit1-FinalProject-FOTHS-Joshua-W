@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route index element={ <LoginForm/>} />
+        {/* <Route index element={ <LoginForm/>} /> */}
 
         <Route path="/login" element={ <LoginForm/>} />
         <Route path="/signup" element={ <SignupForm/>} />
