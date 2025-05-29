@@ -5,9 +5,10 @@ const ErrorPage = () => {
 
            
             <div className="error-header">
-                <div className="header-logo"> justOne Logo </div>
-                <div className="header-user"> Welcome, </div>
-                <div className="header-center"> Navigation Menu </div>
+                <div className="header-element-1"> FOTHS </div>
+                <div className="header-element-2"> Dashboard </div>
+                <div className="header-element-3"> Exit Program </div>
+                <div className="header-element-4"> Welcome, User! </div>
             </div>
 
             <main>

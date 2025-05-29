@@ -5,10 +5,11 @@ const FOTHSMain = () => {
         <div id="foths-main">
 
            
-            <div className="fothsUserHeader">
-                <div className="header-logo"> FOTHS Logo </div>
-                <div className="header-user"> Welcome, </div>
-                <div className="header-center"> Navigation Menu </div>
+            <div className="foths-header">
+                <div className="header-element-1"> FOTHS </div>
+                <div className="header-element-2"> Dashboard </div>
+                <div className="header-element-3"> Exit Program </div>
+                <div className="header-element-4"> Welcome, User! </div>
             </div>
 
        
@@ -18,27 +19,29 @@ const FOTHSMain = () => {
                 <div className="scope-card-2">Goals</div>
             </aside>
 
-            <main className="foths-main">
+            <div className="foths-main">
                 <div className="foths-main-title"> FOTHS </div>
-                <div className="fruit-image-1"> &#127822; </div>
+                {/* <div className="fruit-image-1"> &#127822; </div> */}
 
-                <div className="fruit-cards-row-1">
-                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-1">Fruit 1</a>
-                    <a disabled href="./game-mode" id="card-hyperlink" className="fruit-card-2">Fruit 2</a>
-                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-3">Fruit 3</a>
-                </div>
-                <div disabled className="fruit-cards-row-2">
-                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-4">Fruit 4</a>
-                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-5">Fruit 5</a>
-                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-6">Fruit 6</a>
-                </div>
-                <div className="fruit-cards-row-3">
-                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-7">Fruit 7</a>
-                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-8">Fruit 8</a>
-                    <a href="./game-mode" id="card-hyperlink" className="fruit-card-9">Fruit 9</a>
+                <div className="fruits-grid">
+                    <div className="fruit-cards-row-1">
+                        <a href="./game-mode" id="card-hyperlink" className="fruit-card-1">Faith</a>
+                        <a href="./game-mode" id="card-hyperlink" className="fruit-card-2">Fruit 2</a>
+                        <a href="./game-mode" id="card-hyperlink" className="fruit-card-3">Fruit 3</a>
+                    </div>
+                    <div className="fruit-cards-row-2">
+                        <a href="./game-mode" id="card-hyperlink" className="fruit-card-4">Fruit 4</a>
+                        <a href="./game-mode" id="card-hyperlink" className="fruit-card-5">Fruit 5</a>
+                        <a href="./game-mode" id="card-hyperlink" className="fruit-card-6">Fruit 6</a>
+                    </div>
+                    <div className="fruit-cards-row-3">
+                        <a href="./game-mode" id="card-hyperlink" className="fruit-card-7">Fruit 7</a>
+                        <a href="./game-mode" id="card-hyperlink" className="fruit-card-8">Fruit 8</a>
+                        <a href="./game-mode" id="card-hyperlink" className="fruit-card-9">Fruit 9</a>
+                    </div>
                 </div>
 
-            </main>
+            </div>
 
             <nav>
                 <div className="recent-activity">Activity</div>

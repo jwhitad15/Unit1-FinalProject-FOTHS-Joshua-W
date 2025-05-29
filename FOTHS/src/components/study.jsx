@@ -6,10 +6,11 @@ const Study = () => {
         <div id="foths-main">
 
            
-            <div className="foths-header">
-                <div className="study-header-logo"> justOne Logo </div>
-                <div className="study-header-user"> Welcome, </div>
-                <div className="study-header-center"> Navigation Menu </div>
+            <div className="study-header">
+                <div className="header-element-1"> FOTHS </div>
+                <div className="header-element-2"> Dashboard </div>
+                <div className="header-element-3"> Exit Program </div>
+                <div className="header-element-4"> Welcome, User! </div>
             </div>
 
        
