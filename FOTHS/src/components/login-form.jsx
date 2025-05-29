@@ -72,7 +72,7 @@ const LoginForm = () => {
 
                 
                 {/* <a onClick={handleValidatorClick} className="button-class">Login</a>  */}
-                <a href="./dashboard" class="button-class">Login</a> 
+                <a href="./#dashboard" class="button-class">Login</a> 
 
 
                 {/* <Button onClick={handleSubmit} text="Hover Effect 2" effectType="effect2"/> */}
