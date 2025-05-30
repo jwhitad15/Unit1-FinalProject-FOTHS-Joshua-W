@@ -31,8 +31,8 @@ const Study = () => {
             </main>
 
             <div className="return-to-foths-from-study">
-                   <a id="return-to-dashboard-hyperlink" href="./#/foths">Return</a>
-                </div>
+                   <a id="return-to-dashboard-hyperlink" href="./#/foths">Home</a>
+            </div>
 
             <footer className="footer">
                 <div className="footer-copyright"> &copy; JWMP 2025 </div>
