@@ -1,3 +1,5 @@
+import FourElementHeader from "./header-4";
+
 const UnderConstruction = () => {
 
     return (
@@ -5,13 +7,7 @@ const UnderConstruction = () => {
 
            
             <div className="under-construction-header">
-
-
-                <div className="header-element-1"> justOne&trade; </div>
-                <div className="header-element-4"> Welcome, User! </div>
-                <a href="./#/dashboard" id="card-hyperlink" className="header-element-3"> Dashboard</a>
-                <a href="./#/login" id="card-hyperlink" className="header-element-4"> Exit Program </a>
-
+                <FourElementHeader/>
             </div>
 
             <div className="under-construction-container">

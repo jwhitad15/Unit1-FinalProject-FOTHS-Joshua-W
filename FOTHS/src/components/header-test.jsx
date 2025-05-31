@@ -1,12 +1,15 @@
-import ThreeElementHeader from "./header-3";
+import Header from "./header-dashboard";
 
-const Dashboard = () => {
+const TestDashboard = () => {
 
     return (
         <div id="main">
            
             <header className="dashboard-header">
-                <ThreeElementHeader/>
+                <Header/>
+                {/* <div className="header-element-1"> justOne&trade; </div>
+                <div className="header-element-4"> Welcome, User! </div>
+                <a href="./#/login" id="card-hyperlink" className="header-element-3"> Exit Program </a> */}
             </header>
 
             <main>
@@ -24,4 +27,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard;
+export default TestDashboard;

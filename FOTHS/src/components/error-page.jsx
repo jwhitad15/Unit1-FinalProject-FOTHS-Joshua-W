@@ -1,3 +1,5 @@
+import ThreeElementHeader from "./header-3";
+
 const ErrorPage = () => {
 
     return (
@@ -5,11 +7,7 @@ const ErrorPage = () => {
 
            
             <div className="error-header">
-           
-                <div className="header-element-1"> justOne&trade; </div>
-                <div className="header-element-4"> Welcome, User! </div>
-                <a href="./#/login" id="card-hyperlink" className="header-element-4"> Exit Program </a>
-
+                <ThreeElementHeader/>
             </div>
 
             <div className="error-container">

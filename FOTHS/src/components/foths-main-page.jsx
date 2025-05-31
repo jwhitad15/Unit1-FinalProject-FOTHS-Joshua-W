@@ -1,24 +1,28 @@
+import { useState } from "react";
+import UserInteraction from "./foths-user-interaction";
+import DisplayUserInteraction from "./foths-display-user-interaction";
+import FourElementHeader from "./header-4";
 
 
 const FOTHSMain = () => {
+
+    const [goals, setGoals] = useState(null);
+
+    const handleGoalSubmission = (data) => {
+        setGoals(data)
+    };
+
     return (
         <div id="foths-main">
 
            
-            <div className="foths-header">
-
-                <div className="header-element-1"> justOne&trade; </div>
-                <div className="header-element-4"> Welcome, User! </div>
-                <a href="./#/dashboard" id="card-hyperlink" className="header-element-3"> Dashboard</a>
-                <a href="./#/login" id="card-hyperlink" className="header-element-4"> Exit Program </a>
-
-            </div>
+            <FourElementHeader/>
 
        
             <aside>
                 <div className="scope">Scope</div>
-                <div className="scope-card-1">This is your Scope Column.</div>
-                <div className="scope-card-2">Personal goals saved in your account will appear here.</div>
+                <div className="scope-card-1"><UserInteraction onSubmit={handleGoalSubmission}/> {goals && <DisplayUserInteraction data={goals}/>} </div>
+                <div className="scope-card-2"><DisplayUserInteraction/></div>
             </aside>
 
             <div className="foths-main">
@@ -47,7 +51,7 @@ const FOTHSMain = () => {
 
             <nav>
                 <div className="recent-activity">Activity</div>
-                <div className="recent-activity-card-1">This is your Activity Board</div>
+                <div className="recent-activity-card-1">Welcome to FOTHS. This is your Activity Board</div>
                 <div className="recent-activity-card-2">Any recent activity, such as study sessions or quizzes will be recorded here.</div>
                 <div className="recent-activity-card-3">Have fun studying!</div>
             </nav>

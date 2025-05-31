@@ -1,6 +1,7 @@
 import { FcRight } from "react-icons/fc";
 import { FcLeft } from "react-icons/fc";
 import React, {useState, useEffect} from "react";
+import FourElementHeader from "./header-4";
 
 const faithScripture = [
     
@@ -120,11 +121,7 @@ const handlePrevious=()=>{
 
            
             <div className="study-header">
-
-            <div className="header-element-1"> justOne&trade; </div>
-                <div className="header-element-4"> Welcome, User! </div>
-                <a href="./#/dashboard" id="card-hyperlink" className="header-element-3"> Dashboard</a>
-                <a href="./#/login" id="card-hyperlink" className="header-element-4"> Exit Program </a>
+                <FourElementHeader/>
             </div>
 
        
