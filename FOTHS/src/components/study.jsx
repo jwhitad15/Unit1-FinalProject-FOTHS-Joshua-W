@@ -2,142 +2,118 @@ import { FcRight } from "react-icons/fc";
 import { FcLeft } from "react-icons/fc";
 import React, {useState, useEffect} from "react";
 
-
-const arrayC = [
-    {key: "bad", ass: "good"},
-    {key: "wach", ass: "good"},
-    {key: "tach", ass: "good"}
-]
-
 const faithScripture = [
     
     {
         name: "2 Corinthians 5:7",
         verse: "For we walk by faith, not by sight.",
         level: "easy",
-        id: 1
+        id: 0
     },
     {
         name: "Romans 10:17",
         verse: "So then faith cometh by hearing, and hearing by the word of God.",
         level: "easy",
-        id: 2
+        id: 1
     },
     {
         name: "Mark 9:23",
         verse: "Jesus said unto him, 'If thou canst believe, all things are possible to him that believeth.'",
         level: "easy",
-        id: 3
+        id: 2
     },
     {
         name: "Matthew 21:22",
         verse: "And all things, whatsoever ye shall ask in prayer, believing, ye shall receive.",
         level: "easy",
-        id: 4
+        id: 3
     },
     {
         name: "James 2:17",
         verse: "Even so faith, if it hath not works, is dead, being alone.",
         level: "easy",
-        id: 5
+        id: 4
     },
     {
         name: "Habakkuk 2:4",
         verse: "Behold, his soul which is lifted up is not upright in him: but the just shall live by his faith.",
         level: "easy",
-        id: 6
+        id: 5
     },
     {
         name: "2 Timothy 2:13",
         verse: "If we believe not, yet he abideth faithful: he cannot deny himself.",
         level: "easy",
-        id: 7
+        id: 6
     },
     {
         name: "1 John 5:4",
         verse: "For whatsoever is born of God overcometh the world: and this is the victory that overcometh the world, even our faith.",
         level: "intermediate",
-        id: 8
+        id: 7
     },
     {
         name: "Ephesians 2:8-9",
         verse: "For by grace are ye saved through faith, and that not of yourselves. It is the gift of God - not of works, lest any man should boast.",
         level: "intermediate",
-        id: 9
+        id: 8
     },
     {
         name: "James 1:3,6",
         verse: "Knowing this, that the trying of your faith works patience...But let him ask in faith, nothing wavering. For he that wavers is like a wave of the sea driven with the wind and tossed.",
         level: "intermediate",
-        id: 10
+        id: 9
     },
     {
         name: "Matthew 17:20-21",
         verse: "And Jesus said unto them, Because of your unbelief: for verily I say unto you, If ye have faith as a grain of mustard seed, ye shall say unto this mountain, Remove hence to yonder place; and it shall remove; and nothing shall be impossible unto you. Howbeit this kind goeth not out but by prayer and fasting.",
         level: "difficult",
-        id: 11
+        id: 10
     },
     {
         name: "Hebrews 11:1-3",
         verse: "Now faith is the substance of things hoped for, the evidence of things not seen. For by it the elders obtained a good report. Through faith we understand that the worlds were framed by the word of God, so that things which are seen were not made of things which do appear.",
         level: "difficult",
-        id: 12
+        id: 11
     },
     {
         name: "Hebrews 11:6",
         verse: "But without faith it is impossible to please him: for he that cometh to God must believe that he is, and that he is a rewarder of them that diligently seek him.",
         level: "difficult",
-        id: 13
+        id: 12
     },
     {
         name: "Hebrews 11:11",
         verse: "Through faith also Sara herself received strength to conceive seed, and was delivered of a child when she was past age, because she judged him faithful who had promised.",
         level: "difficult",
-        id: 14
+        id: 13
     }   
 ]
 
 
 const Study = ({}) => {
 
-      
-    //     const [currentIndex, setCurrentIndex] = useState(0)
-        
-    //     const carouselInfiniteScroll = () => {
-    //         if (currentIndex === arrayC.length-1) {
-    //             return setCurrentIndex(0)
-    //         }
-    //         return setCurrentIndex(currentIndex+1)
-    //     }
-    
-    // useEffect(() => {
-    //     const interval = setInterval(() => {carouselInfiniteScroll()}, 3000)
-    //         return () => clearInterval(interval)})
-    
-    // const [previousSlide, setPreviousSlide] = useState(0);
-    const [currentSlide, setCurrentSlide] = useState(0);
+const [wordData, setWordData] = useState(faithScripture[0])
+const [val, setVal] = useState(0)
 
-
-    // const toPrevSlide =() => {
-    //     const prevIndex = (previousSlide - 1 + slides.length);
-    //     setPreviousSlide(prevIndex);
-    // };
-    const toNextSlide =() => {
-        const nextIndex = (currentSlide + 1) % slides.length;
-        setCurrentSlide(nextIndex);
-    };
-
- 
-
-    // let displayScriptures = faithScripture.map((scripture) => console.log({scripture}));
-
-    // for (let i=0; i < arrayC.length; i++) {
-    //     console.log(arrayC[i].bitch)
-    // }
-
-    // arrayC.forEach(obj => {
-    //     console.log(obj.bitch)
-    // })
+const handleClick=(index)=>{
+    setVal(index)
+    const wordSlider=faithScripture[index];
+    setWordData(wordSlider)
+}
+const handleNext=()=>{
+   let index = val < faithScripture.length -1 ? val + 1 : val;
+   setVal(index)
+   const wordSlider=faithScripture[index];
+   setWordData(wordSlider)
+}
+const handlePrevious=()=>{
+    let index = val <= faithScripture.length -1 && val > 0 ? val - 1 : val;
+    setVal(index)
+    const wordSlider=faithScripture[index];
+    setWordData(wordSlider)
+}
+  
 
     return (
         <div id="foths-main">
@@ -153,17 +129,29 @@ const Study = ({}) => {
 
        
             <div>
-                <button onClick={toNextSlide} className="study-previous-button"> Next </button>
+                <button onClick={handleNext} className="study-previous-button"> Next </button>
             </div>
 
 
             <div>
-                <button className="study-next-button"> Previous </button>
+                <button onClick={handlePrevious} className="study-next-button"> Previous </button>
             </div>
 
             <main className="study-display-verse">
+
+            <p> {wordData.verse} </p>
+
+         
+                {faithScripture.map((data,i) => 
+
+                    <div key={i}>
+                        <p onClick={()=>handleClick(i)} ></p>
+                    </div>
+                    
+                )}
             
-                {faithScripture && faithScripture.filter((scripture) => scripture.id === 1).map((scripture) => scripture.verse)} 
+            
+                {/* {faithScripture && faithScripture.filter((scripture) => scripture.id === 1).map((scripture) => scripture.verse)}  */}
                     
                     {/* {data.map((item, index) => {
                     return <h1 className='carousel-item' style={{transform: `translate(-${currentIndex * 100}%)`}} key={index}>
@@ -172,7 +160,8 @@ const Study = ({}) => {
 
                 <div className="study-title"> Study Mode </div>
                 <div className="verse-name">
-                    {faithScripture && faithScripture.filter((scripture) => scripture.id === 1).map((scripture) => scripture.name)} 
+                <p> {wordData.name} </p>
+                    {/* {faithScripture && faithScripture.filter((scripture) => scripture.id === 1).map((scripture) => scripture.name)}  */}
                 </div>
             </main>
 
