@@ -8,7 +8,7 @@ const Button = ({ text, effecttype }) => {
 
   return (
     <Link>
-    <button onClick={<Dashboard/>} id="login" style={{ margin: "10px" }} className={`custom-button ${effecttype}`}> Login </button>
+    <button onClick={<Dashboard/>} id="login" style={{ margin: "10px" }} className={`custom-button ${effecttype}`} effecttype="effect2"> Login </button>
     </Link>
   );
 };

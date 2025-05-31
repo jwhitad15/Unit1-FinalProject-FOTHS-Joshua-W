@@ -43,15 +43,23 @@
   border-radius: 4px;
 }
 .textfield {
-  border: 1.2px solid white;
+  /* border-style: inset; */
+  border: 2.1px inset #1d3461;
   border-radius: 5px;
-  color: black;
+  background-color: #cdc5b4;
+  color: #1d3461;
+}
+.checkbox {
+color: white;
 }
 .legend {
-  text-align: center;
+  text-align: left;
 }
 .fieldset {
-  justify-content: left;
+
+  justify-content: left;  
+  /* align-items: left; */
+  /* place-content: left; */
 }
 .nested-legend {
   text-align: right;
@@ -984,22 +992,37 @@
 #signup-title {
   /* line-height: 5%; */
   font-size: 20px;
-  border: 2.1px outset #4d788f;
+  border: 2.1px outset #a64444;
   border-radius: 8px;
-  background-color: #a64444;
+  background-color: #4d788f;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 7px#a64444;
 }
 .signup-container-in-form {
   border-style: outset;
-  border: 3px outset #4d788f;;
+  border: 3px outset #a64444;
   padding: 20px;
   border-radius: 10px;
-  background-color: #a64444;
+  background-color: #4d788f;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 7px#a64444;
 }
-
+.signup-button-class {
+  border: outset 2.5px;
+  color: white;
+  background-color:  #a64444;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
 .under-construction-container {
   display: grid;
   justify-content: space-evenly;

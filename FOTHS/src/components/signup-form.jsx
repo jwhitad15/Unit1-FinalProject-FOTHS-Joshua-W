@@ -51,11 +51,11 @@ const SignupForm = () => {
                     <legend className="legend">Name</legend>
 
                     <label> First:
-                        <input className="textfield" type="text" name="name" value={formData.name} onChange={handleChange} />
+                        <input className="textfield" type="text" name="first-name"  onChange={handleChange} />
                     </label> 
 
                     <label className="text-to-prompt-pad"> Last:
-                        <input className="textfield" type="text" name="name" value={formData.name} onChange={handleChange} />
+                        <input className="textfield" type="text" name="last-name"  onChange={handleChange} />
                     </label> <br /> <br />
 
                 </fieldset> <br />
@@ -64,11 +64,11 @@ const SignupForm = () => {
                     <legend className="legend">Contact</legend> 
 
                     <label> Email: 
-                        <input className="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
+                        <input className="textfield" type="email" name="email" onChange={handleChange} required/>
                     </label> 
 
                     <label> <em>Phone:</em> 
-                        <input className="textfield" type="email" name="email" placeholder="optional" value={formData.email} onChange={handleChange}/>
+                        <input className="textfield" type="phone" name="phone" placeholder="optional" onChange={handleChange} required/>
                     </label> <br /> <br />
 
                 </fieldset> <br />
@@ -76,18 +76,14 @@ const SignupForm = () => {
                 <fieldset> 
                     <legend className="legend">Account</legend> 
 
-                    {/* <fieldset>  */}
-                        {/* <legend className="nested-legend">Credentials</legend>   */}
-
                         <label> Username: 
-                            <input className="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
+                            <input className="textfield" type="username" name="username"  onChange={handleChange} required/>
                         </label> 
 
                         <label> Password:
-                            <input className="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
+                            <input className="textfield" type="password" name="password"  onChange={handleChange} required/>
                         </label> <br /> <br />
 
-                    {/* </fieldset> <br /> */}
 
                     {/* <div className="optional-info">
                     <label> Church Name:
@@ -108,7 +104,7 @@ const SignupForm = () => {
 
                 </fieldset> <br/>
 
-                <a href="./#/dashboard" class="button-class">Signup</a> 
+                <a href="./#/dashboard" class="signup-button-class">Signup</a> 
 
                 {/* <SignupButton onClick=" document.location='signup-form.jsx' " text="Hover Effect 2" effectType="effect2"/> */}
 

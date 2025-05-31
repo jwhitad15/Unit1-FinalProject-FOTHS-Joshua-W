@@ -9,6 +9,7 @@ import About from './components/about';
 import Study from './components/study';
 import UnderConstruction from './components/under-construction';
 import ErrorPage from './components/error-page'
+import Carousel from './components/slideshow';
 
 function App() {
  
@@ -26,6 +27,7 @@ function App() {
         <Route path="/about" element={ <About/>} />
         <Route path="/under-construction" element={ <UnderConstruction/>} />
         <Route path="*" element={<ErrorPage/>} />
+        <Route path="/carousel" element={<Carousel/>} />
       </Routes>
     </>
   )
