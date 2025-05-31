@@ -1,4 +1,5 @@
 import ThreeElementHeader from "./header-3";
+import Footer from "./footer";
 
 const ErrorPage = () => {
 
@@ -27,9 +28,7 @@ const ErrorPage = () => {
             <input type="submit" value="Go to Another Page" />
             </form> */}
 
-            <footer className="footer">
-                <div className="footer-copyright"> &copy; JWMP 2025 </div>
-            </footer>
+            <Footer/>
 
         </div>
 

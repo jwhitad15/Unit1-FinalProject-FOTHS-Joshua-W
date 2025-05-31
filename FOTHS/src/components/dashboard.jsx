@@ -1,4 +1,5 @@
 import ThreeElementHeader from "./header-3";
+import Footer from "./footer";
 
 const Dashboard = () => {
 
@@ -14,10 +15,7 @@ const Dashboard = () => {
                 <a href="./#/foths" id="card-hyperlink" className="FOTHS-dashboard-card">FOTHS</a>
             </main>
 
-            <footer className="footer">
-                <div className="footer-copyright"> &copy; JWMP 2025 </div>
-                <a id="card-hyperlink" className="footer-about-link" href="./#/about"> About</a>
-            </footer>
+           <Footer/>
 
         </div>
 

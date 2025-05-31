@@ -1,4 +1,5 @@
 import FourElementHeader from "./header-4";
+import Footer from "./footer";
 
 
 const GameMode = () => {
@@ -23,9 +24,7 @@ const GameMode = () => {
             </div>
        
 
-            <footer className="footer">
-                <div className="footer-copyright"> &copy; JWMP 2025 </div>
-            </footer>
+            <Footer/>
 
         </div>
 

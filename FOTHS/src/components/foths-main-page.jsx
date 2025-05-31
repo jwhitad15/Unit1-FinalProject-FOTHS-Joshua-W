@@ -2,6 +2,7 @@ import { useState } from "react";
 import UserInteraction from "./foths-user-interaction";
 import DisplayUserInteraction from "./foths-display-user-interaction";
 import FourElementHeader from "./header-4";
+import Footer from "./footer";
 
 
 const FOTHSMain = () => {
@@ -56,9 +57,7 @@ const FOTHSMain = () => {
                 <div className="recent-activity-card-3">Have fun studying!</div>
             </nav>
 
-            <footer className="footer">
-                <div className="footer-copyright"> &copy; JWMP 2025 </div>
-            </footer>
+            <Footer/>
 
         </div>
 

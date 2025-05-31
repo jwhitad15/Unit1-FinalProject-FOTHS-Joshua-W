@@ -1,4 +1,5 @@
 import FourElementHeader from "./header-4";
+import Footer from "./footer";
 
 
 const About = () => {
@@ -42,9 +43,7 @@ const About = () => {
             <input type="submit" value="Go to Another Page" />
             </form> */}
 
-            <footer className="footer">
-                <div className="footer-copyright"> &copy; JWMP 2025 </div>
-            </footer>
+            <Footer/>   
 
         </div>
 

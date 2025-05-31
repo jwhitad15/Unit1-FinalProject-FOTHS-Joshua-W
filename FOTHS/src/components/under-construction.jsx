@@ -1,4 +1,5 @@
 import FourElementHeader from "./header-4";
+import Footer from "./footer";
 
 const UnderConstruction = () => {
 
@@ -26,9 +27,7 @@ const UnderConstruction = () => {
             </div>
 
 
-            <footer className="footer">
-                <div className="footer-copyright"> &copy; JWMP 2025 </div>
-            </footer>
+            <Footer/>
 
         </div>
 

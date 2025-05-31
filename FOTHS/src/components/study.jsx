@@ -2,6 +2,7 @@ import { FcRight } from "react-icons/fc";
 import { FcLeft } from "react-icons/fc";
 import React, {useState, useEffect} from "react";
 import FourElementHeader from "./header-4";
+import Footer from "./footer";
 
 const faithScripture = [
     
@@ -166,9 +167,7 @@ const handlePrevious=()=>{
                    <a id="return-to-dashboard-hyperlink" href="./#/foths">Home</a>
             </div>
 
-            <footer className="footer">
-                <div className="footer-copyright"> &copy; JWMP 2025 </div>
-            </footer>
+            <Footer/>
 
         </div>
 
