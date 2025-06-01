@@ -28,6 +28,8 @@ const AppQ = () => {
                 <h4>This page represents a mockup fetch for sample data. When more users join FOTHS, user account data will be fetched & displayed on this page. </h4>
             </div> <br />
 
+            <img src="/Users/JWMP/Desktop/launchcode/Unit1-FinalProject-FOTHS-Joshua-W/FOTHS/src/images/just-one-logo.png" width="50px" height="50px" />
+
             <div className="container">
                 {items.map((item) => (
                     <div className="item" key={item.id}>
@@ -48,6 +50,7 @@ const AppQ = () => {
                 ))}
             </div>
         </div>
+
     );
 };
 export default AppQ;
