@@ -49,6 +49,14 @@
   background-color: #cdc5b4;
   color: #1d3461;
 }
+.scope-textfield {
+  /* border-style: inset; */
+  border: 2.1px inset #1d3461;
+  border-radius: 5px;
+  background-color: #cdc5b4;
+  color: #1d3461;
+ 
+}
 .checkbox {
 color: white;
 }
@@ -601,60 +609,6 @@ color: white;
   top:68.5%;
   width: 9%;
   height: 14%;
-  padding-left: 2%;
-  padding-right:  2%;
-  font-size: xx-small;
-  box-shadow: 8 14px 8px black;
-  -webkit-box-shadow: 0 0 10px #fff;
-          box-shadow: 0 0 21px #a64444;
-}
-
-.scope {
-  border: outset;
-  border: 3px outset white;
-  border-radius: 8px;
-  background-color: #a64444;
-  color: white;
-  place-content: center;
-  position: fixed;
-  top: 21%;
-  width: 12%;
-  height: 5%;
-  padding-left: 2%;
-  padding-right:  2%;
-  box-shadow: 8 14px 8px black;
-  -webkit-box-shadow: 0 0 10px #fff;
-          box-shadow: 0 0 21px #a64444;
-}
-.scope-card-1 {
-  border: outset;
-  border: 3px outset white;
-  border-radius: 8px;
-  background-color: #a64444;
-  color: white;
-  place-content: center;
-  position: fixed;
-  top: 31%;
-  width: 9%;
-  height: 15%;
-  padding-left: 2%;
-  padding-right:  2%;
-  font-size: xx-small;
-  box-shadow: 8 14px 8px black;
-  -webkit-box-shadow: 0 0 10px #fff;
-          box-shadow: 0 0 21px #a64444;
-}
-.scope-card-2 {
-  border: outset;
-  border: 3px outset white;
-  border-radius: 8px;
-  background-color: #a64444;
-  color: white;
-  place-content: center;
-  position: fixed;
-  top: 49.75%;
-  width: 9%;
-  height: 15%;
   padding-left: 2%;
   padding-right:  2%;
   font-size: xx-small;
@@ -1267,8 +1221,9 @@ color: white;
   border: outset;
   place-content: center;
   padding-right: 10px;
+  padding-left: 10px;
   border-radius: 10px;
-  background-color: #a64444;
+  background-color: #a64444; 
   position: fixed;
   right: 36%;
   left: 36%;
@@ -1279,6 +1234,14 @@ color: white;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
           box-shadow: 0 0 21px #1d3461;
+}
+table, tr, td {
+  border: 3px solid;
+  text-align: center;
+  width: 50%;
+}
+.about-table {
+  left: 2%
 }
 
 .footer-copyright {
@@ -1302,12 +1265,83 @@ aside {
   border-color: #1d3461;
   
   position: fixed;
-  
   left: 3%;
   top: 18%;
   width: 20%;
   height:68%
  }
+/* .mock-aside-tag {
+  display: flex;
+  place-content: center;
+  flex: 0 0 25vw;
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: outset;
+  border-color: #1d3461;
+  
+  position: fixed;
+  left: 3%;
+  top: 18%;
+  width: 20%;
+  height:68%
+} */
+.scope {
+  border: outset;
+  border: 3px outset white;
+  border-radius: 8px;
+  background-color: #a64444;
+  color: white;
+  place-content: center;
+  position: fixed;
+  top: 21%;
+  width: 12%;
+  height: 5%;
+  padding-left: 2%;
+  padding-right:  2%;
+  box-shadow: 8 14px 8px black;
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 21px #a64444;
+}
+.scope-card-1 {
+  border: outset;
+  border: 3px outset white;
+  border-radius: 8px;
+  background-color: #a64444;
+  color: white;
+  place-content: center;
+  position: fixed;
+  top: 31%;
+  width: 9%;
+  height: 15%;
+  padding-left: 2%;
+  padding-right:  2%;
+  font-size: xx-small;
+  box-shadow: 8 14px 8px black;
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 21px #a64444;
+}
+.scope-card-2 {
+  border: outset;
+  border: 3px outset white;
+  border-radius: 8px;
+  background-color: #a64444;
+  color: white;
+  place-content: center;
+  position: fixed;
+  top: 49.75%;
+  width: 9%;
+  height: 15%;
+  padding-left: 2%;
+  padding-right:  2%;
+  font-size: xx-small;
+  box-shadow: 8 14px 8px black;
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 21px #a64444;
+}
+.scope-goals-input {
+  top: 4%;
+}
 foths-aside {
   display: flex;
   place-content: center;
