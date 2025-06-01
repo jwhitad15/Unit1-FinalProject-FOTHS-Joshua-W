@@ -24,7 +24,7 @@ const FOTHSMain = () => {
 
                 <div className="fruits-grid">
                     <div className="fruit-cards-row-1">
-                        <a href="./#/game-mode" id="card-hyperlink" className="fruit-card-1">Fruit 1</a>
+                        <a href="./#/game-mode" id="card-hyperlink" className="fruit-card-1"> Fruit 1</a>
                         <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-2">Fruit 2</a>
                         <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-3">Fruit 3</a>
                     </div>

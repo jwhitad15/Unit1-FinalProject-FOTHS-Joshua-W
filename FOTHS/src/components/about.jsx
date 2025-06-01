@@ -23,26 +23,20 @@ const About = () => {
                     interactivity with photos & more.
                 </div>
 
+              
                 <div className="about-app-card">
-                    <p>Fruits of the Holy Spirit</p>
-                    <p>FOTHS &#8482;</p> <br/>
-
-                    <h4>SPECS</h4>
-                        <table className="about-table">
-                            <tr>
-                                <td><b>Serial Number</b></td>
-                                <td>JWMP-j1-FOTHS-G01PTA</td>
-                            </tr>
-                            <tr>
-                                <td><b>Lifecycle</b></td>
-                                <td>Generation 1 Prototype A</td>
-                            </tr>
-                        </table> <br/>
-
-                    <p>Fruits of the Holy Spirit &copy; 2025</p>
+                    <p><b>FOTHS &#8482; </b></p>
+                    <p>Fruits of the Holy Spirit &copy; 2025 </p>
                     <p>a justOne talent</p>
-                    <p>in association with JWMP</p>
+                    <p>in association with JWMP</p> 
+                        <hr/>
+                    <h4>SPECS</h4>
+                    <ul className="about-list">
+                        <li><b>Serial Number:</b> JWMP-j1-FOTHS-G01PTA</li>
+                        <li><b>Lifecycle:</b> Generation 1 Prototype A</li>
+                    </ul>
                 </div>
+           
                 
             </main>
 

@@ -21,6 +21,10 @@
   color: white;
   text-decoration: none;
 }
+#jwmp-hyperlink {
+  color: white;
+  text-decoration: none;
+}
 /* Miscellaneous CSS */
 .form .icon {
   position: absolute;
@@ -29,7 +33,7 @@
 .button-class {
   border: outset 2.5px;
   color: white;
-  background-color: #4d788f;
+  background-color: #1d3461;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 3px;
@@ -1251,6 +1255,7 @@ box-shadow: 0 0 5px #1d3461;
   left: 36%;
   top: 51%;
   bottom: 17%;
+  overflow-wrap: break-word;
   color: white;
   font-size:xx-small;
   box-shadow: 8 14px 8px black;
@@ -1263,7 +1268,11 @@ table, tr, td {
   width: 50%;
 }
 .about-table {
-  left: 2%
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-list {
+  text-align: left;
 }
 
 .footer-copyright {
@@ -1340,6 +1349,24 @@ aside {
   place-content: center;
   position: fixed;
   top: 49.75%;
+  width: 9%;
+  height: 15%;
+  padding-left: 2%;
+  padding-right:  2%;
+  font-size: xx-small;
+  box-shadow: 8 14px 8px black;
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 5px black;
+}
+.scope-card-prop {
+  border: outset;
+  border: 3px outset white;
+  border-radius: 8px;
+  background-color: #a64444;
+  color: white;
+  place-content: center;
+  position: fixed;
+  top: 68.5%;
   width: 9%;
   height: 15%;
   padding-left: 2%;
@@ -1472,6 +1499,28 @@ footer {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
           box-shadow: 0 0 5px black;
+}
+.footer-jwmp-link {
+  border-style: outset;
+  border: 3px outset white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  background-color: #117f9e;
+  /* position: fixed; */
+  /* top: 1%; */
+  /* left: 3%; */
+  padding-top: auto;
+  /* vertical-align: middle; */
+  box-shadow: 8 14px 8px black;
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 8px  #ff7f57;
+}
+
+.start-page-text {
+  border: groove #1d3461;
+  background-color: #cdc5b4;
+  color: #1d3461;
 }
 
 
