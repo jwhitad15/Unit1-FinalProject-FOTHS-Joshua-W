@@ -16,16 +16,16 @@ function App() {
     <>
       <HashRouter>
         <Routes>
-          <Route path="/" element={ <Navigate to="/#/dashboard" replace/>} />
+          {/* <Route path="/" element={ <Navigate to="/#/dashboard" replace/>} /> */}
 
-          <Route path="#/login" element={ <LoginForm/>} />
-          <Route path="#/signup" element={ <SignupForm/>} />
-          <Route path="#/dashboard" element={ <Dashboard/>} />
-          <Route path="#/foths" element={ <FOTHSMain/>} />
-          <Route path="#/game-mode" element={ <GameMode/>} />
-          <Route path="#/study" element={ <Study/>} />
-          <Route path="#/about" element={ <About/>} />
-          <Route path="#/under-construction" element={ <UnderConstruction/>} />
+          <Route path="/login" element={ <LoginForm/>} />
+          <Route path="/signup" element={ <SignupForm/>} />
+          <Route path="/dashboard" element={ <Dashboard/>} />
+          <Route path="/foths" element={ <FOTHSMain/>} />
+          <Route path="/game-mode" element={ <GameMode/>} />
+          <Route path="/study" element={ <Study/>} />
+          <Route path="/about" element={ <About/>} />
+          <Route path="/under-construction" element={ <UnderConstruction/>} />
           <Route path="*" element={<ErrorPage/>} />
         </Routes>
       </HashRouter>
