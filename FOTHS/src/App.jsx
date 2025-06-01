@@ -9,6 +9,8 @@ import About from './components/about';
 import Study from './components/study';
 import UnderConstruction from './components/under-construction';
 import ErrorPage from './components/error-page'
+// import MyComponent from './components/fetch-component';
+import AppQ from './components/fetch-component';
 
 function App() {
  
@@ -26,6 +28,7 @@ function App() {
           <Route path="/study" element={ <Study/>} />
           <Route path="/about" element={ <About/>} />
           <Route path="/under-construction" element={ <UnderConstruction/>} />
+          <Route path="/fetch" element={ <AppQ/>} />
           <Route path="*" element={<ErrorPage/>} />
         </Routes>
       </HashRouter>

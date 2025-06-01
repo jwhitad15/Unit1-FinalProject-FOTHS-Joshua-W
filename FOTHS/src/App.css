@@ -83,6 +83,13 @@ color: white;
     border-radius: 20px;
 }
 
+@media (width:675) {
+  header {
+    background-color: blue;
+  }
+    
+  }
+
 .header {
   border-style: outset;
   border: 3px outset white;
@@ -1430,6 +1437,7 @@ main {
  }
 footer {
   display: flex;
+  justify-content: space-between;
   flex: 0 0 25vw;
   background: #cdc5b4;
   color: #85756e;
@@ -1438,6 +1446,7 @@ footer {
   /* border-color: #1d3461; */
   align-items: center;
   border-radius: 10px;
+  padding-right: 23px;
   
   position: fixed;
   bottom: 3%;
@@ -1467,14 +1476,37 @@ footer {
 
 
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   .item1 {grid-area: 1 / span 6;}
   .item2 {grid-area: 2 / span 1;}
   .item3 {grid-area: 2 / span 4;}
   .item4 {grid-area: 3 / span 6;}
   .item5 {grid-area: 4 / span 6;}
+} */
+
+/* @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
 }
 
+/* Portrait */
+/* @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
 
+}
+
+/* Landscape */
+/* @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+} */ 
 
 
