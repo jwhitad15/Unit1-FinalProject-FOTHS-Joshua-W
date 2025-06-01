@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Routes>
-        {/* <Route index element={ <LoginForm/>} /> */}
+        <Route path="/" element={ <Navigate to="/dashboard" replace/>} />
 
         <Route path="/login" element={ <LoginForm/>} />
         <Route path="/signup" element={ <SignupForm/>} />
