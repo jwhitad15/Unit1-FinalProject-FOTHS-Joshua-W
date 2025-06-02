@@ -12,6 +12,7 @@ const ErrorPage = () => {
             </div>
 
             <div className="error-container">
+                
                 <div className="error-title-container"> <h2> Error 404: Page Does Not Exist </h2> </div> <br />
 
                 <div className="error-display-card"> 
@@ -23,10 +24,6 @@ const ErrorPage = () => {
                 </div>
                 
             </div>
-
-            {/* <form action="./dashboard">
-            <input type="submit" value="Go to Another Page" />
-            </form> */}
 
             <Footer/>
 

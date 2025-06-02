@@ -1,3 +1,4 @@
+// reusable footer component on main pages
 const Footer = () => {
 
     return (
@@ -9,7 +10,6 @@ const Footer = () => {
             <a id="jwmp-hyperlink" className="footer-jwmp-link" href="https://www.jwmp.solutions"> JWMP</a>
         </footer>
     )
-
 }
 
 export default Footer;

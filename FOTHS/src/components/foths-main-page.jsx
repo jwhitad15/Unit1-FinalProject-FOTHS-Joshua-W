@@ -1,8 +1,7 @@
-import { useState } from "react";
 import UserInteraction from "./foths-user-interaction";
 import FourElementHeader from "./header-4";
 import Footer from "./footer";
-import DisplayUserInteraction from "./foths-display-user-interaction";
+import Image from "./image";
 
 
 const FOTHSMain = () => {
@@ -13,7 +12,7 @@ const FOTHSMain = () => {
            
             <FourElementHeader/>
 
-       
+            {/* Dynamic Component that receives user input to display in another element */}
             <aside>
                 <div className="scope">Scope</div>
                 <div className="scope-card-1"><UserInteraction/> </div>
@@ -24,7 +23,7 @@ const FOTHSMain = () => {
 
                 <div className="fruits-grid">
                     <div className="fruit-cards-row-1">
-                        <a href="./#/game-mode" id="card-hyperlink" className="fruit-card-1"> Fruit 1</a>
+                        <a href="./#/game-mode" id="card-hyperlink" className="fruit-card-1"><Image/></a>
                         <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-2">Fruit 2</a>
                         <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-3">Fruit 3</a>
                     </div>
@@ -41,7 +40,8 @@ const FOTHSMain = () => {
                 </div>
 
             </div>
-
+        
+            {/* Flexbox stylization to create columns & column cards */}
             <nav>
                 <div className="recent-activity">Activity</div>
                 <div className="recent-activity-card-1">Welcome to FOTHS, an interactive application designed to help users study & retain biblical Scripture. </div>

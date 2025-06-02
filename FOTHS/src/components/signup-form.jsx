@@ -84,29 +84,9 @@ const SignupForm = () => {
                             <input className="textfield" type="password" name="password"  onChange={handleChange} required/>
                         </label> <br /> <br />
 
-
-                    {/* <div className="optional-info">
-                    <label> Church Name:
-                        <input className="textfield" type="email" name="email" value={formData.email} onChange={handleChange}/>
-                    </label> <br /> <br />
-            <hr />
-                    
-                    <label> Tell us about yourself! <br />
-                        <textarea className="textfield" id="feedback" name="feedback" value={formData.feedback} onChange={handleSignupChange} maxLength={maxSignupLength}></textarea> 
-                            <div id="characterCount"> Character Limit: {signupCharacterCount} / {maxSignupLength} </div>
-                    </label> <br /> 
-
-                    <label> 3 Areas for Improvement <br />
-                        <textarea className="textfield" id="feedback" name="feedback" value={formData.feedback} onChange={handleSignupChange} maxLength={maxLength}></textarea> 
-                            <div id="characterCount"> Character Limit: {signupCharacterCount} / {maxLength} </div>
-                    </label> <br /> <br />
-                    </div> */}
-
                 </fieldset> <br/>
 
                 <a href="./#/dashboard" class="signup-button-class">Signup</a> 
-
-                {/* <SignupButton onClick=" document.location='signup-form.jsx' " text="Hover Effect 2" effectType="effect2"/> */}
 
             </form>
 

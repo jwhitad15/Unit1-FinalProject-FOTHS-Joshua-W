@@ -1,18 +1,19 @@
-/* App.css*/ 
+/* App.css*/
 .AppQ {
     text-align: center;
     justify-content: center;
-    /* color: Green; */
 }
+
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
 }
+
 .item {
     text-align: left;
 }
+
 .geeks {
     color: white;
     border-style: outset;
@@ -26,8 +27,9 @@
     vertical-align: middle;
     box-shadow: 8 14px 8px black;
     -webkit-box-shadow: 0 0 10px #fff;
-            box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
 }
+
 .subheader {
     color: white;
     border-style: outset;
@@ -43,8 +45,9 @@
     vertical-align: middle;
     box-shadow: 8 14px 8px black;
     -webkit-box-shadow: 0 0 10px #fff;
-            box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
 }
+
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -53,9 +56,11 @@
 table {
     border: 3px outset;
 }
+
 th {
     border: 3px solid;
 }
+
 td {
     border: ridge;
 }

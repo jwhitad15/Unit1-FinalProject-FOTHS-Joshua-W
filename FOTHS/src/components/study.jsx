@@ -1,5 +1,4 @@
-import { FcRight } from "react-icons/fc";
-import { FcLeft } from "react-icons/fc";
+// This component controls the Study Mode Scripture carousel
 import React, {useState, useEffect} from "react";
 import FourElementHeader from "./header-4";
 import Footer from "./footer";
@@ -98,6 +97,8 @@ const Study = ({}) => {
 const [wordData, setWordData] = useState(faithScripture[0])
 const [val, setVal] = useState(0)
 
+// event handler functions that control the Previous & Next Arrows
+// also includes logic that disables Previous button on first slide & Next button on last slide
 const handleClick=(index)=>{
     setVal(index)
     const wordSlider=faithScripture[index];
@@ -130,36 +131,27 @@ const handlePrevious=()=>{
                 <button onClick={handleNext} className="study-previous-button"> Next </button>
             </div>
 
-
+            {/* event handling inserted on buttons */}
             <div>
                 <button onClick={handlePrevious} className="study-next-button"> Previous </button>
             </div>
 
             <main className="study-display-verse">
 
-            <p> {wordData.verse} </p>
+                <p> {wordData.verse} </p>
 
-         
-                {faithScripture.map((data,i) => 
+                    {/* using .map() to cycle through Scripture data */}
+                    {faithScripture.map((data,i) => 
 
-                    <div key={i}>
-                        <p onClick={()=>handleClick(i)} ></p>
-                    </div>
-                    
-                )}
-            
-            
-                {/* {faithScripture && faithScripture.filter((scripture) => scripture.id === 1).map((scripture) => scripture.verse)}  */}
-                    
-                    {/* {data.map((item, index) => {
-                    return <h1 className='carousel-item' style={{transform: `translate(-${currentIndex * 100}%)`}} key={index}>
-                                {item}
-                            </h1>})} */}
+                        <div key={i}>
+                            <p onClick={()=>handleClick(i)} ></p>
+                        </div>
+                        
+                    )}
 
                 <div className="study-title"> Study Mode </div>
                 <div className="verse-name">
-                <p> {wordData.name} </p>
-                    {/* {faithScripture && faithScripture.filter((scripture) => scripture.id === 1).map((scripture) => scripture.name)}  */}
+                    <p> {wordData.name} </p>
                 </div>
             </main>
 

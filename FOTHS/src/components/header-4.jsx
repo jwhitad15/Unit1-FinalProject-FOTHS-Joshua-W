@@ -1,3 +1,5 @@
+// custom reusable header component (4 elements)
+
 import ExitProgram from "./exit-program-button";
 
 const FourElementHeader = () => {

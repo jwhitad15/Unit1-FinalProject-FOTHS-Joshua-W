@@ -15,24 +15,11 @@ import React from "react";
 import { CiUser } from "react-icons/ci";
 import { CiLock } from "react-icons/ci";
 import './button-animation.css';
-// import Button from './login-button.jsx'
 
 
 const LoginForm = () => {
-
-       
-
-       
-    
-        function handleClick (){
-            const navigate = navigate();
-            navigate("/dashboard")
-        }
         
     const [input, setInput] = useState({ username: "", password: ""});
-   
-   
-
     
     const handleChange = (event) => {
         const { username, value } = event.target;
@@ -42,8 +29,6 @@ const LoginForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
     }
-
-
 
     return (
         <div className="login-signup" >
@@ -68,13 +53,7 @@ const LoginForm = () => {
                     </label>
                 </div> <br/>
 
-                {/* <button onClick={handleClick} id="login" text="Hover Effect 2" effectteype="effect2">sdf</button> */}
-
-                
-                {/* <a className="button-class">Login</a>  */}
                 <a href="./#/dashboard" class="button-class" text="Hover Effect 2" effecttype="effect2" >Login</a> 
-
-                {/* <Button onClick={handleSubmit} text="Hover Effect 2" effectType="effect2"/> */}
                
             </form>
 

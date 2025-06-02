@@ -9,18 +9,21 @@ import About from './components/about';
 import Study from './components/study';
 import UnderConstruction from './components/under-construction';
 import ErrorPage from './components/error-page'
-import AppQ from './components/fetch-component';
+import Fetch from './components/fetch-component';
 import StartFoths from './components/start-foths';
 
 function App() {
  
+  // I plug all of my main components into the App component
+  // each route has a specific parameter ID
+  // all routes are enveloped inside Routes & HashRouter tags for proper functionality
   return (
     <>
       <HashRouter>
         <Routes>
           {/* <Route path="/" element={ <Navigate to="/#/dashboard" replace/>} /> */}
 
-          <Route path="/start" element={ <StartFoths/>} />
+          <Route index path="/start" element={ <StartFoths/>} />
           <Route path="/dashboard" element={ <Dashboard/>} />
           <Route path="/foths" element={ <FOTHSMain/>} />
           <Route path="/game-mode" element={ <GameMode/>} />
@@ -29,7 +32,7 @@ function App() {
           <Route path="/under-construction" element={ <UnderConstruction/>} />
           <Route path="*" element={<ErrorPage/>} />
 
-          <Route path="/fetch" element={ <AppQ/>} />
+          <Route path="/fetch" element={ <Fetch/>} />
 
           <Route path="/login" element={ <LoginForm/>} />
           <Route path="/signup" element={ <SignupForm/>} />
