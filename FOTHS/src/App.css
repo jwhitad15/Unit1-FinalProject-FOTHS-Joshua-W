@@ -659,6 +659,7 @@ label {
   height: 50%;
   width: 28.333%;
   color: white;
+  font-size: 31px;
   place-content: center;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
@@ -1865,11 +1866,11 @@ footer {
 
 @-webkit-keyframes my-animation {
   from {
-    -webkit-transform: translateX(90%);
+    -webkit-transform: translateX(100%);
   }
 
   to {
-    -webkit-transform: translateX(-90%);
+    -webkit-transform: translateX(-100%);
   }
 }
 
