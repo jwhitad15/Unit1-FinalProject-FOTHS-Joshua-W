@@ -355,7 +355,7 @@ label {
   right: 15%;
   left: 15%;
   top: 25%;
-  width: 70%;
+  width: 69%;
   height: 44%;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
@@ -378,12 +378,13 @@ label {
   border: outset;
   border-color: #1d3461;
   align-items: center;
+  padding-left;
 
   position: fixed;
   right: 3%;
-  left: 88%;
+  left: 90%;
   top: 47.25%;
-  width: 9%;
+  width: 8%;
   height: 5%;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
