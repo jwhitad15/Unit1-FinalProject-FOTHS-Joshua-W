@@ -6,10 +6,10 @@ const DisplayUserInteraction = (props) => {
     return (
         <div >
   
-            <div className="scope-card-j"> 
-            {props.data} <br></br> 
+            <ul className="scope-card-j"> 
+            <li className="scope-card-list-item"> {props.data}</li>  <br></br> 
             <p> LEVEL: {props.radioData} </p>
-            </div>
+            </ul>
 
         </div>
     );

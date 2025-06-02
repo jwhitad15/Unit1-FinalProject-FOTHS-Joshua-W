@@ -150,10 +150,12 @@ const handlePrevious=()=>{
                     )}
 
                 <div className="study-title"> Study Mode </div>
-                <div className="verse-name">
-                    <p> {wordData.name} </p>
-                </div>
+           
             </main>
+
+            <div className="verse-name">
+                <p className="verse-size"> {wordData.name} </p>
+            </div>
 
             <div className="return-to-foths-from-study">
                    <a id="return-to-dashboard-hyperlink" href="./#/foths">Home</a>

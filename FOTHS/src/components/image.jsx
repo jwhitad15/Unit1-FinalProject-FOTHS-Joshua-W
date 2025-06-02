@@ -2,10 +2,10 @@
 
 import React from "react";
 import image from '../images/Faith.svg'
-
+// FOTHS/src/images/Faith.svg
 function Image() {
     return (
-    <img src={image} alt="graphic-of-orange-fruit" width="125px" height="150px" />
+    <img src={image} alt="graphic-of-orange-fruit" width="95px" height="93px" />
     )
 
 }

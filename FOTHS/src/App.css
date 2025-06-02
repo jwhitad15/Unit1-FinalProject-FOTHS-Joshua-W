@@ -24,10 +24,18 @@
   color: white;
   text-decoration: none;
 }
+#card-hyperlink:hover {
+    background-color: #1d3461;
+    color: white;
+}
 
 #jwmp-hyperlink {
   color: white;
   text-decoration: none;
+}
+
+.personal-goals {
+  font-size: small;
 }
 
 label {
@@ -50,6 +58,28 @@ label {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button-class:hover {
+  background-color: #1d3461;
+  color: white;
+  left: 10%;
+  width: 80%;
+}
+.scope-button-class {
+  border: outset 2.5px;
+  color: white;
+  background-color: #1d3461;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 4px;
@@ -213,7 +243,7 @@ label {
   background-color: #cdc5b4;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #1d3461;
+  box-shadow: 0 0 8px black;
 }
 
 .study-header {
@@ -230,7 +260,7 @@ label {
   background-color: #cdc5b4;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #1d3461;
+  box-shadow: 0 0 8px black;
 }
 
 .study-header-logo {
@@ -271,15 +301,18 @@ label {
 }
 
 .study-display-verse {
-  display: grid;
+  display: center;
   place-content: center;
   flex: 0 0 25vw;
   background: #cdc5b4;
   color: #85756e;
   box-sizing: borderbox;
   border: outset;
-  border-color: #1d3461;
-  align-items: center;
+  /* border-color: #1d3461; */
+  vertical-align: middle;
+  font-size: 31px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   position: fixed;
   right: 15%;
@@ -289,7 +322,13 @@ label {
   height: 44%;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #1d3461;
+  box-shadow: 0 0 8px black;
+}
+.study-display-verse:hover {
+  background-color: #1d3461;
+  color: white;
+  left: 10%;
+  width: 80%;
 }
 
 .study-previous-button {
@@ -297,7 +336,7 @@ label {
   place-content: center;
   flex: 0 0 25vw;
   background: #cdc5b4;
-  color: #85756e;
+  color: #1d3461;
   box-sizing: borderbox;
   border: outset;
   border-color: #1d3461;
@@ -311,7 +350,11 @@ label {
   height: 5%;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #1d3461;
+  box-shadow: 0 0 8px black;
+}
+.study-previous-button:hover {
+  background-color: #1d3461;
+  color: white
 }
 
 .study-next-button {
@@ -319,7 +362,7 @@ label {
   place-content: center;
   flex: 0 0 25vw;
   background: #cdc5b4;
-  color: #85756e;
+  color: #1d3461;
   box-sizing: borderbox;
   border: outset;
   border-color: #1d3461;
@@ -333,8 +376,13 @@ label {
   height: 5%;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #1d3461;
+  box-shadow: 0 0 8px black;
 }
+.study-next-button:hover {
+  background-color: #1d3461;
+  color: white
+}
+
 
 .study-title {
   border-style: outset;
@@ -347,13 +395,13 @@ label {
   left: 15%;
   top: 17%;
   height: 5%;
-  width: 68%;
-  color: white;
+  width: 70%;
   place-content: center;
-  color: #85756e;
+  color: #1d3461;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #1d3461;
+  box-shadow: 0 0 8px black;
+  font-size: 18px;
 
 }
 
@@ -380,21 +428,28 @@ label {
   border-style: outset;
   border: 3px outset white;
   padding-right: 10px;
+  padding-bottom: 5px;
   border-radius: 8px;
   background: #cdc5b4;
   position: fixed;
   right: 15%;
   left: 15%;
   top: 72%;
-  width: 68%;
+  width: 70%;
   height: 6%;
   color: white;
-  place-content: center;
-  color: #85756e;
+  font-size: 16px;
+  color: #1d3461;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #1d3461;
-
+  box-shadow: 0 0 8px black;
+}
+.verse-name:hover {
+  background-color: #1d3461;
+  color: white;
+}
+.verse-size {
+  font-size: 16px;
 }
 
 .game-mode-title {
@@ -413,7 +468,7 @@ label {
   place-content: center;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #a64444;
+  box-shadow: 0 0 5px black;
 
 }
 
@@ -454,7 +509,10 @@ label {
   place-content: center;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #a64444;
+  box-shadow: 0 0 5px black;
+}
+.game-card-1:hover {
+  background-color: #658361;
 }
 
 .game-card-2 {
@@ -470,9 +528,11 @@ label {
   place-content: center;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #a64444;
+  box-shadow: 0 0 5px black;
 }
-
+.game-card-2:hover {
+  background-color: black;
+}
 .game-card-3 {
   border-style: outset;
   border: 3px outset white;
@@ -486,7 +546,10 @@ label {
   place-content: center;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #a64444;
+  box-shadow: 0 0 5px black;
+}
+.game-card-3:hover {
+  background-color: black;
 }
 
 .game-mode-header {
@@ -503,7 +566,11 @@ label {
   background-color: #cdc5b4;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #a64444;
+  box-shadow: 0 0 8px black;
+}
+#game-mode-hyperlink {
+  color: white;
+  text-decoration: none;
 }
 
 .dashboard-header {
@@ -621,7 +688,7 @@ label {
   height: 14%;
   padding-left: 2%;
   padding-right: 2%;
-  font-size: small;
+  font-size: x-small;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
@@ -640,7 +707,7 @@ label {
   height: 14%;
   padding-left: 2%;
   padding-right: 2%;
-  font-size: small;
+  font-size: x-small;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
@@ -857,7 +924,6 @@ label {
   border-radius: 8px;
   background-color: #a64444;
   color: white;
-  place-content: center;
   position: fixed;
   top: 31%;
   left: 29%;
@@ -887,6 +953,14 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 8px black;
+}
+#fruit-card-1-hyperlink {
+  color: white;
+  text-decoration: none;
+}
+#fruit-card-2-hyperlink {
+  color: white;
+  text-decoration: none;
 }
 
 .fruit-card-2:hover {
@@ -1233,6 +1307,12 @@ label {
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 21px #1d3461;
 }
+.return-to-button-class:hover {
+  background-color: #1d3461;
+  color: white;
+  left: 10%;
+  width: 80%;
+}
 
 .under-construction-display-card {
   border: outset 2px;
@@ -1320,6 +1400,12 @@ label {
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 21px #1d3461;
 }
+.return-to-dashboard-button-class:hover {
+  background-color: #1d3461;
+  color: white;
+  left: 10%;
+  width: 80%;
+}
 
 .error-display-card {
   border: outset 2px;
@@ -1375,7 +1461,7 @@ label {
   color: white;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #1d3461;
+  box-shadow: 0 0 8px black;
 }
 
 .about-story-card {
@@ -1396,7 +1482,7 @@ label {
   font-size: small;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #1d3461;
+  box-shadow: 0 0 8px black;
 }
 
 .about-app-card {
@@ -1413,10 +1499,10 @@ label {
   bottom: 17%;
   overflow-wrap: break-word;
   color: white;
-  font-size: small;
+  font-size: x-small;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #1d3461;
+  box-shadow: 0 0 8px black;
 }
 
 table,
@@ -1487,9 +1573,9 @@ aside {
   position: fixed;
   top: 31%;
   width: 9%;
-  height: 20%;
   padding-left: 2%;
   padding-right: 2%;
+  padding-bottom: 2%;
   font-size: x-small;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
@@ -1506,26 +1592,8 @@ aside {
   position: fixed;
   top: 60%;
   width: 9%;
+  left: 6.3%;
   height: 20%;
-  padding-left: 2%;
-  padding-right: 2%;
-  font-size: small;
-  box-shadow: 8 14px 8px black;
-  -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 5px black;
-}
-
-.scope-card-2 {
-  border: outset;
-  border: 3px outset white;
-  border-radius: 8px;
-  background-color: #a64444;
-  color: white;
-  place-content: center;
-  position: fixed;
-  top: 58%;
-  width: 9%;
-  height: 15%;
   padding-left: 2%;
   padding-right: 2%;
   font-size: small;
@@ -1553,9 +1621,11 @@ aside {
   box-shadow: 0 0 5px black;
 }
 
-.scope-goals-input {
+.scope-card-list-item {
+  text-align: left;
   top: 4%;
 }
+
 
 foths-aside {
   display: flex;

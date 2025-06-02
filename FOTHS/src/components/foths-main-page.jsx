@@ -23,19 +23,19 @@ const FOTHSMain = () => {
 
                 <div className="fruits-grid">
                     <div className="fruit-cards-row-1">
-                        <a href="./#/game-mode" id="card-hyperlink" className="fruit-card-1"><Image/></a>
-                        <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-2">Fruit 2</a>
-                        <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-3">Fruit 3</a>
+                        <a href="./#/game-mode" id="fruit-card-1-hyperlink" className="fruit-card-1"><Image/></a>
+                        <a href="./#/under-construction" id="fruit-card-2-hyperlink" className="fruit-card-2">Fruit 2</a>
+                        <a href="./#/under-construction" id="fruit-card-2-hyperlink" className="fruit-card-3">Fruit 3</a>
                     </div>
                     <div className="fruit-cards-row-2">
-                        <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-4">Fruit 4</a>
-                        <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-5">Fruit 5</a>
-                        <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-6">Fruit 6</a>
+                        <a href="./#/under-construction" id="fruit-card-2-hyperlink" className="fruit-card-4">Fruit 4</a>
+                        <a href="./#/under-construction" id="fruit-card-2-hyperlink" className="fruit-card-5">Fruit 5</a>
+                        <a href="./#/under-construction" id="fruit-card-2-hyperlink" className="fruit-card-6">Fruit 6</a>
                     </div>
                     <div className="fruit-cards-row-3">
-                        <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-7">Fruit 7</a>
-                        <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-8">Fruit 8</a>
-                        <a href="./#/under-construction" id="card-hyperlink" className="fruit-card-9">Fruit 9</a>
+                        <a href="./#/under-construction" id="fruit-card-2-hyperlink" className="fruit-card-7">Fruit 7</a>
+                        <a href="./#/under-construction" id="fruit-card-2-hyperlink" className="fruit-card-8">Fruit 8</a>
+                        <a href="./#/under-construction" id="fruit-card-2-hyperlink" className="fruit-card-9">Fruit 9</a>
                     </div>
                 </div>
 

@@ -1,9 +1,3 @@
-/* App.css*/
-.AppQ {
-    text-align: center;
-    justify-content: center;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -20,7 +14,7 @@
     border: 3px outset white;
     padding-left: 10px;
     border-radius: 8px;
-    background-color: #a64444;
+    background-color: #4d788f;
     -webkit-box-shadow: 0 0 10px #fff;
     box-shadow: 0 0 7px#a64444;
     position: grid;
@@ -38,7 +32,7 @@
     padding-top: 3px;
     padding-bottom: 2px;
     border-radius: 8px;
-    background-color: #a64444;
+    background-color: #4d788f;
     -webkit-box-shadow: 0 0 10px #fff;
     box-shadow: 0 0 7px#a64444;
     position: grid;
