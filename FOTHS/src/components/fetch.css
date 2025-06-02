@@ -45,16 +45,23 @@
 .center {
     margin-left: auto;
     margin-right: auto;
+    border-color: #4d788f;
+    border-radius: 8px;
 }
 
 table {
     border: 3px outset;
+
 }
 
 th {
-    border: 3px solid;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 3px;
 }
 
 td {
     border: ridge;
+    border-color: white;
+    border-radius: 3px;
 }

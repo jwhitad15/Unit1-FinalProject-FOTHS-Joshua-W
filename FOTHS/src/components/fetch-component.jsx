@@ -41,9 +41,9 @@ const Fetch = () => {
                     <div className="item" key={item.id}>
                     <table className="center">
                         <tr>
-                            <th> <strong> User_Name </strong> </th>
-                            <td>Full_Name</td>
-                            <td>User_Email </td>
+                            <th> <strong> Username </strong> </th>
+                            <th> <strong> Name </strong></th>
+                            <th> <strong> Email </strong></th>
                         </tr> 
                         <tr>
                         {/* Passed down props */}

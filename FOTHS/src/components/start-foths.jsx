@@ -27,7 +27,7 @@ const StartFoths = () => {
                 <form className="login-form" onSubmit={handleSubmit}>
 
                 <h4 className="start-page-text">To start the application, press the button below!</h4>
-                    <a href="./#/dashboard" className="button-class" text="Hover Effect 2" effecttype="effect2" >Start</a> 
+                    <a href="./#/dashboard" className="start-button" text="Hover Effect 2" effecttype="effect2" >Start</a> 
                 
                 </form> <br />
                 </div>
