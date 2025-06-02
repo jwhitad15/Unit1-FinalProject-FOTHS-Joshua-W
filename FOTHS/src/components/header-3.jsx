@@ -8,6 +8,9 @@ const ThreeElementHeader = () => {
         <header className="dashboard-header">
             <div className="header-element-1"> justOne&trade; </div>
             <div className="header-element-4"> Welcome, User! </div>
+
+            <div className="header-element-5"> justOne&trade; </div>
+            <div className="header-element-5"> Exit </div>
             <ExitProgram/>
         </header>
     )
