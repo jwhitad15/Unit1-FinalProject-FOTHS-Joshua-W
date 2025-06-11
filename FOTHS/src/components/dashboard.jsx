@@ -12,7 +12,7 @@ const Dashboard = () => {
 
             <main>
                 <div className="dashboard-title"> Dashboard View </div>
-                <a href="./#/foths" id="card-hyperlink" className="FOTHS-dashboard-card">FOTHS</a>
+                <a href="./#/foths" id="card-hyperlink" className="FOTHS-dashboard-card"></a>
             </main>
 
            <Footer/>

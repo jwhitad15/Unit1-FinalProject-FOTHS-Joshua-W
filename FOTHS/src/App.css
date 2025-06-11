@@ -5,8 +5,6 @@
   text-align: center;
   display: flex;
   place-content: center;
-  /* grid-auto-flow: column; */
-  /* vertical-align: middle; */
 }
 
 /* ID CSS */
@@ -832,7 +830,7 @@ label {
   --o: 31px;
   /* control the offset */
 
-  width: 234px;;
+  width: 234px;;;
   /* the image size */
   --_p: calc(2*var(--o) + var(--b));
   padding: var(--_p) var(--_p) 0 0;
@@ -890,7 +888,7 @@ label {
   color: white;
   place-content: center;
   box-shadow: 8 14px 8px black;
-  -webkit-box-shadow: 0 0 20px #fff;
+  -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 px #a64444;
 }
 
@@ -966,6 +964,8 @@ label {
   top: 31%;
   left: 29%;
   height: 12.5%;
+  padding-left: 2%;
+  padding-right: 2%;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
@@ -1834,7 +1834,7 @@ footer {
 
 /* Start Page */
 .start-page-text {
-  border: groove #1d3461;
+  border: groove white;
   background-color: #1d3461;
   color: white;
 }

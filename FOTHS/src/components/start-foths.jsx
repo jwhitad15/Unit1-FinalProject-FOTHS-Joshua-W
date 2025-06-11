@@ -30,7 +30,8 @@ const StartFoths = () => {
                     <a href="./#/dashboard" className="start-button" text="Hover Effect 2" effecttype="effect2" >Start</a> 
                 
                 </form> <br />
-                </div>
+
+            </div>
 
                 {/* Scripture Animation */}
                 <Animation/>
