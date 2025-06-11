@@ -183,6 +183,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 25px;
 }
 
 .header-element-2 {
@@ -197,6 +198,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 25px;
 }
 
 .header-element-3 {
@@ -211,6 +213,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 25px;
 }
 
 .header-element-4 {
@@ -225,6 +228,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 25px;
 }
 .header-element-5 {
   border-style: outset;
@@ -386,6 +390,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 8px black;
+  font-size: 25px;
 }
 .study-previous-button:hover {
   background-color: #1d3461;
@@ -412,6 +417,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 8px black;
+  font-size: 25px;
 }
 .study-next-button:hover {
   background-color: #1d3461;
@@ -436,7 +442,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 8px black;
-  font-size: 18px;
+  font-size: 31px;
 
 }
 
@@ -473,7 +479,7 @@ label {
   width: 70%;
   height: 6%;
   color: white;
-  font-size: 16px;
+  font-size: 25px;
   color: #1d3461;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
@@ -504,6 +510,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 31px;
 
 }
 
@@ -545,6 +552,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 48px;
 }
 .game-card-1:hover {
   background-color: #658361;
@@ -564,6 +572,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 48px;
 }
 .game-card-2:hover {
   background-color: black;
@@ -582,6 +591,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 48px;
 }
 .game-card-3:hover {
   background-color: black;
@@ -709,6 +719,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 31px;
 }
 
 .recent-activity-card-1 {
@@ -890,6 +901,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 px #a64444;
+  font-size: 31px;
 }
 
 .foths-header {
@@ -1599,6 +1611,7 @@ aside {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 31px;
 }
 
 .scope-card-1 {
@@ -1781,6 +1794,7 @@ footer {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 18px;
 }
 .footer-notepad-link {
   border-style: outset;
@@ -1793,6 +1807,7 @@ footer {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 18px;
 }
 .footer-eBible-link {
   border-style: outset;
@@ -1805,6 +1820,7 @@ footer {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 18px;
 }
 .footer-about-link {
   border-style: outset;
@@ -1817,6 +1833,7 @@ footer {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  font-size: 18px;
 }
 
 .footer-jwmp-link {
@@ -1830,6 +1847,7 @@ footer {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 8px #ff7f57;
+  font-size: 18px;
 }
 
 /* Start Page */
