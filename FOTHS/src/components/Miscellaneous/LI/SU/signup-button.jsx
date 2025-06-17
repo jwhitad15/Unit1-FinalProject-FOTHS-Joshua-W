@@ -1,5 +1,4 @@
 import React from 'react';
-import './button-animation.css';
 
 const SignupButton = ({ text, effecttype }) => {
 

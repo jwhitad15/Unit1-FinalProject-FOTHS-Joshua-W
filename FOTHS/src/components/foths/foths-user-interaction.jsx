@@ -28,13 +28,13 @@ const UserInteraction = () => {
     <div style={{ textAlign: "center", marginTop: "20px" }}>
       <h1 className="personal-goals">Personal Goals</h1>
 
-      <div> <label for='beginner'> Beginner </label> <input type="radio" id="beginner" value="beginner" checked={radio === "Beginner"} onChange={() => handleRadio("Beginner")} /> </div>
-      <div> <label for='advanced'> Advanced </label> <input type="radio" id="advanced" value="advanced" checked={radio === "Advanced"} onChange={() => handleRadio("Advanced")} /> </div>
+      <div> <label > Beginner </label> <input type="radio" id="beginner" value="beginner" checked={radio === "Beginner"} onChange={() => handleRadio("Beginner")} /> </div>
+      <div> <label > Advanced </label> <input type="radio" id="advanced" value="advanced" checked={radio === "Advanced"} onChange={() => handleRadio("Advanced")} /> </div>
 
       <form className="scope-goals-input" onSubmit={handleSubmit}>
         <label> <br />
           {/* Validation - makes sure user at least inputs 4 characters in textbox */}
-          <input maxLength='250' minLength='4' className="scope-textfield" type="text" placeholder="Enter Goals Here" value={goalInput} onChange={handleChange} size="12" />
+          <input maxLength='250' minLength='4' className="scope-textfield" type="text" placeholder="Enter Goals" value={goalInput} onChange={handleChange} size="12" />
         </label> <br /> <br />
 
         <button type="submit" className="scope-button-class" >Submit</button>

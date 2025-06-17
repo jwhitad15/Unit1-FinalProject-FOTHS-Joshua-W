@@ -5,7 +5,7 @@ import image from '../images/1.png'
 // FOTHS/src/images/Faith.svg
 function Image() {
     return (
-    <img src={image} alt="graphic-of-orange-fruit" width="130px" height="120px" />
+    <img src={image} className="fruit-card-image" alt="graphic-of-orange-fruit" width="130px" height="120px" />
     )
 
 }

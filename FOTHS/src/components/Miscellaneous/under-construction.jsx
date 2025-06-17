@@ -1,7 +1,7 @@
 // this componenet displays when a user has enter a section of the application that is framed but not fully functional
 
-import FourElementHeader from "./header-4";
-import Footer from "./footer";
+import FourElementHeader from "../header-components/header-4";
+import Footer from "../footer/footer";
 
 const UnderConstruction = () => {
 

@@ -1,5 +1,5 @@
-import FourElementHeader from "./header-4";
-import Footer from "./footer";
+import FourElementHeader from "../header-components/header-4";
+import Footer from "../footer/footer";
 
 
 const GameMode = () => {

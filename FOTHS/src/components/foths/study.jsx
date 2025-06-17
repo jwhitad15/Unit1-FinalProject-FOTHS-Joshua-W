@@ -1,7 +1,7 @@
 // This component controls the Study Mode Scripture carousel
 import React, {useState, useEffect} from "react";
-import FourElementHeader from "./header-4";
-import Footer from "./footer";
+import FourElementHeader from "../header-components/header-4";
+import Footer from "../footer/footer";
 
 const faithScripture = [
     

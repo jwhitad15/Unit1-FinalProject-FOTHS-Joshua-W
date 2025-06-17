@@ -1,16 +1,14 @@
 import './App.css'
 import {Routes, Route, HashRouter } from 'react-router-dom'
-import LoginForm from './components/login-form'
-import SignupForm from './components/signup-form';
 import Dashboard from './components/dashboard';
-import FOTHSMain from './components/foths-main-page';
-import GameMode from './components/game-mode';
-import About from './components/about';
-import Study from './components/study';
-import UnderConstruction from './components/under-construction';
-import ErrorPage from './components/error-page'
-import Fetch from './components/fetch-component';
-import StartFoths from './components/start-foths';
+import FOTHSMain from './components/foths/foths-main-page';
+import GameMode from './components/foths/game-mode';
+import About from './components/footer/about';
+import Study from './components/foths/study';
+import UnderConstruction from './components/Miscellaneous/under-construction';
+import Fetch from './components/fetch-folder/fetch-component';
+import StartFoths from './components/Miscellaneous/start-foths';
+import ErrorPage from './components/error-page';
 
 function App() {
  
@@ -33,9 +31,6 @@ function App() {
           <Route path="*" element={<ErrorPage/>} />
 
           <Route path="/fetch" element={ <Fetch/>} />
-
-          <Route path="/login" element={ <LoginForm/>} />
-          <Route path="/signup" element={ <SignupForm/>} />
         </Routes>
       </HashRouter>
     </>

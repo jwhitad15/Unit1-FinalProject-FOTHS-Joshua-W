@@ -12,9 +12,6 @@
 
 import { useState } from "react";
 import React from "react";
-import { CiUser } from "react-icons/ci";
-import { CiLock } from "react-icons/ci";
-import './button-animation.css';
 
 
 const LoginForm = () => {
@@ -53,7 +50,7 @@ const LoginForm = () => {
                     </label>
                 </div> <br/>
 
-                <a href="./#/dashboard" class="button-class" text="Hover Effect 2" effecttype="effect2" >Login</a> 
+                <a href="./#/dashboard" class="button-class" text="Hover Effect 2" >Login</a> 
                
             </form>
 

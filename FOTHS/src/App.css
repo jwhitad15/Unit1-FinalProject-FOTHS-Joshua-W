@@ -1907,6 +1907,70 @@ footer {
 }
 
 /* Media Query Breakpoints */
+@media screen and (min-width: 1351px) {
+  .fruit-card-query-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .fruit-card-image {
+    display: none;
+}
+  .fruit-card-1 {
+  top: 31%;
+  left: 29%;
+  width: 38%;
+  height: 8.5%;
+}
+.fruit-card-2 {
+  top: 31%;
+  left: 29%;
+  width: 38%;
+  height: 8.5%;
+}
+.fruit-card-3 {
+  top: 31%;
+  left: 29%;
+  width: 38%;
+  height: 8.5%;
+}
+.fruit-card-4 {
+  top: 31%;
+  left: 29%;
+  width: 38%;
+  height: 8.5%;
+}
+.fruit-card-5 {
+  top: 31%;
+  left: 29%;
+  width: 38%;
+  height: 8.5%;
+}
+.fruit-card-6 {
+  top: 31%;
+  left: 29%;
+  width: 38%;
+  height: 8.5%;
+}
+.fruit-card-7 {
+  top: 31%;
+  left: 29%;
+  width: 38%;
+  height: 8.5%;
+}
+.fruit-card-8 {
+  top: 31%;
+  left: 29%;
+  width: 38%;
+  height: 8.5%;
+}
+.fruit-card-9 {
+  top: 31%;
+  left: 29%;
+  width: 38%;
+  height: 8.5%;
+}
+}
 @media screen and (max-width: 777px) {
   .FOTHS-dashboard-card {
     width: 86%

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './button-animation.css';
-import Dashboard from "./dashboard";
+import Dashboard from "../../../dashboard";
 
 const Button = ({ text, effecttype }) => {
 

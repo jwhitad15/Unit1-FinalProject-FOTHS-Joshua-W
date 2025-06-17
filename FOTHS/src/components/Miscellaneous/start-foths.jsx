@@ -1,7 +1,6 @@
 // This component starts the game
 
 import React from "react";
-import './button-animation.css';
 import Animation from "./animation";
 
 
