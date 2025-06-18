@@ -1,5 +1,6 @@
 // This component controls the Study Mode Scripture carousel
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
+import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 import FourElementHeader from "../header-components/header-4";
 import Footer from "../footer/footer";
 
@@ -128,12 +129,18 @@ const handlePrevious=()=>{
 
        
             <div>
-                <button onClick={handleNext} className="study-previous-button"> Next </button>
+                <button onClick={handleNext} className="study-previous-button"> 
+                    <div id="study-button-text"> Next </div>
+                    <div id="study-button-icon"> <FaArrowRightLong/> </div>
+                </button>
             </div>
 
             {/* event handling inserted on buttons */}
             <div>
-                <button onClick={handlePrevious} className="study-next-button"> Previous </button>
+                <button onClick={handlePrevious} className="study-next-button">
+                    <div id="study-button-text"> Previous </div>  
+                    <div id="study-button-icon"> <FaArrowLeftLong/> </div>  
+                </button>
             </div>
 
             <main className="study-display-verse">

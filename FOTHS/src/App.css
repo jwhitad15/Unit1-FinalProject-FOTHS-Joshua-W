@@ -347,7 +347,6 @@ label {
   color: #85756e;
   box-sizing: borderbox;
   border: outset;
-  /* border-color: #1d3461; */
   vertical-align: middle;
   font-size: 31px;
   padding-left: 10px;
@@ -459,7 +458,7 @@ label {
   margin-top: 545px;
   border-radius: 4px;
   position: relative;
-  top: 40%;
+  top: 29%;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 21px #1d3461;
@@ -490,7 +489,9 @@ label {
   color: white;
 }
 .verse-size {
-  font-size: 16px;
+  font-size: 20px;
+  /* vertical-align: middle; */
+
 }
 
 .game-mode-title {
@@ -1975,6 +1976,14 @@ footer {
   height: 8.5%;
 }
 }
+@media screen and (max-width: 1183px) {
+  .study-previous-button {
+    font-size: 23px;
+  }
+  .study-next-button {
+    font-size: 21px;
+  }
+}
 @media screen and (max-width: 1011px) {
   aside {
     height: 12%;
@@ -1986,6 +1995,12 @@ footer {
     left: 3.2%;
     width: 93.1%;
     top: 15.3%;
+  }
+  .study-next-button {
+    font-size: 18px;
+  }
+  .study-previous-button {
+    font-size: 18px;
   }
   .foths-main {
     left: 3.2%;
@@ -2043,6 +2058,10 @@ footer {
   .recent-activity-card-2 {width: 15%; left:65.88%}
   .recent-activity-card-3 {width: 15%; left:75.4%; display: none;}
   .header-element-3 {font-size: 21px;}
+  #study-button-text {display: none;}
+}
+@media screen and (min-width: 872px) {
+  #study-button-icon {display: none;}
 }
 @media screen and (max-width: 841px) {
   .recent-activity {font-size: 24px;}
@@ -2118,6 +2137,7 @@ footer {
   .game-card-3 {display: grid; width: 80%; height: 25%;}
   .return-to-foths-from-game-mode {display: none;}
   .game-mode-title {display: none;}
+  .study-display-verse { font-size: 21px;}
 
   main {
     flex-direction: column;
