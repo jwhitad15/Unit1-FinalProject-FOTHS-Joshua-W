@@ -21,7 +21,7 @@ function App() {
         <Routes>
           {/* <Route path="/" element={ <Navigate to="/#/dashboard" replace/>} /> */}
 
-          <Route index path="/start" element={ <StartFoths/>} />
+          <Route index path="/" element={ <StartFoths/>} />
           <Route path="/dashboard" element={ <Dashboard/>} />
           <Route path="/foths" element={ <FOTHSMain/>} />
           <Route path="/game-mode" element={ <GameMode/>} />

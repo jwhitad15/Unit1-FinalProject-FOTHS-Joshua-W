@@ -872,6 +872,7 @@ label {
   color: #85756e;
   box-sizing: borderbox;
   border: outset;
+  border-radius: 10px;
   /* border-color: #1d3461; */
   justify-content: space-evenly;
 
@@ -902,6 +903,7 @@ label {
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 px #a64444;
   font-size: 31px;
+  z-index: 1;
 }
 
 .foths-header {
@@ -1593,6 +1595,7 @@ aside {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  border-radius: 10px;
 }
 
 .scope {
@@ -1717,6 +1720,7 @@ nav {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  border-radius: 10px;
 }
 
 foths-nav {
@@ -1971,6 +1975,78 @@ footer {
   height: 8.5%;
 }
 }
+@media screen and (max-width: 1011px) {
+  aside {
+    height: 12%;
+    width: 93.1%;
+    top: 76%;
+  }
+  nav {
+    height: 12%;
+    left: 3.2%;
+    width: 93.1%;
+    top: 15.3%;
+  }
+  .foths-main {
+    left: 3.2%;
+    width: 93.1%;
+    top: 30.4%;
+    height: 42.4%;
+  }
+  .foths-main-title {
+    top: 33%;
+
+  }
+  .recent-activity {
+    left: 5%;
+    top: 18.8%;
+    ;
+  }
+  .recent-activity-card-1 {
+    top: 16.3%;
+    height: 9.9%;
+    width: 12.8%;
+    left: 28.6%;
+  }
+  .recent-activity-card-2 {
+    top: 16.3%;
+    height: 9.9%;
+    width: 12.8%;
+    left: 53%;
+    }
+  .recent-activity-card-3 {
+    top: 16.3%;
+    height: 9.9%;
+    width: 12.8%;
+    left: 77.4%;
+    }
+    .fruit-cards-row-2 {
+      display: none;
+    }
+    .fruit-cards-row-3 {
+      display: none;
+    }
+    .fruit-card-1 {
+      top: 43%;
+      width: 25.7%;
+      left: 5%;
+    }
+}
+@media screen and (max-width: 944px) {
+  .recent-activity-card-1 {width: 14.8%; left:26.6%}
+  .recent-activity-card-2 {width: 14.8%; left:51%}
+  .recent-activity-card-3 {width: 14.8%; left:75.4%}
+}
+@media screen and (max-width: 871px) {
+  .recent-activity {left: 42%;}
+  .recent-activity-card-1 {width: 15%; left:15.5%}
+  .recent-activity-card-2 {width: 15%; left:65.88%}
+  .recent-activity-card-3 {width: 15%; left:75.4%; display: none;}
+  .header-element-3 {font-size: 21px;}
+}
+@media screen and (max-width: 841px) {
+  .recent-activity {font-size: 24px;}
+}
 @media screen and (max-width: 777px) {
   .FOTHS-dashboard-card {
     width: 86%
@@ -1980,7 +2056,21 @@ footer {
     left: 5.3%
   }
 }
+@media screen and (max-width: 765px) {
+  .foths-main-title {font-size: 28px;}
+}
+@media screen and (max-width: 726px) {
+  .foths-main-title {font-size: 24px;}
+  .header-element-3 {font-size: 20px; width: 21%;}
+}
+@media screen and (max-width: 700px) {
+  .foths-main-title {font-size: 24px;}
+  .recent-activity-card-1 {width: 18%; left:12.5%}
+  .recent-activity-card-2 {width: 18%; left:65.88%}
+  /* .header-element-3 {font-size: 18px;} */
+}
 @media screen and (max-width: 673px) {
+  .recent-activity {font-size: 22px;}
   .header-element-5{
     font-size: 16px;
   }
@@ -1988,10 +2078,10 @@ footer {
     font-size: 10px;
     display: none;
   }
-  .header-element-3 {
+  /* .header-element-3 {
     font-size: 10px;
     display: none;
-  }
+  } */
   .header-element-1 {
    display: none;
   }
@@ -2001,8 +2091,8 @@ footer {
     display: none;
   }
 }
-
 @media screen and (max-width: 600px) {
+  .recent-activity {font-size: 20px;}
   .FOTHS-dashboard-card {
     width: 86%
   }
@@ -2021,26 +2111,53 @@ footer {
   .dashboard-card-text {
     grid-area: 5 / span 6;
   }
+  .foths-main-title {font-size: 21px;}
+  .header-element-3 {font-size: 20px; width: 23%;}
+  .game-card-1 {display: grid; width: 80%; height: 25%;}
+  .game-card-2 {display: grid; width: 80%; height: 25%;}
+  .game-card-3 {display: grid; width: 80%; height: 25%;}
+  .return-to-foths-from-game-mode {display: none;}
+  .game-mode-title {display: none;}
 
   main {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 582px) {
+  .recent-activity-card-1 {width: 18%; left:12.5%; font-size: 9px;}
+  .recent-activity-card-2 {width: 18%; left:65.88%; font-size: 9px;}
+  /* .header-element-3 {font-size: 18px;} */
+}
+@media screen and (max-width: 543px) {
+  .header-element-3 {font-size: 20px; width: 27%;}
+  .recent-activity {font-size: 18px;}
+}
 @media screen and (max-width: 530px) {
  .footer-jwmp-link {
   display: none;
  }
+ .foths-main-title {font-size: 17px;}
+}
+@media screen and (max-width: 463px) {
+ .footer-notepad-link {display: none;}
+ .recent-activity {font-size: 16px;}
+ .recent-activity-card-1 {width: 24.5%; left:6%; font-size: 9px;}
+ .recent-activity-card-2 {width: 24.5%; left:65%; font-size: xx-small;}
+ .header-element-3 {font-size: 20px; width: 33%;}
 }
 @media screen and (max-width: 439px) {
  .footer-notepad-link {
   display: none;
  }
+ .recent-activity {font-size: 15px;}
+ .header-element-3 {font-size: 20px; width: 31%;}
 }
 @media screen and (max-width: 421px) {
   .header-element-4 {
     font-size: 9px;
   }
   .header-element-3 {
-    font-size: 9px;
+    width: 31%;
   }
+  .foths-main-title {font-size: 15px;}
 }
