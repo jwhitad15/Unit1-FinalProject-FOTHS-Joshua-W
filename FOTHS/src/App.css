@@ -166,7 +166,7 @@ label {
   border-radius: 8px;
   background-color: #a64444;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 7px#a64444;
+  box-shadow: 0 0 5px#1d3461;
   position: grid;
   vertical-align: middle;
 }
@@ -461,7 +461,7 @@ label {
   top: 29%;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #1d3461;
+  box-shadow: 0 0 2px #cdc5b4;
 }
 
 .verse-name {
@@ -791,7 +791,6 @@ label {
 
   border: outset;
   border-color: #1d3461;
-  ;
   display: flex;
   padding-left: 5px;
   padding-right: 5px;
@@ -851,10 +850,9 @@ label {
   outline-offset: calc(var(--o) - var(--_p));
   transition: 1.0s;
   cursor: pointer;
-  box-shadow: 8 14px 8px black;
   background: #cdc5b4;
-  -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 21px #cdc5b4;
+  -webkit-box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 10px #1d3461;
 }
 
 .foths-start+.foths-start {
@@ -1219,7 +1217,7 @@ label {
   border-radius: 8px;
   background-color: #a64444;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 7px#a64444;
+  box-shadow: 0 0 5px#1d3461;
 }
 
 .login-form {
@@ -1229,7 +1227,7 @@ label {
   border-radius: 10px;
   background-color: #a64444;
   -webkit-box-shadow: 0 0 10px #fff;
-  box-shadow: 0 0 7px#a64444;
+  box-shadow: 0 0 5px#1d3461;
 }
 
 .signup-form {
@@ -1857,9 +1855,15 @@ footer {
 
 /* Start Page */
 .start-page-text {
-  border: groove white;
+  border: outset white;
   background-color: #1d3461;
   color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  box-shadow: 8 14px 8px black;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 4px #117f9e;
+
 }
 
 #scrolling2 {
@@ -2065,22 +2069,34 @@ footer {
 }
 @media screen and (max-width: 841px) {
   .recent-activity {font-size: 24px;}
+  #scrolling2 {font-size: 14px;}
+}
+@media screen and (max-width: 800px) {
+
+  .study-display-verse {font-size: 21px;}
 }
 @media screen and (max-width: 777px) {
   .FOTHS-dashboard-card {
-    width: 86%
+    width: 85.7%
   }
   .dashboard-title {
     width: 86%;
     left: 5.3%
   }
+  .study-next-button {top: 82%; left: 15%; width: 12%;}
+  .study-previous-button {top: 82%; left: 75.5%; width: 12%;}
 }
 @media screen and (max-width: 765px) {
   .foths-main-title {font-size: 28px;}
 }
+@media screen and (max-width: 740px) {
+  #scrolling2 {padding-top: 2px; padding-bottom: 2px}
+}
 @media screen and (max-width: 726px) {
   .foths-main-title {font-size: 24px;}
   .header-element-3 {font-size: 20px; width: 21%;}
+  .study-display-verse {font-size: 18px;}
+
 }
 @media screen and (max-width: 700px) {
   .foths-main-title {font-size: 24px;}
@@ -2118,15 +2134,12 @@ footer {
   .dashboard-header {
     grid-area: 2 / span 6;
   }
-
   .dashboard-title {
     grid-area: 3 / span 6;
   }
-
   .FOTHS-dashboard-card{
     grid-area: 4 / span 6;
   }
-
   .dashboard-card-text {
     grid-area: 5 / span 6;
   }
@@ -2137,7 +2150,7 @@ footer {
   .game-card-3 {display: grid; width: 80%; height: 25%;}
   .return-to-foths-from-game-mode {display: none;}
   .game-mode-title {display: none;}
-  .study-display-verse { font-size: 21px;}
+  .study-display-verse { display: inline;}
 
   main {
     flex-direction: column;
@@ -2151,6 +2164,9 @@ footer {
 @media screen and (max-width: 543px) {
   .header-element-3 {font-size: 20px; width: 27%;}
   .recent-activity {font-size: 18px;}
+}
+@media screen and (max-width: 532px) {
+ #scrolling2 {width: 77%;}
 }
 @media screen and (max-width: 530px) {
  .footer-jwmp-link {

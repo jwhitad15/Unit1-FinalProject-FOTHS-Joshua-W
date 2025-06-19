@@ -1,5 +1,5 @@
-import ThreeElementHeader from "./header-components/header-3";
 import Footer from "./footer/footer";
+import FourElementHeader from "./header-components/header-4";
 
 const Dashboard = () => {
 
@@ -7,12 +7,12 @@ const Dashboard = () => {
         <div id="main">
            
             <header className="dashboard-header">
-                <ThreeElementHeader/>
+                <FourElementHeader/>
             </header>
 
             <main>
                 <div className="dashboard-title"> Dashboard View </div>
-                <a href="./#/foths" id="card-hyperlink" className="FOTHS-dashboard-card"></a>
+                <a href="./#/foths" id="card-hyperlink" className="FOTHS-dashboard-card">FOTHS</a>
             </main>
 
            <Footer/>
