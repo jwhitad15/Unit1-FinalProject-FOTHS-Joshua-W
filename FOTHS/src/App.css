@@ -457,11 +457,12 @@ label {
   font-size: 18px;
   margin-top: 545px;
   border-radius: 4px;
-  position: relative;
-  top: 29%;
+  position: fixed;
+  top: 25%;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 2px #cdc5b4;
+  display: none;
 }
 
 .verse-name {
@@ -968,7 +969,6 @@ label {
 }
 
 .fruit-card-1 {
-  border: outset;
   border: 3px outset white;
   border-radius: 8px;
   background-color: #a64444;
@@ -1786,6 +1786,19 @@ footer {
   box-shadow: 0 0 5px #cdc5b4;
 }
 
+.footer-admin-link {
+  border-style: outset;
+  border: 3px outset white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  background-color: #a64444;
+  padding-top: auto;
+  box-shadow: 8 14px 8px black;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 5px black;
+  font-size: 18px;
+}
 .footer-about-link {
   border-style: outset;
   border: 3px outset white;
@@ -1917,19 +1930,17 @@ footer {
 
 /* Media Query Breakpoints */
 @media screen and (min-width: 1351px) {
-  .fruit-card-query-text {
-    display: none;
-  }
+  .responsive-fruit-card-text {display: none;}
 }
 @media screen and (max-width: 1350px) {
-  .fruit-card-image {
-    display: none;
-}
+  .fruit-card-image {display: none;}
+  .responsive-fruit-card-text {font-size: 31px;}
   .fruit-card-1 {
   top: 31%;
   left: 29%;
   width: 38%;
   height: 8.5%;
+  place-content: center;
 }
 .fruit-card-2 {
   top: 31%;
@@ -1993,12 +2004,14 @@ footer {
     height: 12%;
     width: 93.1%;
     top: 76%;
+    
   }
   nav {
     height: 12%;
     left: 3.2%;
     width: 93.1%;
     top: 15.3%;
+    z-index: -1;
   }
   .study-next-button {
     font-size: 18px;
@@ -2011,6 +2024,7 @@ footer {
     width: 93.1%;
     top: 30.4%;
     height: 42.4%;
+    z-index: -1;
   }
   .foths-main-title {
     top: 33%;
@@ -2019,7 +2033,6 @@ footer {
   .recent-activity {
     left: 5%;
     top: 18.8%;
-    ;
   }
   .recent-activity-card-1 {
     top: 16.3%;
@@ -2039,17 +2052,20 @@ footer {
     width: 12.8%;
     left: 77.4%;
     }
-    .fruit-cards-row-2 {
-      display: none;
-    }
-    .fruit-cards-row-3 {
-      display: none;
-    }
-    .fruit-card-1 {
-      top: 43%;
-      width: 25.7%;
-      left: 5%;
-    }
+  .scope {left: 5%; top: 78%; z-index: 2;}
+  .scope-card-1 {left: 5%; top: 78%; width: 25%; height: 5.5%; z-index: 1;}
+  .scope-card-list-item {left: 5%; top: 78%; z-index: 1;}
+  .fruit-cards-row-2 {
+    display: none;
+  }
+  .fruit-cards-row-3 {
+    display: none;
+  }
+  .fruit-card-1 {
+    top: 43%;
+    width: 25.7%;
+    left: 5%;
+  }
 }
 @media screen and (max-width: 944px) {
   .recent-activity-card-1 {width: 14.8%; left:26.6%}
@@ -2180,6 +2196,9 @@ footer {
  .recent-activity-card-1 {width: 24.5%; left:6%; font-size: 9px;}
  .recent-activity-card-2 {width: 24.5%; left:65%; font-size: xx-small;}
  .header-element-3 {font-size: 20px; width: 33%;}
+}
+@media screen and (max-width: 449px) {
+  .error-display-card {font-size: 12px;}
 }
 @media screen and (max-width: 439px) {
  .footer-notepad-link {

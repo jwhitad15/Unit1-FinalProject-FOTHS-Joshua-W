@@ -9,6 +9,7 @@ import UnderConstruction from './components/Miscellaneous/under-construction';
 import Fetch from './components/fetch-folder/fetch-component';
 import StartFoths from './components/Miscellaneous/start-foths';
 import ErrorPage from './components/error-page';
+import LoginForm from './components/Miscellaneous/LI/SU/login-form';
 
 function App() {
  
@@ -29,7 +30,7 @@ function App() {
           <Route path="/about" element={ <About/>} />
           <Route path="/under-construction" element={ <UnderConstruction/>} />
           <Route path="*" element={<ErrorPage/>} />
-
+          <Route path="/login" element={ <LoginForm/>}/>
           <Route path="/fetch" element={ <Fetch/>} />
         </Routes>
       </HashRouter>

@@ -1,5 +1,5 @@
-import ThreeElementHeader from "./header-components/header-3";
 import Footer from "./footer/footer";
+import FourElementHeader from "./header-components/header-4";
 
 const ErrorPage = () => {
 
@@ -8,7 +8,7 @@ const ErrorPage = () => {
 
            
             <div className="error-header">
-                <ThreeElementHeader/>
+                <FourElementHeader/>
             </div>
 
             <div className="error-container">

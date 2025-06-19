@@ -12,6 +12,7 @@
 
 import { useState } from "react";
 import React from "react";
+// import { CiUser, CiLock } from "react-icons/ci";
 
 
 const LoginForm = () => {
@@ -36,12 +37,12 @@ const LoginForm = () => {
 
                 <label> Username <br /> 
                     <input className="textfield" type="text" name="username" onChange={handleChange} required />
-                    <CiUser className="icon" />
+                    {/* <CiUser className="icon" /> */}
                 </label> <br /> 
 
                 <label> Password <br />
                     <input className="textfield" type="password" name="password" onChange={handleChange} required />
-                    <CiLock className="icon" />
+                    {/* <CiLock className="icon" /> */}
                 </label> <br /> 
 
                 <div className="remember-forgot">
