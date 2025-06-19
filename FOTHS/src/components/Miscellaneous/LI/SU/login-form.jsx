@@ -17,21 +17,31 @@ import { useNavigate, Link } from "react-router";
 
 
 const LoginForm = () => {
+    const navigate = useNavigate();
+    // const [username, setUsername] = useState("");
+    // const [password, setPassword] = useState("");
+    const [formData, setFormData] = useState({ username: "", password: ""});
     
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    
-    // const handleChange = (event) => {
-    //     const { username, value } = event.target;
-    //     setInput((input) => ({...input, [username]: value}));
-    // }
-    
-    const handleChange = (event) => {
-        setUsername(e.target.value);
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        console.log(`Updating ${name}:`, value)
+        setFormData((input) => ({...input, [name]: value}));
     }
     
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    // const handleChange = (event) => {
+    //     setUsername(e.target.value);
+    // }
+
+    // const onClick = (e) => {
+        
+    // }
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("form submitted")
+
+        setTimeout(() => {navigate('/fetch')}, 500)
+
     }
 
     return (
@@ -42,12 +52,12 @@ const LoginForm = () => {
             <form className="login-form" onSubmit={handleSubmit}>
 
                 <label> Username <br /> 
-                    <input className="textfield" type="text" name="username" value={username} onChange={(e) => setUsername(e.target.value)} required />
+                    <input className="textfield" type="text" name="username" value={formData.username} onChange={handleChange} required />
                     {/* <CiUser className="icon" /> */}
                 </label> <br /> 
 
                 <label> Password <br />
-                    <input className="textfield" type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                    <input className="textfield" type="password" name="password" value={formData.password} onChange={handleChange} required />
                     {/* <CiLock className="icon" /> */}
                 </label> <br /> 
 

@@ -10,6 +10,7 @@ import Fetch from './components/fetch-folder/fetch-component';
 import StartFoths from './components/Miscellaneous/start-foths';
 import ErrorPage from './components/error-page';
 import LoginForm from './components/Miscellaneous/LI/SU/login-form';
+import AdminLogin from './components/Miscellaneous/LI/SU/login';
 
 function App() {
  
@@ -32,6 +33,7 @@ function App() {
           <Route path="*" element={<ErrorPage/>} />
           <Route path="/login" element={ <LoginForm/>}/>
           <Route path="/fetch" element={ <Fetch/>} />
+          <Route path="/admin" element={ <AdminLogin/>} />
         </Routes>
       </HashRouter>
     </>
