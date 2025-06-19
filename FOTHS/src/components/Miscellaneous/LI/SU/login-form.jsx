@@ -12,16 +12,22 @@
 
 import { useState } from "react";
 import React from "react";
+import { useNavigate, Link } from "react-router";
 // import { CiUser, CiLock } from "react-icons/ci";
 
 
 const LoginForm = () => {
-        
-    const [input, setInput] = useState({ username: "", password: ""});
+    
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    
+    // const handleChange = (event) => {
+    //     const { username, value } = event.target;
+    //     setInput((input) => ({...input, [username]: value}));
+    // }
     
     const handleChange = (event) => {
-        const { username, value } = event.target;
-        setInput((input) => ({...input, [username]: value}));
+        setUsername(e.target.value);
     }
     
     const handleSubmit = (event) => {
@@ -36,12 +42,12 @@ const LoginForm = () => {
             <form className="login-form" onSubmit={handleSubmit}>
 
                 <label> Username <br /> 
-                    <input className="textfield" type="text" name="username" onChange={handleChange} required />
+                    <input className="textfield" type="text" name="username" value={username} onChange={(e) => setUsername(e.target.value)} required />
                     {/* <CiUser className="icon" /> */}
                 </label> <br /> 
 
                 <label> Password <br />
-                    <input className="textfield" type="password" name="password" onChange={handleChange} required />
+                    <input className="textfield" type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
                     {/* <CiLock className="icon" /> */}
                 </label> <br /> 
 
@@ -50,14 +56,15 @@ const LoginForm = () => {
                         <input className="checkbox" type="checkbox" /> Remember me
                     </label>
                 </div> <br/>
-
-                <a href="./#/fetch" class="button-class" text="Hover Effect 2" >Login</a> 
+                <button type="submit" className="button-class">Login</button>
+                {/* <a href="./#/fetch" class="button-class" text="Hover Effect 2" >Login</a>  */}
                
             </form>
 
             <form >
      
-                <p>Don't have an account? Click <a id="hyperlink" href="/#/signup">here</a> to signup! </p>
+                <p>Don't have an account? Click  <Link id="hyperlink" to="/">here</Link> to return to the application! </p>
+                {/* <p>Don't have an account? Click <a id="hyperlink" href="/#/signup">here</a> to signup! </p> */}
 
             </form>
 
