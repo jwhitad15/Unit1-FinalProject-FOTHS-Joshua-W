@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import "./fetch.css";
+import Footer from "../footer/footer";
+import FourElementHeader from "../header-components/header-4";
 
 
 const Fetch = () => {
@@ -29,11 +31,17 @@ const Fetch = () => {
 
     return (
         <div className="App">
+     
+            {/* <FourElementHeader/> */}
+
             <h1 className="geeks">FOTHS User Briefs</h1>
             <div className="subheader">
-                <h2>Fetching Mock Data from an API</h2>
+                <h2>Fetching User Data from API</h2>
                 <h4>This page represents a mockup fetch for sample data. When more users join FOTHS, user account data will be fetched & displayed on this page. </h4>
-            </div> <br /> <hr/> <br />
+            </div> <br />
+          
+            <hr/> <br />
+            
 
             {/* Render fetched data in a table */}
             <div className="container">
@@ -47,17 +55,20 @@ const Fetch = () => {
                         </tr> 
                         <tr>
                         {/* Passed down props */}
-                            <td>{item.username}</td>
-                            <td>{item.name}</td>
-                            <td>{item.email}</td>
+                            <td className="username-cell">{item.username}</td>
+                            <td className="name-cell">{item.name}</td>
+                            <td className="email-cell">{item.email}</td>
                         </tr>
 
                     </table> <br/>
                     </div>
                 ))}
-            </div>
+            </div>   <hr /><br />
+          
+            <a id="card-hyperlink" className="return-from-fetch" href="./#/dashboard"> Return </a> 
+            {/* <Footer/> */}
         </div>
-
+        
     );
 };
 export default Fetch;

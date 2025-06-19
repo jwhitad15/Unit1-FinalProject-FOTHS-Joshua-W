@@ -40,6 +40,7 @@
     box-shadow: 8 14px 8px black;
     -webkit-box-shadow: 0 0 10px #fff;
     box-shadow: 0 0 5px black;
+    top: 31%
 }
 
 .center {
@@ -66,4 +67,25 @@ td {
     border-color: white;
     border-radius: 3px;
     background-color: #4d788f;
+}
+
+td {text-align: center;}
+th {text-align: center;}
+.username-cell:hover {
+  background-color: white;
+  color: #1d3461;
+  left: 10%;
+  width: 31%;
+}
+.name-cell:hover {
+  background-color: white;
+  color: #1d3461;
+  left: 10%;
+  width: 31%;
+}
+.email-cell:hover {
+  background-color: white;
+  color: #1d3461;
+  left: 10%;
+  width: 31%;
 }
