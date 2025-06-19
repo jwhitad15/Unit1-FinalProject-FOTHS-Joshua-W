@@ -21,10 +21,11 @@ const LoginForm = () => {
     // const [username, setUsername] = useState("");
     // const [password, setPassword] = useState("");
     const [formData, setFormData] = useState({ username: "", password: ""});
+    const [formError, setFormError] = useState({ username: "", password: ""});
     
     const handleChange = (e) => {
         const { name, value } = e.target;
-        console.log(`Updating ${name}:`, value)
+        // console.log(`Updating ${name}:`, value)
         setFormData((input) => ({...input, [name]: value}));
     }
     
@@ -38,10 +39,27 @@ const LoginForm = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("form submitted")
+        // console.log("form submitted")
+        // let formData = formData.password;
+        // const minLength = 8;
+        // hasNumber = /\d/.test(formData.password);
+        // hasUpperCase = /[A-Z]/.test(formData.password);
+        // let inputError = {
+        //     username: "",
+        //     password: ""
+        // }
 
+        // if (!formData.password.length < minLength) {
+        //     console.log("this workedies");
+        //     return disable(handleSubmit);
+        // }
+
+        if (formData.password.includes('Admin:User!')){
         setTimeout(() => {navigate('/fetch')}, 500)
-
+        } else {
+            // disable(handleSubmit);
+            setTimeout(() => {navigate('/')}, 100)
+        }
     }
 
     return (
