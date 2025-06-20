@@ -91,7 +91,7 @@ const LoginForm = () => {
 
             <form >
      
-                <p>Don't have an account? Click  <Link id="hyperlink" to="/">here</Link> to return to the application! </p>
+                <p>Don't have an account? Click  <Link id="card-hyperlink" to="/dashboard">here</Link> to return to the application! </p>
                 {/* <p>Don't have an account? Click <a id="hyperlink" href="/#/signup">here</a> to signup! </p> */}
 
             </form>
