@@ -484,7 +484,6 @@ label {
   box-shadow: 0 0 2px #cdc5b4;
   display: none;
 }
-
 .verse-name {
   border-style: outset;
   border: 3px outset white;
@@ -512,9 +511,32 @@ label {
 .verse-size {
   font-size: 20px;
   /* vertical-align: middle; */
-
 }
 
+.quiz-score {
+  border-style: outset;
+  border: 3px outset white;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  background: #cdc5b4;
+  position: fixed;
+  right: 15%;
+  left: 15%;
+  top: 72%;
+  width: 70%;
+  height: 9.5%;
+  color: white;
+  font-size: 25px;
+  color: #1d3461;
+  box-shadow: 8 14px 8px black;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 8px black;
+}
+.quiz-score:hover {
+  background-color: #1d3461;
+  color: white;
+}
 .game-mode-title {
   border-style: outset;
   border: 3px outset white;
@@ -1764,6 +1786,7 @@ main {
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px #1d3461 inset;
 }
+
 
 footer {
   display: flex;

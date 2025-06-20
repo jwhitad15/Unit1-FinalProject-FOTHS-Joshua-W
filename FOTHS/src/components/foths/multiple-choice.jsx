@@ -31,7 +31,7 @@ const questions = [
         nextButton.style.display = "none";
        }
        // Handle Answer Click
-       2
+       
        function handleAnswerClick(event) {
         const selectedButton = event.target;
         const selectedIndex =
@@ -53,8 +53,7 @@ function nextQuestion() {
  LoadQuestion();
  } else {
  questionElement.textContent = "Quiz completed!";
- answerButtons.forEach(button => button.style.display =
-"none");
+ answerButtons.forEach(button => button.style.display ="none");
  feedbackElement.textContent = "Great job!";
  nextButton.style.display = "none";
  }
