@@ -10,6 +10,7 @@ import StartFoths from './components/Miscellaneous/start-foths';
 import ErrorPage from './components/error-page';
 import LoginForm from './components/Miscellaneous/LI/SU/login-form';
 import Multichoice from './components/multichoice/multichoice';
+import Recall from './components/recall/recall';
 
 
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/login" element={ <LoginForm/>}/>
           <Route path="/fetch" element={ <Fetch/>} />
           <Route path="/multichoice" element={ <Multichoice/>} />
+          <Route path="/recall" element={ <Recall/>} />
  
         </Routes>
       </HashRouter>
