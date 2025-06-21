@@ -195,7 +195,7 @@ const Recall = ({}) => {
             <div className="verse-name">
                 
                 <p className="verse-size"> 
-                    <textarea maxLength='50' minLength='4' className="scope-textfield" type="text" placeholder="Enter Full Verse" value={verseInput} onChange={handleChange} size="12" />
+                    <textarea maxLength='50' minLength='4' className="recall-input" type="text" placeholder="Enter Full Verse" value={verseInput} onChange={handleChange} size="12" />
                 </p>
 
                 <form className="scope-goals-input" onSubmit={handleSubmit}>

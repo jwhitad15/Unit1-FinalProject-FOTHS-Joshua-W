@@ -34,7 +34,7 @@ const UserInteraction = () => {
       <form className="scope-goals-input" onSubmit={handleSubmit}>
         <label> <br />
           {/* Validation - makes sure user at least inputs 4 characters in textbox */}
-          <input maxLength='250' minLength='4' className="scope-textfield" type="text" placeholder="Enter Goals" value={goalInput} onChange={handleChange} size="12" />
+          <textarea maxLength='50' minLength='4' className="scope-textfield" type="text" placeholder="Enter Goals" value={goalInput} onChange={handleChange} />
         </label> <br /> <br />
 
         <button type="submit" className="scope-button-class" >Submit</button>
