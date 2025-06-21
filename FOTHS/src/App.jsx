@@ -9,7 +9,8 @@ import Fetch from './components/fetch-folder/fetch-component';
 import StartFoths from './components/Miscellaneous/start-foths';
 import ErrorPage from './components/error-page';
 import LoginForm from './components/Miscellaneous/LI/SU/login-form';
-import MC from './components/multichoice/mc';
+import Multichoice from './components/multichoice/multichoice';
+
 
 
 // I plug all of my main components into the App component
@@ -29,7 +30,8 @@ function App() {
           <Route path="*" element={<ErrorPage/>} />
           <Route path="/login" element={ <LoginForm/>}/>
           <Route path="/fetch" element={ <Fetch/>} />
-          <Route path="/mc" element={ <MC/>} />
+          <Route path="/multichoice" element={ <Multichoice/>} />
+ 
         </Routes>
       </HashRouter>
     </>

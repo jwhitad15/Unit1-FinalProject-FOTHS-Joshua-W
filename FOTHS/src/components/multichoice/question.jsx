@@ -6,17 +6,13 @@ class Question extends Component{
         const {question, selectedOption, onOptionChange, onSubmit} = this.props;
 
         return(
-            <div className="">
-                <h3>Question {question.id}</h3>
-                <h5 className="mt-2">{question.question}</h5>
+            <div className="quiz-questions">
+                <p>Question {question.id}</p>
+                <p className="mt-2">{question.question}</p>
                 <form onSubmit={onSubmit} className="mt-2 mb-2">
-                    <Options
-                        options={question.options}
-                        selectedOption={selectedOption}
-                        onOptionChange={onOptionChange}
-                    />
-                    <button type="submit" className="btn btn-primary mt-2">
-                        SUBMIT
+                    <Options options={question.options} selectedOption={selectedOption} onOptionChange={onOptionChange}/>
+                    <button type="submit" className="button-class">
+                        Submit
                     </button>
                 </form>
                 

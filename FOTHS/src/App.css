@@ -512,7 +512,12 @@ label {
   font-size: 20px;
   /* vertical-align: middle; */
 }
-
+.form-check {
+  line-height: 1;
+}
+.form-check-input {
+  background-color: pink;
+}
 .quiz-score {
   border-style: outset;
   border: 3px outset white;

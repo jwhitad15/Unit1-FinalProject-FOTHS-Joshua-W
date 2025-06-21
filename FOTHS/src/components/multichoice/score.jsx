@@ -7,8 +7,7 @@ class Score extends Component {
 
         return (
             <div>
-                <h2>Results</h2>
-                <h4>{score}/5</h4>
+                <h2>Results: {score}/5</h2>
             </div>
         );
     }
