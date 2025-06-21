@@ -202,7 +202,7 @@ const Recall = ({}) => {
 
                   
 
-                    <button type="submit" className="scope-button-class" >Submit</button>
+                    <button type="submit" className="button-class" >Submit</button>
                 </form>
 
 
