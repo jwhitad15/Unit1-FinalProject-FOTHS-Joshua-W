@@ -1527,7 +1527,6 @@ label {
   box-shadow: 0 0 21px #1d3461;
 }
 
-
 .about-title-container {
   border: outset;
   place-content: center;
@@ -2141,6 +2140,7 @@ footer {
   }
   .study-next-button {top: 82%; left: 15%; width: 12%;}
   .study-previous-button {top: 82%; left: 75.5%; width: 12%;}
+  .about-story-card {font-size: x-small;}
 }
 @media screen and (max-width: 765px) {
   .foths-main-title {font-size: 28px;}
@@ -2244,30 +2244,33 @@ footer {
   .header-element-3 {font-size: 20px; width: 27%;}
   .recent-activity {font-size: 18px;}
 }
+@media screen and (max-width: 531px) {
+  .footer-copyright {font-size: 10px;}
+  }
+@media screen and (max-width: 530px) {
+  .footer-jwmp-link {
+    display: none;
+  }
+  .foths-main-title {font-size: 17px;}
+  }
 @media screen and (max-width: 523px) {
  #scrolling2 {width: 77%;}
  .footer-copyright {font-size: 7px;}
 }
-@media screen and (max-width: 531px) {
-.footer-copyright {font-size: 10px;}
+@media screen and (max-width: 514px) {
+  .about-app-card {font-size: xx-small;}
+  .about-story-card {font-size: xx-small;}
 }
 @media screen and (max-width: 486px) {
 .footer-copyright {font-size: 8px;}
 }
 @media screen and (max-width: 471px) {
 .footer-copyright {font-size: 14px;}
+.footer-eBible-link {font-size: 16px;}
+h4 {font-size: 14px;}
 }
 @media screen and (max-width: 465px) {
 .footer-copyright {font-size: 8px;}
-}
-@media screen and (max-width: 486px) {
-.footer-copyright {font-size: 8px;}
-}
-@media screen and (max-width: 530px) {
- .footer-jwmp-link {
-  display: none;
- }
- .foths-main-title {font-size: 17px;}
 }
 @media screen and (max-width: 464px) {
   .footer-copyright {font-size: 7px;}

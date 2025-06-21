@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import Score from '../multichoice/score';
 
 function FillInTheBlank({ text, answers }) {
-    // let answers;
   const [userAnswers, setUserAnswers] = useState('');
 
   const handleInputChange = (index, event) => {
@@ -26,7 +26,6 @@ function FillInTheBlank({ text, answers }) {
           </span>
         ))}
       </p>
-      {/* You can add validation and feedback here */}
     </div>
   );
 }

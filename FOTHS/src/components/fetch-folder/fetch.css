@@ -29,6 +29,7 @@
     border-style: outset;
     border: 3px outset white;
     padding-left: 10px;
+    padding-right: 10px;
     padding-top: 3px;
     padding-bottom: 2px;
     border-radius: 8px;
@@ -49,7 +50,6 @@
     border-color: white;
     border-radius: 8px;
 }
-
 table {
     border: 3px outset;
 
