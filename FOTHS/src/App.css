@@ -137,6 +137,10 @@ label {
   color: #1d3461;
   width: 125px;
 }
+.goal-select {
+  width: 125px;
+  background-color: #cdc5b4;
+}
 .recall-input {
   border: 2.1px inset #1d3461;
   border-radius: 5px;
