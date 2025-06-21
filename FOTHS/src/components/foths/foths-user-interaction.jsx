@@ -36,13 +36,16 @@ const UserInteraction = () => {
   const handleSubmit = e => {
     e.preventDefault(); 
 
+    setIsValid(false)
+    setIsCustomValid(false)
+
     if (goal !== 0 && goal != '') {
       setIsValid(true);
-    } else if (title !== ('') && goalInput !== ('')) {
+    } 
+    if (title !== ('') && goalInput !== ('')) {
       setIsCustomValid(true)
     }
-    console.log(isValid)
-    console.log(isCustomValid)
+
     setGoalSubmit(goalInput);
     setGoalInput('');
 
@@ -52,9 +55,8 @@ const UserInteraction = () => {
     setTitleSubmit(title);
     setTitle('');
 
+    
   };
-
-
 
 
   return (
@@ -66,7 +68,7 @@ const UserInteraction = () => {
 
         <label for="goals">Choose a Goal:</label> <br/>
 
-        <select name="goals" className="goal-select" onChange={handleDropdown}>
+        <select value={goal}  className="goal-select" onChange={handleDropdown} >
           <option value="0"></option>
           <option value="1">Study Faith for 31 minutes</option>
           <option value="2">Study Gentleness for 31 minutes</option>
@@ -74,17 +76,23 @@ const UserInteraction = () => {
         </select> <br /> <br />
 
          <hr/>
+
         <label> <br />
           {/* Validation - makes sure user at least inputs 4 characters in textbox */}
           Custom Goal
           <input maxLength='15' minLength='4' className="scope-textfield" type="text" placeholder="Goal Title" value={title} onChange={handleTitle} /> <br />
           <textarea maxLength='50' minLength='4' className="scope-textfield" type="text" placeholder="Description" value={goalInput} onChange={handleChange} />
-        </label> <br /> <br />
+        </label> <br />
+
+        <div> {!isCustomValid && titleSubmit && (<p style={{color: 'red' }}> Must Add Description </p>)} </div>
+        <div> {!isCustomValid && goalSubmit && (<p style={{color: 'red' }}> Must Add Title </p>)} </div>
 
         <button type="submit" className="scope-button-class" >Submit</button>
-      </form>
 
-      <div> { isValid && <DisplaySelectedDropdown goalData={selectedGoal} />} </div>
+      </form> <hr/>
+
+
+      <div> { isValid && !titleSubmit && !goalSubmit && <DisplaySelectedDropdown goalData={selectedGoal} />} </div>
       <div> { isCustomValid && <DisplayCustomGoal data={goalSubmit} customTitle={titleSubmit} />} </div>
 
 

@@ -8,7 +8,8 @@ const DisplaySelectedDropdown = (props) => {
     const selections = {
         0: "",
         1: {title: "Study Faith for 31 minutes", a:"Set a timer for 31 minutes", b:"Navigate to Study Mode for Faith", c: "Read each of the verses"},
-        2: {title: "Study Gentleness for 31 minutes", a:"Set a timer for 32 minutes", b:"Navigate to Quiz Mode for Faith", c: "Read each of the chapters"}
+        2: {title: "Study Gentleness for 31 minutes", a:"Set a timer for 32 minutes", b:"Navigate to Quiz Mode for Faith", c: "Read each of the chapters"},
+        3: {title: "Study Love for 31 minutes", a:"Set a timer for 32 minutes", b:"Navigate to Quiz Mode for Faith", c: "Read each of the chapters"}
     }
     let notZero = false;
 
@@ -16,12 +17,12 @@ const DisplaySelectedDropdown = (props) => {
         notZero = true;
     } 
 
-    console.log(notZero)
+    //console.log(notZero)
 
     return (
-        <div >
+        <div className="scope-card-list-item">
   
-            <ul className="scope-card-j"> 
+            <ul > 
 
                 <h5>{selections[props.goalData].title}</h5>
                 <li> {selections[props.goalData].a} </li>

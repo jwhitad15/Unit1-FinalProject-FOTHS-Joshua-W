@@ -11,6 +11,7 @@ import ErrorPage from './components/error-page';
 import LoginForm from './components/Miscellaneous/LI/SU/login-form';
 import Multichoice from './components/multichoice/multichoice';
 import Recall from './components/recall/recall';
+import Fetchy from './components/fetch-folder/fetch';
 
 // I plug all of my main components into the App component
 // each route has a specific parameter ID
@@ -31,6 +32,7 @@ function App() {
           <Route path="*" element={<ErrorPage/>} />
           <Route path="/login" element={ <LoginForm/>}/>
           <Route path="/fetch" element={ <Fetch/>} />
+          <Route path="/fetchy" element={ <Fetchy/>} />
         </Routes>
       </HashRouter>
     </>
