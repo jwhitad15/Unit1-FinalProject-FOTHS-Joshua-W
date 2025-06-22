@@ -13,86 +13,60 @@
 import { useState } from "react";
 import React from "react";
 import { useNavigate, Link } from "react-router";
-// import { CiUser, CiLock } from "react-icons/ci";
+import { CiUser, CiLock } from "react-icons/ci";
 
 
 const LoginForm = () => {
     const navigate = useNavigate();
-    // const [username, setUsername] = useState("");
-    // const [password, setPassword] = useState("");
     const [formData, setFormData] = useState({ username: "", password: ""});
-    const [formError, setFormError] = useState({ username: "", password: ""});
+    const [isNotValid, setIsNotValid] = useState(false);
+
     
     const handleChange = (e) => {
         const { name, value } = e.target;
-        // console.log(`Updating ${name}:`, value)
         setFormData((input) => ({...input, [name]: value}));
     }
     
-    // const handleChange = (event) => {
-    //     setUsername(e.target.value);
-    // }
-
-    // const onClick = (e) => {
-        
-    // }
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        // console.log("form submitted")
-        // let formData = formData.password;
-        // const minLength = 8;
-        // hasNumber = /\d/.test(formData.password);
-        // hasUpperCase = /[A-Z]/.test(formData.password);
-        // let inputError = {
-        //     username: "",
-        //     password: ""
-        // }
 
-        // if (!formData.password.length < minLength) {
-        //     console.log("this workedies");
-        //     return disable(handleSubmit);
-        // }
-
-        if (formData.password.includes('Admin:User!')){
+        if (formData.username.includes('admin_') && (formData.password === 'Admin:User!')) {
         setTimeout(() => {navigate('/fetch')}, 500)
         } else {
-            // disable(handleSubmit);
-            setTimeout(() => {navigate('/')}, 100)
+           setIsNotValid(true);
         }
+
     }
 
     return (
         <div className="login-signup" >
             <h1 className="header">FOTHS</h1>
-            <p id="login-title">Login</p>
+            <p id="login-title">Administrative Login</p>
 
             <form className="login-form" onSubmit={handleSubmit}>
 
                 <label> Username <br /> 
+                    <CiUser className="icon" />
                     <input className="textfield" type="text" name="username" value={formData.username} onChange={handleChange} required />
-                    {/* <CiUser className="icon" /> */}
                 </label> <br /> 
 
                 <label> Password <br />
+                    <CiLock className="icon" />
                     <input className="textfield" type="password" name="password" value={formData.password} onChange={handleChange} required />
-                    {/* <CiLock className="icon" /> */}
-                </label> <br /> 
+              
+                </label> <br /> <br />
 
-                <div className="remember-forgot">
-                    <label>
-                        <input className="checkbox" type="checkbox" /> Remember me
-                    </label>
-                </div> <br/>
+                  {isNotValid && (
+                    <p style={{fontSize:"14px", color: 'red' }}> Invalid username and/or password. Please check credentials. </p> )}
+
                 <button type="submit" className="button-class">Login</button>
-                {/* <a href="./#/fetch" class="button-class" text="Hover Effect 2" >Login</a>  */}
                
             </form>
 
             <form >
      
                 <p>Don't have an account? Click  <Link id="card-hyperlink" to="/dashboard">here</Link> to return to the application! </p>
-                {/* <p>Don't have an account? Click <a id="hyperlink" href="/#/signup">here</a> to signup! </p> */}
 
             </form>
 

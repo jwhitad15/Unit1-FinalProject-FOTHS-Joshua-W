@@ -1,11 +1,12 @@
 // This component controls the Study Mode Scripture carousel
 import {useState, useEffect} from "react";
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
-import FourElementHeader from "../header-components/header-4";
 import Footer from "../footer/footer";
+import FetchtHeader from "../header-components/fetch-header";
+import './fetch.css'
 
 
-const Fetchy = ({}) => {
+const Fetch = ({}) => {
 
         const [items, setItems] = useState([]);
         const [dataIsLoaded, setDataIsLoaded] = useState(false);
@@ -34,7 +35,7 @@ const Fetchy = ({}) => {
 
            
             <div className="study-header">
-                <FourElementHeader/>
+                <FetchtHeader/>
             </div>
 
        
@@ -53,18 +54,17 @@ const Fetchy = ({}) => {
                 </button>
             </div> */}
 
-            {/* <main className="study-display-verse"> */}
+            <main className="fetch-display-container">
 
-              <h1 className="geeks">FOTHS User Briefs</h1>
             <div className="subheader">
-                <h2>Fetching User Data from API</h2>
-                <h4>This page represents a mockup fetch for sample data. When more users join FOTHS, user account data will be fetched & displayed on this page. </h4>
+                <p className="subheader-title">Fetching User Data from API</p>
+                <p className="subheader-text">This page represents a mockup fetch for sample data. When more users join FOTHS, user account data will be fetched & displayed on this page. </p>
             </div> <br />
           
             <hr/> <br />
 
-               <div className="container">
-                    {items.map((item) => (
+            <div className="container">
+                {items.map((item) => (
                     <div className="item" key={item.id}>
                         <table className="center">
                             <tr>
@@ -73,7 +73,6 @@ const Fetchy = ({}) => {
                                 <th> <strong> Email </strong></th>
                             </tr> 
                             <tr>
-                            {/* Passed down props */}
                                 <td className="username-cell">{item.username}</td>
                                 <td className="name-cell">{item.name}</td>
                                 <td className="email-cell">{item.email}</td>
@@ -82,11 +81,7 @@ const Fetchy = ({}) => {
                     </div>
                 ))}
             </div> 
-            {/* </main> */}
-
-            {/* <div className="verse-name">
-                <p className="verse-size"></p>
-            </div> */}
+            </main>
 
             <div className="return-to-foths-from-study">
                    <a id="return-to-dashboard-hyperlink" href="./#/foths">Home</a>
@@ -99,4 +94,4 @@ const Fetchy = ({}) => {
     )
 }
 
-export default Fetchy;
+export default Fetch;

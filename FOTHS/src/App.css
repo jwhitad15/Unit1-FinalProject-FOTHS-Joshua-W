@@ -46,6 +46,8 @@ label {
   position: absolute;
 }
 
+.icon {padding-right: 4px;}
+
 .button-class {
   border: outset 2.5px;
   color: white;
@@ -2061,6 +2063,9 @@ footer {
   .study-next-button {
     font-size: 21px;
   }
+}
+@media screen and (max-width: 1160) {
+    .subheader-title {font-size: 25px;}
 }
 @media screen and (min-width: 1012px) {
   .mobile-scope-breakpoint {display: none;}
