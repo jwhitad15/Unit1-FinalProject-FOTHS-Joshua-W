@@ -8,10 +8,15 @@ const DisplayCustomGoal = (props) => {
 
     return (
         <div >
-
-                <p className="scope-card-list-item"> {props.customTitle} </p> 
-                <p className="scope-card-list-item"> {props.data} </p>  <br></br> 
-    
+                <div className="desktop-custom-goal">
+                <p className="scope-card-list-item"> <b>{props.customTitle}</b> </p> 
+                <p className="scope-card-list-item"> + {props.data} </p>  <br></br> 
+                </div>
+                
+                <div className="mobile-response-custom-goal">
+                <p className="scope-card-list-item"> <b>{props.customTitle}</b> </p> 
+                <p className="scope-card-list-item"> + {props.data} </p>  <br></br> 
+                </div>
         </div>
     );
 

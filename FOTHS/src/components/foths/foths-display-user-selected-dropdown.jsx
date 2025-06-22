@@ -20,15 +20,15 @@ const DisplaySelectedDropdown = (props) => {
     return (
         <div className="scope-card-list-item">
   
-            <ul > 
+            <div > 
 
-                <h5 className="scope-display-dropdown-selection"> {selections[props.goalData].title}</h5>
-                <p> {selections[props.goalData].a} </p>
-                <li> {selections[props.goalData].b} </li>
-                <li> {selections[props.goalData].c} </li>
+                <p className="scope-display-dropdown-selection"> <b>{selections[props.goalData].title}</b></p>
+                <p className="scope-preset-item"> + {selections[props.goalData].a} </p>
+                <p className="scope-preset-item"> + {selections[props.goalData].b} </p>
+                <p className="scope-preset-item"> + {selections[props.goalData].c} </p>
     
 
-            </ul>
+            </div>
 
         </div>
     );
