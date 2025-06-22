@@ -7,9 +7,9 @@ const DisplaySelectedDropdown = (props) => {
 
     const selections = {
         0: "",
-        1: {title: "Study Faith for 31 minutes", a:"Set a timer for 31 minutes", b:"Navigate to Study Mode for Faith", c: "Read each of the verses"},
-        2: {title: "Study Gentleness for 31 minutes", a:"Set a timer for 32 minutes", b:"Navigate to Quiz Mode for Faith", c: "Read each of the chapters"},
-        3: {title: "Study Love for 31 minutes", a:"Set a timer for 32 minutes", b:"Navigate to Quiz Mode for Faith", c: "Read each of the chapters"}
+        1: {title: "Complete Faith Study Mode", a:"Set a timer for 31 minutes", b:"Choose 2-3 favorite scriptures", c: "Write each verse 5 times"},
+        2: {title: "Complete Faith Recall Mode", a:"Try Recall Quiz", b:"Take notes on missed questions", c: "Retake Recall Quiz"},
+        3: {title: "Complete Faith Multichoice Quiz", a:"Try Multichoice Quiz", b:"Take notes on missed questions", c: "Retake Multichhoice Quiz"}
     }
     let notZero = false;
 

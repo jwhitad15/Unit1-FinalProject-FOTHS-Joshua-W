@@ -54,7 +54,6 @@ const UserInteraction = () => {
 
     setTitleSubmit(title);
     setTitle('');
-
     
   };
 
@@ -70,9 +69,9 @@ const UserInteraction = () => {
 
         <select value={goal}  className="goal-select" onChange={handleDropdown} >
           <option value="0"></option>
-          <option value="1">Study Faith for 31 minutes</option>
-          <option value="2">Study Gentleness for 31 minutes</option>
-          <option value="3">Study Love for 31 minutes</option>
+          <option value="1">Complete Faith Study Mode</option>
+          <option value="2">Complete Faith Recall Mode</option>
+          <option value="3">Complete Faith Multichoice Quiz</option>
         </select> <br /> <br />
 
          <hr/>
@@ -92,7 +91,7 @@ const UserInteraction = () => {
       </form> <hr/>
 
 
-      <div> { isValid && !titleSubmit && !goalSubmit && <DisplaySelectedDropdown goalData={selectedGoal} />} </div>
+      <div> { ((isValid && !titleSubmit && !goalSubmit) || (isValid && isCustomValid)) && <DisplaySelectedDropdown goalData={selectedGoal} />} </div>
       <div> { isCustomValid && <DisplayCustomGoal data={goalSubmit} customTitle={titleSubmit} />} </div>
 
 
@@ -102,4 +101,3 @@ const UserInteraction = () => {
 
 export default UserInteraction;
 
-// goalSubmit && selectedGoal && titleSubmit
