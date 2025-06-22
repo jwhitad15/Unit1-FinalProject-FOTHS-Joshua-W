@@ -17,15 +17,13 @@ const DisplaySelectedDropdown = (props) => {
         notZero = true;
     } 
 
-    //console.log(notZero)
-
     return (
         <div className="scope-card-list-item">
   
             <ul > 
 
-                <h5>{selections[props.goalData].title}</h5>
-                <li> {selections[props.goalData].a} </li>
+                <h5 className="scope-display-dropdown-selection"> {selections[props.goalData].title}</h5>
+                <p> {selections[props.goalData].a} </p>
                 <li> {selections[props.goalData].b} </li>
                 <li> {selections[props.goalData].c} </li>
     

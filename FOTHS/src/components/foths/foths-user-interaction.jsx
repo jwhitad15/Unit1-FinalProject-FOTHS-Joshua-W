@@ -72,13 +72,13 @@ const UserInteraction = () => {
           <option value="1">Complete Faith Study Mode</option>
           <option value="2">Complete Faith Recall Mode</option>
           <option value="3">Complete Faith Multichoice Quiz</option>
-        </select> <br /> <br />
+        </select> <br /> <br className="desktop-scope-breakpoint" />
 
-         <hr/>
+         <hr className="scope-line"/>
 
         <label> <br />
+          Custom Goal <br className="mobile-scope-breakpoint"/>
           {/* Validation - makes sure user at least inputs 4 characters in textbox */}
-          Custom Goal
           <input maxLength='15' minLength='4' className="scope-textfield" type="text" placeholder="Goal Title" value={title} onChange={handleTitle} /> <br />
           <textarea maxLength='50' minLength='4' className="scope-textfield" type="text" placeholder="Description" value={goalInput} onChange={handleChange} />
         </label> <br />
@@ -88,7 +88,7 @@ const UserInteraction = () => {
 
         <button type="submit" className="scope-button-class" >Submit</button>
 
-      </form> <hr/>
+      </form> <hr className="scope-line"/>
 
 
       <div> { ((isValid && !titleSubmit && !goalSubmit) || (isValid && isCustomValid)) && <DisplaySelectedDropdown goalData={selectedGoal} />} </div>
