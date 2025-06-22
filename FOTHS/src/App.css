@@ -68,7 +68,7 @@ label {
   background-color: #1d3461;
   color: white;
   left: 10%;
-  width: 80%;
+  /* width: 80%; */
 }
 .start-button {
   border: outset 2.5px;
@@ -155,6 +155,10 @@ label {
   background-color: #cdc5b4;
   color: #1d3461;
 
+}
+
+.validate-message{
+  text-align: center;
 }
 
 .checkbox {
@@ -561,6 +565,31 @@ label {
   background-color: #1d3461;
   color: white;
 }
+
+.quiz-display {
+  display: center;
+  place-content: center;
+  flex: 0 0 25vw;
+  background: #cdc5b4;
+  color: #85756e;
+  box-sizing: borderbox;
+  border: outset;
+  vertical-align: middle;
+  font-size: 31px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  position: fixed;
+  right: 15%;
+  left: 15%;
+  top: 25%;
+  width: 69%;
+  height: 44%;
+  box-shadow: 8 14px 8px black;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 8px black;
+}
+
 .game-mode-title {
   border-style: outset;
   border: 3px outset white;
@@ -2171,6 +2200,7 @@ footer {
 @media screen and (max-width: 800px) {
 
   .study-display-verse {font-size: 21px;}
+  .quiz-display {font-size: 18px;}
 }
 @media screen and (max-width: 777px) {
   .FOTHS-dashboard-card {
@@ -2194,6 +2224,7 @@ footer {
   .foths-main-title {font-size: 24px;}
   .header-element-3 {font-size: 20px; width: 21%;}
   .study-display-verse {font-size: 18px;}
+  .quiz-display {font-size: 15px;}
 
 }
 @media screen and (max-width: 700px) {
@@ -2272,6 +2303,7 @@ footer {
   .return-to-foths-from-game-mode {display: none;}
   .game-mode-title {display: none;}
   .study-display-verse { display: inline;}
+  /* .quiz-display { display: inline;} */
 
   main {
     flex-direction: column;

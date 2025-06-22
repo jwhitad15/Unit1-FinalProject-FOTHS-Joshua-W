@@ -69,7 +69,7 @@ const UserInteraction = () => {
 
         <label for="goals">Choose a Goal:</label> <br/>
 
-        <select value={goal}  className="goal-select" onChange={handleDropdown} >
+        <select id="goals" value={goal}  className="goal-select" onChange={handleDropdown} >
           <option value="0"></option>
           <option value="1">Complete Faith Study Mode</option>
           <option value="2">Complete Faith Recall Mode</option>

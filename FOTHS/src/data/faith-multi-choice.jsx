@@ -113,10 +113,7 @@ const faithMultiChoice = [
         options: ["Ephesians 2:8-9", "James 2:17", "Mark 9:23", "Matthew 21:22"],
         answer: "Ephesians 2:8-9",
         level: "intermediate"
-    },
-
-
-  
+    }
 ]
 
 export default faithMultiChoice;

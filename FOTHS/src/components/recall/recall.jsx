@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 import FourElementHeader from "../header-components/header-4";
 import Footer from "../footer/footer";
+import Popup from 'reactjs-popup'
+import 'reactjs-popup/dist/index.css'
 
 
 const Recall = ({}) => {
@@ -126,19 +128,28 @@ const Recall = ({}) => {
     const [verseInput, setVerseInput] = useState('');
     const [verseSubmit, setVerseSubmit] = useState('');
     const [isValid, setIsValid] = useState('');
+    const [showPopup, setShowPopup] = useState(false);
+
     const handleSubmit = e => {
-    if (verseInput.toLowerCase().trim() === wordData.name.toLowerCase()){
-        setIsValid(true)
-    }
-    else {
-        setIsValid(false)
-    }
-    e.preventDefault();
-    setVerseSubmit(verseInput)
-    setVerseInput('')
+        if (verseInput.toLowerCase().trim() === wordData.name.toLowerCase()){
+            setIsValid(true)
+            setShowPopup(true)
+        }
+        else {
+            setIsValid(false)
+            setShowPopup(true)
+        }
+        e.preventDefault();
+        setVerseSubmit(verseInput)
+        setVerseInput('')
     };
+
     const handleChange = e => {
-    setVerseInput(e.target.value)
+        setVerseInput(e.target.value)
+    };
+
+     const closePopup = () => {
+        setShowPopup(false);
     };
 
 
@@ -199,23 +210,27 @@ const Recall = ({}) => {
                 </p>
 
                 <form className="scope-goals-input" onSubmit={handleSubmit}>
-
-                  
-
                     <button type="submit" className="button-class" >Submit</button>
                 </form>
 
+                {showPopup && !isValid && verseSubmit && (<Popup open={showPopup} closeOnDocumentClick onClose={closePopup}>
+                <div>
+                    
+                    <p className="validate-message" style={{ color: "red" }}>Incorrect. The verse is not: {verseSubmit}</p>
+                    <button onClick={closePopup}>Close</button>
+                </div>
+                </Popup> )}
 
-        {!isValid && verseSubmit && (
-        <p style={{ color: 'red' }}>Incorrect. The verse is not: {verseSubmit}</p>
-        )}
-        {isValid && verseSubmit && (
-        <p style={{ color: 'green' }}>Correct! The verse is: {wordData.name}</p>
-        )}
+                {showPopup && isValid && verseSubmit && (<Popup open={showPopup} closeOnDocumentClick onClose={closePopup}>
+                <div>
+                    
+                    <p className="validate-message" style={{ color: "green" }}>Correct! The verse is: {wordData.name}</p>
+                    <button onClick={closePopup}>Close</button>
+                </div>
+                </Popup> )}
         
             </div>
-
-
+            
             <div className="return-to-foths-from-study">
                     <a id="return-to-dashboard-hyperlink" href="./#/foths">Home</a>
             </div>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Question from "./question";
 import Score from "./score";
-import qBank from "./questionBank";
 import FourElementHeader from "../header-components/header-4";
 import Footer from "../footer/footer";
 import faithMultiChoice from "../../data/faith-multi-choice";
@@ -27,6 +26,7 @@ class Multichoice extends Component {
             this.setState((prevState) => ({ score: prevState.score + 1 }));
             }
     };
+    
     handleNextQuestion = () => {const { questionBank, currentQuestion } = this.state;
 
         if (currentQuestion + 1 < questionBank.length) {
@@ -43,7 +43,8 @@ class Multichoice extends Component {
         <div>
             <div> <FourElementHeader/> </div> 
             <div className="study-title"> Quiz Mode </div>
-            <main className="study-display-verse"> <p> <Question question={questionBank[currentQuestion]} selectedOption={selectedOption} onOptionChange={this.handleOptionChange} onSubmit={this.handleFormSubmit}/> </p></main>
+                {!quizEnd && (<main className="quiz-display"> <p> <Question question={questionBank[currentQuestion]} selectedOption={selectedOption} onOptionChange={this.handleOptionChange} onSubmit={this.handleFormSubmit}/> </p></main>)}
+                {quizEnd && (<main className="quiz-display"> <p> End of quiz. Check your results.</p></main>)}
             <div className="quiz-score"> <p className="verse-size"> <Score score={score} onNextQuestion={this.handleNextQuestion} className="score" /></p> </div>
             <Footer/>
         </div>
