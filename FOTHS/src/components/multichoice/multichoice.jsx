@@ -9,18 +9,36 @@ class Multichoice extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            // questionBank: qBank,
             questionBank: faithMultiChoice,
             currentQuestion: 0,
             selectedOption: "",
             score: 0,
             quizEnd: false,
         };
-    }
 
-    handleOptionChange = (e) => {this.setState({ selectedOption: e.target.value })};
-    handleFormSubmit = (e) => {e.preventDefault(); this.checkAnswer(); this.handleNextQuestion()};
-    checkAnswer = () => {const { questionBank, currentQuestion, selectedOption, score } = this.state;
+        this.questionAnswered = true;
+    }
+    
+    handleOptionChange = (e) => {
+        this.setState({ selectedOption: e.target.value })
+    };
+
+    handleFormSubmit = (e) => {
+        e.preventDefault(); 
+        this.checkAnswer(); 
+        if (this.questionAnswered){
+            this.handleNextQuestion()
+        }
+    };
+
+    checkAnswer = () => {
+        const { questionBank, currentQuestion, selectedOption, score } = this.state;
+        if (selectedOption !== ''){
+            this.questionAnswered = true;
+        }
+        else{
+            this.questionAnswered = false
+        }
 
         if (selectedOption === questionBank[currentQuestion].answer) {
             this.setState((prevState) => ({ score: prevState.score + 1 }));

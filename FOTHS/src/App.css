@@ -68,7 +68,6 @@ label {
   background-color: #1d3461;
   color: white;
   left: 10%;
-  /* width: 80%; */
 }
 .start-button {
   border: outset 2.5px;
@@ -154,7 +153,8 @@ label {
   border-radius: 5px;
   background-color: #cdc5b4;
   color: #1d3461;
-
+  width: 250px;
+  height: 28px;
 }
 
 .validate-message{
@@ -394,7 +394,6 @@ label {
   font-size: 31px;
   padding-left: 10px;
   padding-right: 10px;
-
   position: fixed;
   right: 15%;
   left: 15%;
@@ -404,7 +403,9 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 8px black;
+  overflow: auto;
 }
+
 .study-display-verse:hover {
   background-color: #1d3461;
   color: white;
@@ -514,18 +515,19 @@ label {
   padding-bottom: 5px;
   border-radius: 8px;
   background: #cdc5b4;
-  position: fixed;
+  position: absolute;
   right: 15%;
   left: 15%;
   top: 72%;
   width: 70%;
-  height: 6%;
+  height: 6.5%;
   color: white;
   font-size: 25px;
   color: #1d3461;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 8px black;
+  /* vertical-align: middle; */
 }
 .verse-name:hover {
   background-color: #1d3461;
@@ -575,10 +577,9 @@ label {
   box-sizing: borderbox;
   border: outset;
   vertical-align: middle;
-  font-size: 31px;
+  font-size: 26px;
   padding-left: 10px;
   padding-right: 10px;
-
   position: fixed;
   right: 15%;
   left: 15%;
@@ -588,6 +589,8 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 8px black;
+  overflow: auto;
+
 }
 
 .game-mode-title {
@@ -1722,6 +1725,7 @@ aside {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  overflow: auto;
 }
 
 .scope-card {
@@ -2025,7 +2029,7 @@ footer {
 /* Media Queries */
 @media screen and (min-width: 1351px) {
   .responsive-fruit-card-text {display: none;}
-}
+  .fruit-card-image{height: 100%}}
 @media screen and (max-width: 1350px) {
   .fruit-card-image {display: none;}
   .responsive-fruit-card-text {font-size: 31px;}
@@ -2084,6 +2088,7 @@ footer {
   width: 38%;
   height: 8.5%;
 }
+  .recall-input {margin-top: -1.5%;}
 }
 @media screen and (max-width: 1183px) {
   .study-previous-button {
@@ -2303,7 +2308,6 @@ footer {
   .return-to-foths-from-game-mode {display: none;}
   .game-mode-title {display: none;}
   .study-display-verse { display: inline;}
-  /* .quiz-display { display: inline;} */
 
   main {
     flex-direction: column;
@@ -2340,7 +2344,9 @@ footer {
 }
 @media screen and (max-width: 471px) {
 .footer-copyright {font-size: 14px;}
-.footer-eBible-link {font-size: 16px;}
+.footer-eBible-link {font-size: small}
+.footer-admin-link{font-size: small;}
+.footer-about-link{font-size: small;}
 h4 {font-size: 14px;}
 }
 @media screen and (max-width: 465px) {
@@ -2374,6 +2380,18 @@ h4 {font-size: 14px;}
   }
   .header-element-3 {
     width: 31%;
+    font-size: small;
   }
   .foths-main-title {font-size: 15px;}
+  .recent-activity{
+    visibility: hidden;
+  }
+  .recent-activity-card-1{
+    width: 35%;
+  }
+    .recent-activity-card-2{
+    width: 35%;
+    left: 54%
+  }
+
 }

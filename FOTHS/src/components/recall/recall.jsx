@@ -206,7 +206,7 @@ const Recall = ({}) => {
             <div className="verse-name">
                 
                 <p className="verse-size"> 
-                    <textarea maxLength='50' minLength='4' className="recall-input" type="text" placeholder="Enter Full Verse" value={verseInput} onChange={handleChange} size="12" />
+                    <input maxLength='50' minLength='4' className="recall-input" type="text" placeholder="Enter Full Verse" value={verseInput} onChange={handleChange} size="12" />
                 </p>
 
                 <form className="scope-goals-input" onSubmit={handleSubmit}>
@@ -216,7 +216,7 @@ const Recall = ({}) => {
                 {showPopup && !isValid && verseSubmit && (<Popup open={showPopup} closeOnDocumentClick onClose={closePopup}>
                 <div>
                     
-                    <p className="validate-message" style={{ color: "red" }}>Incorrect. The verse is not: {verseSubmit}</p>
+                    <p className="validate-message" style={{ color: "red" }}>Incorrect. Please try again. {verseSubmit}</p>
                     <button onClick={closePopup}>Close</button>
                 </div>
                 </Popup> )}
@@ -224,7 +224,7 @@ const Recall = ({}) => {
                 {showPopup && isValid && verseSubmit && (<Popup open={showPopup} closeOnDocumentClick onClose={closePopup}>
                 <div>
                     
-                    <p className="validate-message" style={{ color: "green" }}>Correct! The verse is: {wordData.name}</p>
+                    <p className="validate-message" style={{ color: "green" }}> Great Work! The correct answer is: {wordData.name}</p>
                     <button onClick={closePopup}>Close</button>
                 </div>
                 </Popup> )}
