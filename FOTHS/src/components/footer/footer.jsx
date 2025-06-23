@@ -8,7 +8,6 @@ const Footer = () => {
             <a id="card-hyperlink" className="footer-notepad-link" href="https://onlinenotepad.org/notepad"> Notepad</a>
             <a id="card-hyperlink" className="footer-about-link" href="./#/about"> About </a>
             <a id="jwmp-hyperlink" className="footer-admin-link" href="./#/login"> Admin </a>
-            {/* <a id="jwmp-hyperlink" className="footer-jwmp-link" href="https://www.jwmp.solutions"> JWMP</a> */}
         </footer>
     )
 }

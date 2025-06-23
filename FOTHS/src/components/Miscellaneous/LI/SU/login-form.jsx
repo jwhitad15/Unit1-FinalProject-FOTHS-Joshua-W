@@ -1,14 +1,5 @@
-// This component will be the first screen users see.
-// It will initially prompt users to login with just a username & password.
-// If the user inputs an appropriate username & password and clicks the 'Login' button, it will take the user to the Dashboard Page.
-// However, if the user is new, they can click the highlighted text link located underneath the form container, which will update the pop-up card to prompt the 
-    // user for extra information. 
-
-// I need this component to remember & recall the user's username & password.
-// I need the username & password fields to ensure validation according to the input conditions I set.
-// I need the text link below the Login Card to dynamically update expand into a bigger card, which will allow the user to input required Account Creation information. 
-// I need the Login Card to be separated and raised from the background of the page.
-// I need a picture embedded into the Login Card for user-friendliness.
+// This page is for Admin to be able to login to the backend of the app and see all user accounts related to the app.
+// The login component navigates to a fetch feature that represents what it would be like to retrieve user account data.
 
 import { useState } from "react";
 import React from "react";
@@ -21,13 +12,11 @@ const LoginForm = () => {
     const [formData, setFormData] = useState({ username: "", password: ""});
     const [isNotValid, setIsNotValid] = useState(false);
 
-    
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((input) => ({...input, [name]: value}));
     }
-    
-    
+
     const handleSubmit = (e) => {
         e.preventDefault();
 

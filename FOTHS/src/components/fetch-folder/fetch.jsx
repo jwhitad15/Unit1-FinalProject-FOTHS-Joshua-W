@@ -1,6 +1,5 @@
 // This component controls the Study Mode Scripture carousel
 import {useState, useEffect} from "react";
-import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 import Footer from "../footer/footer";
 import FetchtHeader from "../header-components/fetch-header";
 import './fetch.css'
@@ -38,49 +37,33 @@ const Fetch = ({}) => {
                 <FetchtHeader/>
             </div>
 
-       
-            {/* <div>
-                <button  className="study-previous-button"> 
-                    <div id="study-button-text"> Next </div>
-                    <div id="study-button-icon"> <FaArrowRightLong/> </div>
-                </button>
-            </div>
-
-            {/* event handling inserted on buttons */}
-            {/* <div>
-                <button className="study-next-button">
-                    <div id="study-button-text"> Previous </div>  
-                    <div id="study-button-icon"> <FaArrowLeftLong/> </div>  
-                </button>
-            </div> */}
-
             <main className="fetch-display-container">
 
-            <div className="subheader">
-                <p className="subheader-title">Fetching User Data from API</p>
-                <p className="subheader-text">This page represents a mockup fetch for sample data. When more users join FOTHS, user account data will be fetched & displayed on this page. </p>
-            </div> <br />
-          
-            <hr/> <br />
+                <div className="subheader">
+                    <p className="subheader-title">Fetching User Data from API</p>
+                    <p className="subheader-text">This page represents a mockup fetch for sample data. When more users join FOTHS, user account data will be fetched & displayed on this page. </p>
+                </div> <br />
+            
+                <hr/> <br />
 
-            <div className="container">
-                {items.map((item) => (
-                    <div className="item" key={item.id}>
-                        <table className="center">
-                            <tr>
-                                <th> <strong> Username </strong> </th>
-                                <th> <strong> Name </strong></th>
-                                <th> <strong> Email </strong></th>
-                            </tr> 
-                            <tr>
-                                <td className="username-cell">{item.username}</td>
-                                <td className="name-cell">{item.name}</td>
-                                <td className="email-cell">{item.email}</td>
-                            </tr>
-                        </table> <br/>
-                    </div>
-                ))}
-            </div> 
+                <div className="container">
+                    {items.map((item) => (
+                        <div className="item" key={item.id}>
+                            <table className="center">
+                                <tr>
+                                    <th> <strong> Username </strong> </th>
+                                    <th> <strong> Name </strong></th>
+                                    <th> <strong> Email </strong></th>
+                                </tr> 
+                                <tr>
+                                    <td className="username-cell">{item.username}</td>
+                                    <td className="name-cell">{item.name}</td>
+                                    <td className="email-cell">{item.email}</td>
+                                </tr>
+                            </table> <br/>
+                        </div>
+                    ))}
+                </div> 
             </main>
 
             <div className="return-to-foths-from-study">

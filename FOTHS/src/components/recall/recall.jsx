@@ -152,7 +152,6 @@ const Recall = ({}) => {
         setShowPopup(false);
     };
 
-
     return (
         <div id="foths-main">
 
@@ -170,7 +169,6 @@ const Recall = ({}) => {
                     <div id="study-button-icon"> <FaArrowRightLong/> </div>
                 </button>
             </div>
-
 
             {/* event handling inserted on buttons */}
             <div>

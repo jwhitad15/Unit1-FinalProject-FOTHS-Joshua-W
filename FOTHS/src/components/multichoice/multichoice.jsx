@@ -62,7 +62,7 @@ class Multichoice extends Component {
             <div> <FourElementHeader/> </div> 
             <div className="study-title"> Quiz Mode </div>
                 {!quizEnd && (<main className="quiz-display"> <p> <Question question={questionBank[currentQuestion]} selectedOption={selectedOption} onOptionChange={this.handleOptionChange} onSubmit={this.handleFormSubmit}/> </p></main>)}
-                {quizEnd && (<main className="quiz-display"> <p> End of quiz. Check your results.</p></main>)}
+                {quizEnd && (<main className="quiz-display"> <p> End of quiz. Take a moment to review your results. </p> <br/> <a href="./#/game-mode" className="start-button" text="Hover Effect 2" effecttype="effect2" >Return</a> </main>)}
             <div className="quiz-score"> <p className="verse-size"> <Score score={score} onNextQuestion={this.handleNextQuestion} className="score" /></p> </div>
             <Footer/>
         </div>

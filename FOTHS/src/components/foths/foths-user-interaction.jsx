@@ -61,7 +61,6 @@ const UserInteraction = () => {
   return (
 
     <div style={{ textAlign: "center", marginTop: "20px" }}>
-      {/* <h1 className="personal-goals">Personal Goals</h1> */}
 
       <form className="scope-goals-input" onSubmit={handleSubmit}>
 

@@ -18,7 +18,6 @@ const GameMode = () => {
                 <a href="./#/multichoice" id="game-mode-hyperlink" className="game-card-3"> Quiz </a> 
             </main>
        
-
             <Footer/>
 
         </div>

@@ -95,29 +95,28 @@ const faithScripture = [
 
 const Study = ({}) => {
 
-const [wordData, setWordData] = useState(faithScripture[0])
-const [val, setVal] = useState(0)
+    const [wordData, setWordData] = useState(faithScripture[0])
+    const [val, setVal] = useState(0)
 
-// event handler functions that control the Previous & Next Arrows
-// also includes logic that disables Previous button on first slide & Next button on last slide
-const handleClick=(index)=>{
+    // event handler functions that control the Previous & Next Arrows
+    // also includes logic that disables Previous button on first slide & Next button on last slide
+    const handleClick=(index)=>{
+        setVal(index)
+        const wordSlider=faithScripture[index];
+        setWordData(wordSlider)
+    }
+    const handleNext=()=>{
+    let index = val < faithScripture.length -1 ? val + 1 : val;
     setVal(index)
     const wordSlider=faithScripture[index];
     setWordData(wordSlider)
-}
-const handleNext=()=>{
-   let index = val < faithScripture.length -1 ? val + 1 : val;
-   setVal(index)
-   const wordSlider=faithScripture[index];
-   setWordData(wordSlider)
-}
-const handlePrevious=()=>{
-    let index = val <= faithScripture.length -1 && val > 0 ? val - 1 : val;
-    setVal(index)
-    const wordSlider=faithScripture[index];
-    setWordData(wordSlider)
-}
-  
+    }
+    const handlePrevious=()=>{
+        let index = val <= faithScripture.length -1 && val > 0 ? val - 1 : val;
+        setVal(index)
+        const wordSlider=faithScripture[index];
+        setWordData(wordSlider)
+    }
 
     return (
         <div id="foths-main">

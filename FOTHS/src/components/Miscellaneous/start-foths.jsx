@@ -12,8 +12,6 @@ const StartFoths = () => {
         event.preventDefault();
     }
 
-
-
     return (
 
         <div>

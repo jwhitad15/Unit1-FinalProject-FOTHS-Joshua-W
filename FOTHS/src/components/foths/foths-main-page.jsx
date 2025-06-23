@@ -20,10 +20,6 @@ const FOTHSMain = () => {
                 <div className="scope">Scope</div>
                 <div className="scope-card-1"><UserInteraction/> </div>
             </aside>
-            {/* <div className="mobile-scope">
-                <div className="scope">Scope</div>
-                <div className="scope-card-1"><UserInteraction/> </div>
-            </div> */}
 
             <div className="foths-main">
                 <div className="foths-main-title"> Fruits of the Holy Spirit </div>
