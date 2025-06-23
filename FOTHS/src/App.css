@@ -543,6 +543,11 @@ label {
 .form-check-input {
   background-color: pink;
 }
+.form-check-label:hover {
+  background-color: #a64444;
+  color: white;
+  font-size: 16px;
+}
 .quiz-score {
   border-style: outset;
   border: 3px outset white;
@@ -626,8 +631,9 @@ label {
   font-size: 18px;
   margin-top: 500px;
   border-radius: 4px;
-  position: relative;
-  top: 40%;
+  position: fixed;
+  top: 27%;
+  left: 47%;
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 21px #1d3461;
@@ -675,7 +681,7 @@ label {
   font-size: 48px;
 }
 .game-card-2:hover {
-  background-color: black;
+  background-color: #658361;
 }
 .game-card-3 {
   border-style: outset;
@@ -694,7 +700,7 @@ label {
   font-size: 48px;
 }
 .game-card-3:hover {
-  background-color: black;
+  background-color: #658361;
 }
 
 .game-mode-header {
@@ -796,7 +802,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
-  font-size: 31px;
+ font-size: 26px;
 }
 
 .recent-activity-card-1 {
@@ -977,7 +983,7 @@ label {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 px #a64444;
-  font-size: 31px;
+font-size: 26px;
   z-index: 1;
 }
 
@@ -1669,6 +1675,7 @@ aside {
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
   border-radius: 10px;
+  overflow: auto;
 }
 
 .scope {
@@ -1687,7 +1694,8 @@ aside {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
-  font-size: 31px;
+  font-size: 26px;
+  z-index: 1;
 }
 
 .mobile-response-custom-goal {
@@ -1707,6 +1715,7 @@ aside {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
+  display: none;
 }
 .scope-card-1 {
   border: outset;
@@ -1715,9 +1724,9 @@ aside {
   background-color: #a64444;
   color: white;
   place-content: center;
-  position: fixed;
-  top: 29%;
-  width: 9%;
+  position: absolute;
+  top: 18.8%;
+  width: 75.6%;
   padding-left: 2%;
   padding-right: 2%;
   /* padding-bottom: 2%; */
@@ -1725,7 +1734,7 @@ aside {
   box-shadow: 8 14px 8px black;
   -webkit-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 5px black;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .scope-card {
@@ -2165,7 +2174,7 @@ footer {
     /* top: 79.4%;  */
     z-index: 2;}
   .mobile-response-custom-goal {left: 58.6%; top: 61.7%; width: 25%; height: 21.2%; z-index: 1;}
-  .scope-card-1 {left: 28.6%; top: 61.7%; width: 25%; height: 23.7%; z-index: 1;}
+  .scope-card-1 {position: absolute; left: 28.6%; top: 10.5%; width: 57%; height: 77%; z-index: 1; overflow: auto;}
   .scope-card-list-item {left: 52.2%; top: 78%; z-index: 1;}
   .scope-line {display: none;}
   .desktop-scope-breakpoint {display: none;}
@@ -2255,6 +2264,7 @@ footer {
    display: none;
   }
   td {font-size: 10px;;}
+  .about-app-card {left: 31%; right: 31% }
 }
 @media screen and (min-width: 673px) {
   .header-element-5{
@@ -2282,6 +2292,7 @@ footer {
   .dashboard-card-text {
     grid-area: 5 / span 6;
   }
+   .scope {font-size: 20px;}
 }
 @media screen and (max-width: 600px) {
   .recent-activity {font-size: 20px;}
@@ -2347,6 +2358,7 @@ footer {
 .footer-eBible-link {font-size: small}
 .footer-admin-link{font-size: small;}
 .footer-about-link{font-size: small;}
+.footer-notepad-link{font-size: small;}
 h4 {font-size: 14px;}
 }
 @media screen and (max-width: 465px) {
@@ -2393,5 +2405,7 @@ h4 {font-size: 14px;}
     width: 35%;
     left: 54%
   }
+  .about-story-card {font-size: 8px; overflow: auto; }
+  .about-app-card {left: 12%; right: 12%}
 
 }

@@ -15,13 +15,8 @@ const GameMode = () => {
                 <div className="game-mode-title"> Game Mode </div>
                 <a href="./#/study" id="game-mode-hyperlink" className="game-card-1"> Study </a>
                 <a href="./#/recall" id="game-mode-hyperlink" className="game-card-2"> Recall </a>
-                <a href="./#/multichoice" id="game-mode-hyperlink" className="game-card-3"> Quiz </a>
-             
+                <a href="./#/multichoice" id="game-mode-hyperlink" className="game-card-3"> Quiz </a> 
             </main>
-
-            <div className="return-to-foths-from-game-mode">
-                   <a id="return-to-dashboard-hyperlink" href="./#/foths">Return</a>
-            </div>
        
 
             <Footer/>
