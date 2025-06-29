@@ -59,6 +59,7 @@
 // export default UserRegistration;
 
 import React, {useEffect, useRef, useState} from "react";
+import { useNavigate } from "react-router";
 import Dashboard from "../../../dashboard";
 import './user-login.css'
 
@@ -82,6 +83,7 @@ function UserRegistration() {
         }
     })
 
+    let navigate = useNavigate();
     const handleClick = () => {
         if(firstName.current.value && email.current.value && password.current.value) {
             localStorage.setItem("firstName", firstName.current.value)
@@ -89,52 +91,54 @@ function UserRegistration() {
             localStorage.setItem("password", password.current.value)
             localStorage.setItem("register", email.current.value)
             alert("Account Registration Successful")
-            window.location.reload()
+            navigate("/dashboard");
         }
     }
 
-    const handleSignIn = () => {
-        if(email.current.value == localEmail && password.current.value == localPassword) {
-                localStorage.setItem("register", email.current.value)
-                window.location.reload()
-    } else {
-        alert("Please enter valid credentials")
-    }
+    // const handleSignIn = () => {
+    //     if(email.current.value == localEmail && password.current.value == localPassword) {
+    //             localStorage.setItem("register", email.current.value)
+    //             window.location.reload()
+    // } else {
+    //     alert("Please enter valid credentials")
+    // }
 
     return(
         <div>
-            {showDashboard?<Dashboard/>:
-                (show?
+            {/* {showDashboard ? <Dashboard/> : (show ? */}
+
+                {/* <div className="container">
+                    <h1>Hi ! </h1>
+
+                    <div className="input-space">
+                        <input placeholder="email" type="text"  />
+                    </div>
+
+                    <div className="input-space">
+                        <input placeholder="password" type="text"  />
+                    </div>
+
+                    <button >Login</button>
+                </div> */}
+
+
+                {/* : */}
                 <div className="container">
-                    <h1>Hi {localFirstName}! </h1>
-
                     <div className="input-space">
-                        <input placeholder="email" type="text" ref={email} />
-                    </div>
-
-                    <div className="input-space">
-                        <input placeholder="password" type="text" ref={password} />
-                    </div>
-
-                    <button onClick={handleSignIn}>Login</button>
-                </div>
-                :
-                <div className="container">
-                    <div className="input-space">
-                        <input placeholder="first-name" type="text" ref={firstName} />
+                        <input placeholder="first-name" type="text" value={firstName} />
                     </div>
                     <div className="input-space">
-                        <input placeholder="email" type="text" ref={email} />
+                        <input placeholder="email" type="text" value={email}/>
                     </div>
                     <div className="input-space">
-                        <input placeholder="password" type="text" ref={password} />
+                        <input placeholder="password" type="text" value={password} />
                     </div>
                     <button onClick={handleClick}>Register</button>
                 </div>
-                )
-            }
+                {/* ) */}
+            {/* } */}
         </div>
     )
 }
-}
+// }
 export default UserRegistration;

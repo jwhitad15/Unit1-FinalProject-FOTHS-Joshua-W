@@ -11,7 +11,7 @@ input {
     font-size: 16px;
   }
 
-.UserRegistratdisplay {
+.container {
     display: flex;
     flex-direction: column;
     gap: 10px;
