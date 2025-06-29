@@ -58,18 +58,28 @@
 
 // export default UserRegistration;
 
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Dashboard from "../../../dashboard";
-import '/.user-login.css'
+import './user-login.css'
 
 function UserRegistration() {
     const firstName=useRef()
     const email=useRef()
     const password=useRef()
-    const localSignup = localStorage.getItem(register);
+    const [showDashboard, setShowDashboard] = useState(false)
+    const [show, setShow] = useState(false)
+    const localSignup = localStorage.getItem("register");
+    const localEmail = localStorage.getItem("email");
+    const localPassword = localStorage.getItem("password");
+    const localFirstName = localStorage.getItem("firstName");
 
     useEffect(()=> {
-    
+        if(localSignup) {
+            setShowDashboard(true)
+        }
+        if(localEmail) {
+            setShow(true)
+        }
     })
 
     const handleClick = () => {
@@ -79,25 +89,52 @@ function UserRegistration() {
             localStorage.setItem("password", password.current.value)
             localStorage.setItem("register", email.current.value)
             alert("Account Registration Successful")
+            window.location.reload()
         }
+    }
+
+    const handleSignIn = () => {
+        if(email.current.value == localEmail && password.current.value == localPassword) {
+                localStorage.setItem("register", email.current.value)
+                window.location.reload()
+    } else {
+        alert("Please enter valid credentials")
     }
 
     return(
         <div>
-            <div className="container">
-                <div className="input-space">
-                    <input placeholder="first-name" type="text" ref={firstName} />
+            {showDashboard?<Dashboard/>:
+                (show?
+                <div className="container">
+                    <h1>Hi {localFirstName}! </h1>
+
+                    <div className="input-space">
+                        <input placeholder="email" type="text" ref={email} />
+                    </div>
+
+                    <div className="input-space">
+                        <input placeholder="password" type="text" ref={password} />
+                    </div>
+
+                    <button onClick={handleSignIn}>Login</button>
                 </div>
-                <div className="input-space">
-                    <input placeholder="email" type="text" ref={email} />
+                :
+                <div className="container">
+                    <div className="input-space">
+                        <input placeholder="first-name" type="text" ref={firstName} />
+                    </div>
+                    <div className="input-space">
+                        <input placeholder="email" type="text" ref={email} />
+                    </div>
+                    <div className="input-space">
+                        <input placeholder="password" type="text" ref={password} />
+                    </div>
+                    <button onClick={handleClick}>Register</button>
                 </div>
-                <div className="input-space">
-                    <input placeholder="password" type="text" ref={password} />
-                </div>
-                <button onClick={handleClick}>Register</button>
-            </div>
+                )
+            }
         </div>
     )
 }
-
+}
 export default UserRegistration;
