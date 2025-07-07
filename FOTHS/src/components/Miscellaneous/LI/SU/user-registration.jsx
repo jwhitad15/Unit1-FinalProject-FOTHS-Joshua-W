@@ -9,20 +9,6 @@
 //         formState: { errors },
 //     } = useForm();
 
-//     const onSubmit = (data) => {
-//         const existingUser = JSON.parse(localStorage.getItem(data.email));
-//         if (existingUser) {
-//             console.log("Email is already registered!");
-//         } else {
-//             const userData = {
-//                 name: data.name,
-//                 email: data.email,
-//                 password: data.password,
-//             };
-//             localStorage.setItem(data.email, JSON.stringify(userData));
-//             console.log(data.name + " has been successfully registered");
-//         }
-//     };
 
 //     return (
 //         <>
@@ -95,34 +81,24 @@ function UserRegistration() {
         }
     }
 
-    // const handleSignIn = () => {
-    //     if(email.current.value == localEmail && password.current.value == localPassword) {
-    //             localStorage.setItem("register", email.current.value)
-    //             window.location.reload()
-    // } else {
-    //     alert("Please enter valid credentials")
-    // }
+    //     const onSubmit = (data) => {
+//         const existingUser = JSON.parse(localStorage.getItem(data.email));
+//         if (existingUser) {
+//             console.log("Email is already registered!");
+//         } else {
+//             const userData = {
+//                 name: data.name,
+//                 email: data.email,
+//                 password: data.password,
+//             };
+//             localStorage.setItem(data.email, JSON.stringify(userData));
+//             console.log(data.name + " has been successfully registered");
+//         }
+//     };
 
     return(
         <div>
-            {/* {showDashboard ? <Dashboard/> : (show ? */}
 
-                {/* <div className="container">
-                    <h1>Hi ! </h1>
-
-                    <div className="input-space">
-                        <input placeholder="email" type="text"  />
-                    </div>
-
-                    <div className="input-space">
-                        <input placeholder="password" type="text"  />
-                    </div>
-
-                    <button >Login</button>
-                </div> */}
-
-
-                {/* : */}
                 <div className="container">
                     <div className="input-space">
                         <input placeholder="first-name" type="text" value={firstName} />
@@ -135,10 +111,39 @@ function UserRegistration() {
                     </div>
                     <button onClick={handleClick}>Register</button>
                 </div>
-                {/* ) */}
-            {/* } */}
+   
+            {/* <>
+            
+            <h2>Registration Form</h2>
+
+                <form className="user-registration" onSubmit={handleSubmit(onSubmit)}>
+                <input
+                    type="text"
+                    {...register("name", { required: true })}
+                    placeholder="Name"
+                />
+                {errors.name && <span style={{ color: "red" }}>*Name* is mandatory</span>}
+
+                <input
+                    type="email"
+                    {...register("email", { required: true })}
+                    placeholder="Email"
+                />
+                {errors.email && <span style={{ color: "red" }}>*Email* is mandatory</span>}
+
+                <input
+                    type="password"
+                    {...register("password", { required: true })}
+                    placeholder="Password"
+                />
+                {errors.password && <span style={{ color: "red" }}>*Password* is mandatory</span>}
+
+                <input type="submit" style={{ backgroundColor: "#a1eafb" }} />
+                </form>
+            </> */}
+
         </div>
     )
 }
-// }
+
 export default UserRegistration;
