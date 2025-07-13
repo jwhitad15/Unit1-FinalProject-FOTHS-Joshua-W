@@ -132,6 +132,22 @@ label {
   background-color: #cdc5b4;
   color: #1d3461;
 }
+.registration-textfield {
+  border: 2.1px inset #1d3461;
+  border-radius: 5px;
+  background-color: #cdc5b4;
+  color: #1d3461;
+  text-align: center;
+}
+.registration-textfield::placeholder {
+  color: #1d3461;
+}
+.legend-title {
+  color: white;
+}
+.legend-border {
+  border-color: #4d788f;
+}
 
 .scope-textfield {
   border: 2.1px inset #1d3461;
@@ -1247,6 +1263,37 @@ font-size: 26px;
   background-color: #1f1f1f;
 }
 
+.registration {
+  --c: #1d3461;
+  /* the main color */
+  --b: 5px;
+  /* thickness of the border */
+  --o: 31px;
+  /* control the offset */
+
+  /* width: 1234px; */
+  /* the image size */
+  --_p: calc(2*var(--o) + var(--b));
+  padding: var(--_p) var(--_p) 0 0;
+  border: var(--b) solid var(--c);
+  border-radius: 25px;
+  outline-offset: calc(var(--o) - var(--_p));
+  transition: 1.0s;
+  cursor: pointer;
+  box-shadow: 8 14px 8px black;
+  background: #cdc5b4;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 21px #cdc5b4;
+}
+
+.registration+.registration {
+  padding: var(--_p) 0 0 var(--_p);
+}
+
+.registration:hover {
+  padding: calc(var(--_p)/2);
+
+}
 .login-signup {
   --c: #1d3461;
   /* the main color */
